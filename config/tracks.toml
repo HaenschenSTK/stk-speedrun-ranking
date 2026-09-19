@@ -1,0 +1,120 @@
+game_id = "46w9mq1r"
+
+[tracks.old-mine]
+id = "ldyxxp93"
+name = "Old Mine"
+# Only 1.x; Normal and Reverse remain separate boards.
+category_id = "7kj1gq4k"
+
+[tracks.gran-paradiso-island]
+id = "rdn7759m"
+name = "Gran Paradiso Island"
+category_id = "7kj1gq4k"
+# Glitches (ql690vjl) is stored on runs, but does not split the boards.
+
+[tracks.antediluvian-abyss]
+id = "49562mmd"
+name = "Antediluvian Abyss"
+category_id = "7kj1gq4k"
+
+[tracks.around-the-lighthouse]
+id = "rdq88odx"
+name = "Around the Lighthouse"
+category_id = "7kj1gq4k"
+
+[tracks.black-forest]
+id = "owoyjzk9"
+name = "Black Forest"
+category_id = "7kj1gq4k"
+
+[tracks.candela-city]
+id = "xd0q2z19"
+name = "Candela City"
+category_id = "7kj1gq4k"
+
+[tracks.cocoa-temple]
+id = "yweyyldl"
+name = "Cocoa Temple"
+category_id = "7kj1gq4k"
+
+[tracks.cornfield-crossing]
+id = "o9xngx3w"
+name = "Cornfield Crossing"
+category_id = "7kj1gq4k"
+
+[tracks.drainage-dash]
+id = "93qo7ynw"
+name = "Drainage Dash"
+category_id = "7kj1gq4k"
+bonus = true
+
+[tracks.fort-magma]
+id = "gdrrxzdz"
+name = "Fort Magma"
+category_id = "7kj1gq4k"
+
+[tracks.freytra-peaks]
+id = "98rn6ggd"
+name = "Freytra Peaks"
+category_id = "7kj1gq4k"
+bonus = true
+
+[tracks.hacienda]
+id = "z983p1dl"
+name = "Hacienda"
+category_id = "7kj1gq4k"
+
+[tracks.minigolf]
+id = "69z55x91"
+name = "Minigolf"
+category_id = "7kj1gq4k"
+
+[tracks.nessies-pond]
+id = "69z358xd"
+name = "Nessie's Pond"
+category_id = "7kj1gq4k"
+
+[tracks.northern-resort]
+id = "r9glljw2"
+name = "Northern Resort"
+category_id = "7kj1gq4k"
+
+[tracks.olivers-math-class]
+id = "5d711qdy"
+name = "Oliver's Math Class"
+category_id = "7kj1gq4k"
+
+[tracks.ravenbridge-mansion]
+id = "nwlozzpw"
+name = "Ravenbridge Mansion"
+category_id = "7kj1gq4k"
+
+[tracks.shifting-sands]
+id = "ldyxq793"
+name = "Shifting Sands"
+category_id = "7kj1gq4k"
+
+[tracks.snow-peak]
+id = "kwjgg0wg"
+name = "Snow Peak"
+category_id = "7kj1gq4k"
+
+[tracks.stk-enterprise]
+id = "n93112d0"
+name = "STK Enterprise"
+category_id = "7kj1gq4k"
+
+[tracks.volcan-island]
+id = "r9g2l7jd"
+name = "Volcan Island"
+category_id = "7kj1gq4k"
+
+[tracks.xr591]
+id = "o9xgg3dl"
+name = "XR591"
+category_id = "7kj1gq4k"
+
+[tracks.zen-garden]
+id = "owojjj96"
+name = "Zen Garden"
+category_id = "7kj1gq4k"

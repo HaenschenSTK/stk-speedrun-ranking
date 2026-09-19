@@ -1,0 +1,2623 @@
+{
+  "game": {
+    "data": {
+      "id": "46w9mq1r",
+      "names": {
+        "international": "SuperTuxKart",
+        "japanese": null,
+        "twitch": "SuperTuxKart"
+      },
+      "boostReceived": 1,
+      "boostDistinctDonors": 1,
+      "abbreviation": "stk",
+      "weblink": "https://www.speedrun.com/stk",
+      "discord": "https://discord.gg/7VU5DNq",
+      "released": 2006,
+      "release-date": "2006-09-01",
+      "ruleset": {
+        "show-milliseconds": true,
+        "require-verification": true,
+        "require-video": false,
+        "run-times": [
+          "realtime"
+        ],
+        "default-time": "realtime",
+        "emulators-allowed": false
+      },
+      "romhack": false,
+      "gametypes": [],
+      "platforms": [
+        "8gej2n93",
+        "lq60nl94",
+        "mx6ppw63",
+        "5neg7key"
+      ],
+      "regions": [],
+      "genres": [],
+      "engines": [],
+      "developers": [],
+      "publishers": [],
+      "moderators": {
+        "qjnq43wj": "super-moderator",
+        "o86ywe3j": "super-moderator",
+        "v8lg5q2j": "super-moderator",
+        "x72mkqq8": "moderator"
+      },
+      "created": "2015-03-07T10:58:37Z",
+      "assets": {
+        "logo": {
+          "uri": "https://www.speedrun.com/static/theme/gwmx4n8k/logo?v=df8dc5c"
+        },
+        "cover-tiny": {
+          "uri": "https://www.speedrun.com/static/game/46w9mq1r/cover?v=17140bd"
+        },
+        "cover-small": {
+          "uri": "https://www.speedrun.com/static/game/46w9mq1r/cover?v=17140bd"
+        },
+        "cover-medium": {
+          "uri": "https://www.speedrun.com/static/game/46w9mq1r/cover?v=17140bd"
+        },
+        "cover-large": {
+          "uri": "https://www.speedrun.com/static/game/46w9mq1r/cover?v=17140bd"
+        },
+        "icon": {
+          "uri": "https://www.speedrun.com/static/theme/gwmx4n8k/favicon?v=0cad28e"
+        },
+        "trophy-1st": {
+          "uri": "https://www.speedrun.com/static/theme/gwmx4n8k/1st?v=8cffd6d"
+        },
+        "trophy-2nd": {
+          "uri": "https://www.speedrun.com/static/theme/gwmx4n8k/2nd?v=347d897"
+        },
+        "trophy-3rd": {
+          "uri": "https://www.speedrun.com/static/theme/gwmx4n8k/3rd?v=ec5b06e"
+        },
+        "trophy-4th": {
+          "uri": null
+        },
+        "background": {
+          "uri": "https://www.speedrun.com/static/theme/gwmx4n8k/background?v=86209c3"
+        },
+        "foreground": {
+          "uri": "https://www.speedrun.com/static/theme/gwmx4n8k/foreground?v=cea83cf"
+        }
+      },
+      "links": [
+        {
+          "rel": "self",
+          "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r"
+        },
+        {
+          "rel": "runs",
+          "uri": "https://www.speedrun.com/api/v1/runs?game=46w9mq1r"
+        },
+        {
+          "rel": "levels",
+          "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r/levels"
+        },
+        {
+          "rel": "categories",
+          "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r/categories"
+        },
+        {
+          "rel": "variables",
+          "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r/variables"
+        },
+        {
+          "rel": "records",
+          "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r/records"
+        },
+        {
+          "rel": "series",
+          "uri": "https://www.speedrun.com/api/v1/series/yr4gon12"
+        },
+        {
+          "rel": "derived-games",
+          "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r/derived-games"
+        },
+        {
+          "rel": "romhacks",
+          "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r/derived-games"
+        },
+        {
+          "rel": "leaderboard",
+          "uri": "https://www.speedrun.com/api/v1/leaderboards/46w9mq1r/category/7kj1gq4k"
+        }
+      ],
+      "levels": {
+        "data": [
+          {
+            "id": "ldyxxp93",
+            "name": "Old Mine",
+            "weblink": "https://www.speedrun.com/stk?h=Old_Mine&x=l_ldyxxp93",
+            "rules": "- 3 laps, Time Trial mode, no A.I. karts\r\n- In-game timer",
+            "links": [
+              {
+                "rel": "self",
+                "uri": "https://www.speedrun.com/api/v1/levels/ldyxxp93"
+              },
+              {
+                "rel": "game",
+                "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r"
+              },
+              {
+                "rel": "categories",
+                "uri": "https://www.speedrun.com/api/v1/levels/ldyxxp93/categories"
+              },
+              {
+                "rel": "variables",
+                "uri": "https://www.speedrun.com/api/v1/levels/ldyxxp93/variables"
+              },
+              {
+                "rel": "records",
+                "uri": "https://www.speedrun.com/api/v1/levels/ldyxxp93/records"
+              },
+              {
+                "rel": "runs",
+                "uri": "https://www.speedrun.com/api/v1/runs?level=ldyxxp93"
+              },
+              {
+                "rel": "leaderboard",
+                "uri": "https://www.speedrun.com/api/v1/leaderboards/46w9mq1r/level/ldyxxp93/7kj1gq4k"
+              }
+            ]
+          }
+        ]
+      },
+      "categories": {
+        "data": [
+          {
+            "id": "7kj1gq4k",
+            "name": "1.x",
+            "weblink": "https://www.speedrun.com/stk/levels?h=1.x&x=7kj1gq4k",
+            "type": "per-level",
+            "rules": "- The true elapsed time is considered. If a glitch altered the shown time at the finish screen, an adjustment will be done to reflect the actual elapsed time. In this case, the first reference time will be the time shown at the left just before the finish screen, next to the character's icon, if it has ms precision. Else, the adjustment will be on a case-by-case basis, for example, by adding 1/24 s to the final time in the case of the Checkline Bug.",
+            "players": {
+              "type": "exactly",
+              "value": 1
+            },
+            "miscellaneous": false,
+            "links": [
+              {
+                "rel": "self",
+                "uri": "https://www.speedrun.com/api/v1/categories/7kj1gq4k"
+              },
+              {
+                "rel": "game",
+                "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r"
+              },
+              {
+                "rel": "variables",
+                "uri": "https://www.speedrun.com/api/v1/categories/7kj1gq4k/variables"
+              },
+              {
+                "rel": "records",
+                "uri": "https://www.speedrun.com/api/v1/categories/7kj1gq4k/records"
+              },
+              {
+                "rel": "runs",
+                "uri": "https://www.speedrun.com/api/v1/runs?category=7kj1gq4k"
+              }
+            ]
+          },
+          {
+            "id": "ndx1j1r2",
+            "name": "0.9.3",
+            "weblink": "https://www.speedrun.com/stk/levels?h=0.9.3&x=ndx1j1r2",
+            "type": "per-level",
+            "rules": "",
+            "players": {
+              "type": "exactly",
+              "value": 1
+            },
+            "miscellaneous": false,
+            "links": [
+              {
+                "rel": "self",
+                "uri": "https://www.speedrun.com/api/v1/categories/ndx1j1r2"
+              },
+              {
+                "rel": "game",
+                "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r"
+              },
+              {
+                "rel": "variables",
+                "uri": "https://www.speedrun.com/api/v1/categories/ndx1j1r2/variables"
+              },
+              {
+                "rel": "records",
+                "uri": "https://www.speedrun.com/api/v1/categories/ndx1j1r2/records"
+              },
+              {
+                "rel": "runs",
+                "uri": "https://www.speedrun.com/api/v1/runs?category=ndx1j1r2"
+              }
+            ]
+          },
+          {
+            "id": "wdm3j4kq",
+            "name": "0.9.0 to 0.9.2",
+            "weblink": "https://www.speedrun.com/stk/levels?h=0.9.0_to_0.9.2&x=wdm3j4kq",
+            "type": "per-level",
+            "rules": "",
+            "players": {
+              "type": "exactly",
+              "value": 1
+            },
+            "miscellaneous": true,
+            "links": [
+              {
+                "rel": "self",
+                "uri": "https://www.speedrun.com/api/v1/categories/wdm3j4kq"
+              },
+              {
+                "rel": "game",
+                "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r"
+              },
+              {
+                "rel": "variables",
+                "uri": "https://www.speedrun.com/api/v1/categories/wdm3j4kq/variables"
+              },
+              {
+                "rel": "records",
+                "uri": "https://www.speedrun.com/api/v1/categories/wdm3j4kq/records"
+              },
+              {
+                "rel": "runs",
+                "uri": "https://www.speedrun.com/api/v1/runs?category=wdm3j4kq"
+              }
+            ]
+          },
+          {
+            "id": "xd1e7l72",
+            "name": "0.8.1",
+            "weblink": "https://www.speedrun.com/stk/levels?h=0.8.1&x=xd1e7l72",
+            "type": "per-level",
+            "rules": "",
+            "players": {
+              "type": "exactly",
+              "value": 1
+            },
+            "miscellaneous": false,
+            "links": [
+              {
+                "rel": "self",
+                "uri": "https://www.speedrun.com/api/v1/categories/xd1e7l72"
+              },
+              {
+                "rel": "game",
+                "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r"
+              },
+              {
+                "rel": "variables",
+                "uri": "https://www.speedrun.com/api/v1/categories/xd1e7l72/variables"
+              },
+              {
+                "rel": "records",
+                "uri": "https://www.speedrun.com/api/v1/categories/xd1e7l72/records"
+              },
+              {
+                "rel": "runs",
+                "uri": "https://www.speedrun.com/api/v1/runs?category=xd1e7l72"
+              }
+            ]
+          }
+        ]
+      },
+      "variables": {
+        "data": [
+          {
+            "id": "j84kz64n",
+            "name": "Mode",
+            "category": null,
+            "scope": {
+              "type": "all-levels"
+            },
+            "mandatory": true,
+            "user-defined": false,
+            "obsoletes": true,
+            "values": {
+              "_note": "`choices` is deprecated, please use `values` instead",
+              "choices": {
+                "4qyn7z31": "Normal",
+                "mln5e86l": "Reverse"
+              },
+              "values": {
+                "4qyn7z31": {
+                  "label": "Normal",
+                  "rules": "- Track must be played in normal direction\r\n- General Rules apply, please read the stickied topic",
+                  "flags": {
+                    "miscellaneous": null
+                  }
+                },
+                "mln5e86l": {
+                  "label": "Reverse",
+                  "rules": "- Track must be played in reverse\r\n- General Rules apply, please read the stickied topic",
+                  "flags": {
+                    "miscellaneous": null
+                  }
+                }
+              },
+              "default": "4qyn7z31"
+            },
+            "is-subcategory": true,
+            "links": [
+              {
+                "rel": "self",
+                "uri": "https://www.speedrun.com/api/v1/variables/j84kz64n"
+              },
+              {
+                "rel": "game",
+                "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r"
+              }
+            ]
+          },
+          {
+            "id": "2lgry2qn",
+            "name": "Sub-version",
+            "category": "7kj1gq4k",
+            "scope": {
+              "type": "all-levels"
+            },
+            "mandatory": true,
+            "user-defined": false,
+            "obsoletes": true,
+            "values": {
+              "_note": "`choices` is deprecated, please use `values` instead",
+              "choices": {
+                "qvvp3dyq": "1.SE",
+                "qzn9ezmq": "1.5-Git",
+                "q5vz0eml": "1.5",
+                "4qywv831": "1.4-Git",
+                "81wkk891": "1.4",
+                "4qym452q": "1.3-Git",
+                "21dndv5l": "1.3",
+                "4lxwkn41": "1.2-Git",
+                "gq7ezkd1": "1.2",
+                "klrw6nw1": "1.1-Git",
+                "jqz7ykkl": "1.1",
+                "21groyoq": "1.0-Git",
+                "gq7ezkr1": "1.0",
+                "jqzd4k2l": "Online"
+              },
+              "values": {
+                "qvvp3dyq": {
+                  "label": "1.SE"
+                },
+                "qzn9ezmq": {
+                  "label": "1.5-Git"
+                },
+                "q5vz0eml": {
+                  "label": "1.5"
+                },
+                "4qywv831": {
+                  "label": "1.4-Git"
+                },
+                "81wkk891": {
+                  "label": "1.4"
+                },
+                "4qym452q": {
+                  "label": "1.3-Git"
+                },
+                "21dndv5l": {
+                  "label": "1.3"
+                },
+                "4lxwkn41": {
+                  "label": "1.2-Git"
+                },
+                "gq7ezkd1": {
+                  "label": "1.2"
+                },
+                "klrw6nw1": {
+                  "label": "1.1-Git"
+                },
+                "jqz7ykkl": {
+                  "label": "1.1"
+                },
+                "21groyoq": {
+                  "label": "1.0-Git"
+                },
+                "gq7ezkr1": {
+                  "label": "1.0"
+                },
+                "jqzd4k2l": {
+                  "label": "Online"
+                }
+              },
+              "default": null
+            },
+            "is-subcategory": false,
+            "links": [
+              {
+                "rel": "self",
+                "uri": "https://www.speedrun.com/api/v1/variables/2lgry2qn"
+              },
+              {
+                "rel": "game",
+                "uri": "https://www.speedrun.com/api/v1/games/46w9mq1r"
+              },
+              {
+                "rel": "category",
+                "uri": "https://www.speedrun.com/api/v1/categories/7kj1gq4k"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runs": {
+    "data": [
+      {
+        "id": "z04x4v8y",
+        "weblink": "https://www.speedrun.com/stk/runs/z04x4v8y",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/vfEb11cutKg?si=hKHZDkIj0zkF-8gS"
+            }
+          ]
+        },
+        "comment": "nice\n\nreplay: https://github.com/gluteq/random-gluteq-replays-etc/blob/main/mines_2026913_1_93_3539.replay",
+        "status": {
+          "status": "verified",
+          "examiner": "x72mkqq8",
+          "verify-date": "2026-09-13T23:06:11Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "j9lyr5vj",
+              "names": {
+                "international": "gluteq",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/gluteq"
+            }
+          ]
+        },
+        "date": "2026-09-13",
+        "date-time": "2026-09-13T17:37:35Z",
+        "submitted": "2026-09-13T17:37:35Z",
+        "times": {
+          "primary": "PT1M33.354S",
+          "primary_t": 93.354,
+          "realtime": "PT1M33.354S",
+          "realtime_t": 93.354,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "q5vz0eml"
+        }
+      },
+      {
+        "id": "zg901qnm",
+        "weblink": "https://www.speedrun.com/stk/runs/zg901qnm",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/WLdVC_2ThNw"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "o86ywe3j",
+          "verify-date": "2026-02-06T06:39:05Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "8gm2g1p8",
+              "names": {
+                "international": "Elrit",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Elrit"
+            }
+          ]
+        },
+        "date": "2026-02-05",
+        "date-time": "2026-02-05T18:49:52Z",
+        "submitted": "2026-02-05T18:53:45Z",
+        "times": {
+          "primary": "PT1M34.432S",
+          "primary_t": 94.432,
+          "realtime": "PT1M34.432S",
+          "realtime_t": 94.432,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "q5vz0eml"
+        }
+      },
+      {
+        "id": "zn5l0p7z",
+        "weblink": "https://www.speedrun.com/stk/runs/zn5l0p7z",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/NwZb9ysmbg0"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "o86ywe3j",
+          "verify-date": "2026-02-03T12:23:33Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "8gm2g1p8",
+              "names": {
+                "international": "Elrit",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Elrit"
+            }
+          ]
+        },
+        "date": "2026-02-02",
+        "date-time": "2026-02-02T19:39:13Z",
+        "submitted": "2026-02-02T19:42:19Z",
+        "times": {
+          "primary": "PT1M34.962S",
+          "primary_t": 94.962,
+          "realtime": "PT1M34.962S",
+          "realtime_t": 94.962,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "q5vz0eml"
+        }
+      },
+      {
+        "id": "zg9115dm",
+        "weblink": "https://www.speedrun.com/stk/runs/zg9115dm",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/cnD3o1ydTZc"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "x72mkqq8",
+          "verify-date": "2026-01-31T16:00:57Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "8gm2g1p8",
+              "names": {
+                "international": "Elrit",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Elrit"
+            }
+          ]
+        },
+        "date": "2026-01-31",
+        "date-time": "2026-01-31T12:08:10Z",
+        "submitted": "2026-01-31T12:12:28Z",
+        "times": {
+          "primary": "PT1M35.188S",
+          "primary_t": 95.188,
+          "realtime": "PT1M35.188S",
+          "realtime_t": 95.188,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "q5vz0eml"
+        }
+      },
+      {
+        "id": "y8g9251z",
+        "weblink": "https://www.speedrun.com/stk/runs/y8g9251z",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/s45vF_0G0U8"
+            }
+          ]
+        },
+        "comment": "Replay file: https://drive.proton.me/urls/5Y25TAGBM4#dTOQiL8NaTqK",
+        "status": {
+          "status": "verified",
+          "examiner": "o86ywe3j",
+          "verify-date": "2025-05-03T08:57:29Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "x72mkqq8",
+              "names": {
+                "international": "Haenschen",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Haenschen"
+            }
+          ]
+        },
+        "date": "2025-02-14",
+        "date-time": "2025-02-14T00:00:00Z",
+        "submitted": "2025-05-02T23:13:26Z",
+        "times": {
+          "primary": "PT1M32.338S",
+          "primary_t": 92.338,
+          "realtime": "PT1M32.338S",
+          "realtime_t": 92.338,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "81wkk891"
+        }
+      },
+      {
+        "id": "yvnrd0om",
+        "weblink": "https://www.speedrun.com/stk/runs/yvnrd0om",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/zog6jbxjUFE"
+            }
+          ]
+        },
+        "comment": "Run: https://github.com/GiTonix198/ElTuneado009-s-WRs-and-PBs/blob/main/mines_202521_1_92_4496.replay",
+        "status": {
+          "status": "verified",
+          "examiner": "v8lg5q2j",
+          "verify-date": "2025-02-01T22:13:47Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "xz2vge9x",
+              "names": {
+                "international": "ElTuneado009",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/ElTuneado009"
+            }
+          ]
+        },
+        "date": "2025-02-01",
+        "date-time": "2025-02-01T21:28:47Z",
+        "submitted": "2025-02-01T21:31:13Z",
+        "times": {
+          "primary": "PT1M32.450S",
+          "primary_t": 92.45,
+          "realtime": "PT1M32.450S",
+          "realtime_t": 92.45,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "81wkk891"
+        }
+      },
+      {
+        "id": "m3jpnwqz",
+        "weblink": "https://www.speedrun.com/stk/runs/m3jpnwqz",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=lsjp__YqGwU"
+            }
+          ]
+        },
+        "comment": "Ahead of theodorepringle :)",
+        "status": {
+          "status": "verified",
+          "examiner": "o86ywe3j",
+          "verify-date": "2024-11-15T17:06:37Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "qjnq43wj",
+              "names": {
+                "international": "Alayan",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Alayan"
+            }
+          ]
+        },
+        "date": "2024-01-01",
+        "date-time": "2024-01-01T00:00:00Z",
+        "submitted": "2024-11-15T16:18:30Z",
+        "times": {
+          "primary": "PT1M33.719S",
+          "primary_t": 93.719,
+          "realtime": "PT1M33.719S",
+          "realtime_t": 93.719,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "81wkk891"
+        }
+      },
+      {
+        "id": "znx9nr7y",
+        "weblink": "https://www.speedrun.com/stk/runs/znx9nr7y",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/_stb9k1GCAA"
+            }
+          ]
+        },
+        "comment": "I'll upload the ghost file on discord.",
+        "status": {
+          "status": "verified",
+          "examiner": "o86ywe3j",
+          "verify-date": "2024-10-16T08:26:17Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "x72mkqq8",
+              "names": {
+                "international": "Haenschen",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Haenschen"
+            }
+          ]
+        },
+        "date": "2024-10-15",
+        "date-time": "2024-10-15T00:00:00Z",
+        "submitted": "2024-10-16T03:56:47Z",
+        "times": {
+          "primary": "PT1M32.497S",
+          "primary_t": 92.497,
+          "realtime": "PT1M32.497S",
+          "realtime_t": 92.497,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "81wkk891"
+        }
+      },
+      {
+        "id": "y6qe2n1z",
+        "weblink": "https://www.speedrun.com/stk/runs/y6qe2n1z",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/cljM32TOVYI"
+            }
+          ]
+        },
+        "comment": "An underwhelming second lap, but a solid improvement over my previous time with clear potential to cut another second. I'll revisit it later to kick theodore out of the top 3!",
+        "status": {
+          "status": "verified",
+          "examiner": "v8lg5q2j",
+          "verify-date": "2023-12-30T22:05:17Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "qjnq43wj",
+              "names": {
+                "international": "Alayan",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Alayan"
+            }
+          ]
+        },
+        "date": "2023-12-21",
+        "date-time": "2023-12-21T00:00:00Z",
+        "submitted": "2023-12-30T21:43:19Z",
+        "times": {
+          "primary": "PT1M34.036S",
+          "primary_t": 94.036,
+          "realtime": "PT1M34.036S",
+          "realtime_t": 94.036,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "81wkk891"
+        }
+      },
+      {
+        "id": "yoon3g1y",
+        "weblink": "https://www.speedrun.com/stk/runs/yoon3g1y",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=sNQHVKrRPVw"
+            }
+          ]
+        },
+        "comment": "ghost(s): https://github.com/trolli123-STK/Standard",
+        "status": {
+          "status": "verified",
+          "examiner": "v8lg5q2j",
+          "verify-date": "2023-12-08T13:55:20Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "jp691l08",
+              "names": {
+                "international": "trolli123",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/trolli123"
+            }
+          ]
+        },
+        "date": "2023-12-08",
+        "date-time": "2023-12-08T13:17:00Z",
+        "submitted": "2023-12-08T13:20:22Z",
+        "times": {
+          "primary": "PT1M32.548S",
+          "primary_t": 92.548,
+          "realtime": "PT1M32.548S",
+          "realtime_t": 92.548,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "81wkk891"
+        }
+      },
+      {
+        "id": "zpp97wvz",
+        "weblink": "https://www.speedrun.com/stk/runs/zpp97wvz",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtube.com/watch?v=d98jJZYrvgs"
+            }
+          ]
+        },
+        "comment": "I felt I could do better, but I'm satisfied with beating Andet.",
+        "status": {
+          "status": "verified",
+          "examiner": "v8lg5q2j",
+          "verify-date": "2023-11-21T21:51:37Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "qjnq43wj",
+              "names": {
+                "international": "Alayan",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Alayan"
+            }
+          ]
+        },
+        "date": "2023-11-09",
+        "date-time": "2023-11-09T00:00:00Z",
+        "submitted": "2023-11-21T15:09:07Z",
+        "times": {
+          "primary": "PT1M35.199S",
+          "primary_t": 95.199,
+          "realtime": "PT1M35.199S",
+          "realtime_t": 95.199,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "81wkk891"
+        }
+      },
+      {
+        "id": "znep93vz",
+        "weblink": "https://www.speedrun.com/stk/runs/znep93vz",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=z2srYg7YcqI&t=1097s"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "v8lg5q2j",
+          "verify-date": "2023-11-19T22:40:51Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "jp691l08",
+              "names": {
+                "international": "trolli123",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/trolli123"
+            }
+          ]
+        },
+        "date": "2023-11-19",
+        "date-time": "2023-11-19T13:40:48Z",
+        "submitted": "2023-11-19T13:41:26Z",
+        "times": {
+          "primary": "PT1M32.671S",
+          "primary_t": 92.671,
+          "realtime": "PT1M32.671S",
+          "realtime_t": 92.671,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "mln5e86l",
+          "2lgry2qn": "81wkk891"
+        }
+      },
+      {
+        "id": "zg8de4ey",
+        "weblink": "https://www.speedrun.com/stk/runs/zg8de4ey",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/bg8GH-iVaHU"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "o86ywe3j",
+          "verify-date": "2023-11-11T09:00:55Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "x72mkqq8",
+              "names": {
+                "international": "Haenschen",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Haenschen"
+            }
+          ]
+        },
+        "date": "2023-11-10",
+        "date-time": "2023-11-10T00:00:00Z",
+        "submitted": "2023-11-11T07:41:42Z",
+        "times": {
+          "primary": "PT1M32.573S",
+          "primary_t": 92.573,
+          "realtime": "PT1M32.573S",
+          "realtime_t": 92.573,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "81wkk891"
+        }
+      },
+      {
+        "id": "y6q5dojz",
+        "weblink": "https://www.speedrun.com/stk/runs/y6q5dojz",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=Li6rSe2UI1c"
+            }
+          ]
+        },
+        "comment": "https://cdn.discordapp.com/attachments/376132566509420544/1158562172692070531/mines_2023103_1_92_964.replay?ex=651cb29b&is=651b611b&hm=61da64b769eb23fea9e91847293e6c3386926069498f7ed1d2e632ca2287812c&",
+        "status": {
+          "status": "verified",
+          "examiner": "o86ywe3j",
+          "verify-date": "2023-10-03T10:06:09Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "jp691l08",
+              "names": {
+                "international": "trolli123",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/trolli123"
+            }
+          ]
+        },
+        "date": "2023-10-03",
+        "date-time": "2023-10-03T00:08:11Z",
+        "submitted": "2023-10-03T00:32:55Z",
+        "times": {
+          "primary": "PT1M32.964S",
+          "primary_t": 92.964,
+          "realtime": "PT1M32.964S",
+          "realtime_t": 92.964,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "81wkk891"
+        }
+      },
+      {
+        "id": "y9xr4xvy",
+        "weblink": "https://www.speedrun.com/stk/runs/y9xr4xvy",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/QNotJyvb-jM"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "v8lg5q2j",
+          "verify-date": "2022-11-20T09:06:54Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "x72mkqq8",
+              "names": {
+                "international": "Haenschen",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Haenschen"
+            }
+          ]
+        },
+        "date": "2022-11-19",
+        "date-time": "2022-11-19T12:00:00Z",
+        "submitted": "2022-11-20T06:15:05Z",
+        "times": {
+          "primary": "PT1M33.880S",
+          "primary_t": 93.88,
+          "realtime": "PT1M33.880S",
+          "realtime_t": 93.88,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "81wkk891"
+        }
+      },
+      {
+        "id": "yorn8l7y",
+        "weblink": "https://www.speedrun.com/stk/runs/yorn8l7y",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=6-r0ULUmpy0"
+            }
+          ]
+        },
+        "comment": "missed one red skid on lap 1",
+        "status": {
+          "status": "verified",
+          "examiner": "v8lg5q2j",
+          "verify-date": "2022-02-05T15:58:57Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "xz9lpq98",
+              "names": {
+                "international": "skindoormimiz",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/skindoormimiz"
+            }
+          ]
+        },
+        "date": "2022-02-04",
+        "date-time": "2022-02-04T12:00:00Z",
+        "submitted": "2022-02-05T15:08:31Z",
+        "times": {
+          "primary": "PT1M35.549S",
+          "primary_t": 95.549,
+          "realtime": "PT1M35.549S",
+          "realtime_t": 95.549,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "21dndv5l"
+        }
+      },
+      {
+        "id": "znrpj69y",
+        "weblink": "https://www.speedrun.com/stk/runs/znrpj69y",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=fY7MeAZyQt8"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "5j5k196j",
+          "verify-date": "2019-10-05T18:49:19Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "v8lg5q2j",
+              "names": {
+                "international": "theodorepringle",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/theodorepringle"
+            }
+          ]
+        },
+        "date": "2019-10-05",
+        "date-time": "2019-10-05T12:00:00Z",
+        "submitted": "2019-10-05T12:11:12Z",
+        "times": {
+          "primary": "PT1M33.906S",
+          "primary_t": 93.906,
+          "realtime": "PT1M33.906S",
+          "realtime_t": 93.906,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "gq7ezkr1"
+        }
+      },
+      {
+        "id": "y6l9qd1y",
+        "weblink": "https://www.speedrun.com/stk/runs/y6l9qd1y",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=AA4VOpwS-fs"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "5j5k196j",
+          "verify-date": "2019-09-04T01:49:14Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "v8lg5q2j",
+              "names": {
+                "international": "theodorepringle",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/theodorepringle"
+            }
+          ]
+        },
+        "date": "2019-09-03",
+        "date-time": "2019-09-03T12:00:00Z",
+        "submitted": "2019-09-04T01:48:57Z",
+        "times": {
+          "primary": "PT1M34.599S",
+          "primary_t": 94.599,
+          "realtime": "PT1M34.599S",
+          "realtime_t": 94.599,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "gq7ezkr1"
+        }
+      },
+      {
+        "id": "y81expxz",
+        "weblink": "https://www.speedrun.com/stk/runs/y81expxz",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=Jgm6Ld4nhK0"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "5j5k196j",
+          "verify-date": "2019-09-02T19:49:47Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "v8lg5q2j",
+              "names": {
+                "international": "theodorepringle",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/theodorepringle"
+            }
+          ]
+        },
+        "date": "2019-09-02",
+        "date-time": "2019-09-02T12:00:00Z",
+        "submitted": "2019-09-02T12:54:13Z",
+        "times": {
+          "primary": "PT1M33.744S",
+          "primary_t": 93.744,
+          "realtime": "PT1M33.744S",
+          "realtime_t": 93.744,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "mln5e86l",
+          "2lgry2qn": "gq7ezkr1"
+        }
+      },
+      {
+        "id": "y81ee4nz",
+        "weblink": "https://www.speedrun.com/stk/runs/y81ee4nz",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=9jGis2aOv-c"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "o86ywe3j",
+          "verify-date": "2019-09-01T00:30:56Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "5j5k196j",
+              "names": {
+                "international": "Andet",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Andet"
+            }
+          ]
+        },
+        "date": "2019-08-22",
+        "date-time": "2019-08-22T12:00:00Z",
+        "submitted": "2019-08-31T22:24:34Z",
+        "times": {
+          "primary": "PT1M35.544S",
+          "primary_t": 95.544,
+          "realtime": "PT1M35.544S",
+          "realtime_t": 95.544,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "mln5e86l",
+          "2lgry2qn": "gq7ezkr1"
+        }
+      },
+      {
+        "id": "m7q8xxez",
+        "weblink": "https://www.speedrun.com/stk/runs/m7q8xxez",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=Ii2vvufDywY"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "5j5k196j",
+          "verify-date": "2019-08-07T03:24:05Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "v8lg5q2j",
+              "names": {
+                "international": "theodorepringle",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/theodorepringle"
+            }
+          ]
+        },
+        "date": "2019-08-06",
+        "date-time": "2019-08-06T12:00:00Z",
+        "submitted": "2019-08-07T02:54:29Z",
+        "times": {
+          "primary": "PT1M36.943S",
+          "primary_t": 96.943,
+          "realtime": "PT1M36.943S",
+          "realtime_t": 96.943,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "mln5e86l",
+          "2lgry2qn": "gq7ezkr1"
+        }
+      },
+      {
+        "id": "z5733gdm",
+        "weblink": "https://www.speedrun.com/stk/runs/z5733gdm",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=QgMl0FfZlLE"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "o864lewj",
+          "verify-date": "2019-07-24T00:56:17Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "5j5k196j",
+              "names": {
+                "international": "Andet",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Andet"
+            }
+          ]
+        },
+        "date": "2019-07-22",
+        "date-time": "2019-07-22T12:00:00Z",
+        "submitted": "2019-07-22T22:35:46Z",
+        "times": {
+          "primary": "PT1M35.231S",
+          "primary_t": 95.231,
+          "realtime": "PT1M35.231S",
+          "realtime_t": 95.231,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "gq7ezkr1"
+        }
+      },
+      {
+        "id": "m315jg6z",
+        "weblink": "https://www.speedrun.com/stk/runs/m315jg6z",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=Mbzkw-42SS4"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "5j5k196j",
+          "verify-date": "2019-07-15T15:39:32Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "v8lg5q2j",
+              "names": {
+                "international": "theodorepringle",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/theodorepringle"
+            }
+          ]
+        },
+        "date": "2019-07-15",
+        "date-time": "2019-07-15T12:00:00Z",
+        "submitted": "2019-07-15T14:50:40Z",
+        "times": {
+          "primary": "PT1M35.274S",
+          "primary_t": 95.274,
+          "realtime": "PT1M35.274S",
+          "realtime_t": 95.274,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "gq7ezkr1"
+        }
+      },
+      {
+        "id": "m7q9kj0z",
+        "weblink": "https://www.speedrun.com/stk/runs/m7q9kj0z",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=eTRNx4mrQqk"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "qjnq43wj",
+          "verify-date": "2019-06-11T10:39:40Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "5j5k196j",
+              "names": {
+                "international": "Andet",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Andet"
+            }
+          ]
+        },
+        "date": "2019-06-10",
+        "date-time": "2019-06-10T12:00:00Z",
+        "submitted": "2019-06-11T08:17:24Z",
+        "times": {
+          "primary": "PT1M36.047S",
+          "primary_t": 96.047,
+          "realtime": "PT1M36.047S",
+          "realtime_t": 96.047,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "gq7ezkr1"
+        }
+      },
+      {
+        "id": "y6p128pm",
+        "weblink": "https://www.speedrun.com/stk/runs/y6p128pm",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/7cA4i3bQ938"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "o864lewj",
+          "verify-date": "2019-04-26T18:52:40Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "qjnq43wj",
+              "names": {
+                "international": "Alayan",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Alayan"
+            }
+          ]
+        },
+        "date": "2019-04-25",
+        "date-time": "2019-04-25T12:00:00Z",
+        "submitted": "2019-04-24T23:54:36Z",
+        "times": {
+          "primary": "PT1M36.921S",
+          "primary_t": 96.921,
+          "realtime": "PT1M36.921S",
+          "realtime_t": 96.921,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "gq7ezkr1"
+        }
+      },
+      {
+        "id": "z03gjkez",
+        "weblink": "https://www.speedrun.com/stk/runs/z03gjkez",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "7kj1gq4k",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=VnNVOy8ggxM"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "qjnq43wj",
+          "verify-date": "2019-04-24T23:54:06Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "5j5k196j",
+              "names": {
+                "international": "Andet",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Andet"
+            }
+          ]
+        },
+        "date": "2019-04-21",
+        "date-time": "2019-04-21T12:00:00Z",
+        "submitted": "2019-04-24T23:54:06Z",
+        "times": {
+          "primary": "PT1M37.075S",
+          "primary_t": 97.075,
+          "realtime": "PT1M37.075S",
+          "realtime_t": 97.075,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31",
+          "2lgry2qn": "gq7ezkr1"
+        }
+      },
+      {
+        "id": "mr8o5lgy",
+        "weblink": "https://www.speedrun.com/stk/runs/mr8o5lgy",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "ndx1j1r2",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/hiooXW3EDqI"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "0jm6w6o8",
+          "verify-date": "2018-12-02T20:07:30Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "qjnq43wj",
+              "names": {
+                "international": "Alayan",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Alayan"
+            }
+          ]
+        },
+        "date": "2018-12-02",
+        "date-time": "2018-12-02T12:00:00Z",
+        "submitted": "2018-12-02T19:02:33Z",
+        "times": {
+          "primary": "PT1M36.768S",
+          "primary_t": 96.768,
+          "realtime": "PT1M36.768S",
+          "realtime_t": 96.768,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31"
+        }
+      },
+      {
+        "id": "zq3ep8ry",
+        "weblink": "https://www.speedrun.com/stk/runs/zq3ep8ry",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "ndx1j1r2",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/of_QM281zS0"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "qjnq43wj",
+          "verify-date": "2018-12-02T07:24:34Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "5j5k196j",
+              "names": {
+                "international": "Andet",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Andet"
+            }
+          ]
+        },
+        "date": "2018-12-01",
+        "date-time": "2018-12-01T12:00:00Z",
+        "submitted": "2018-12-02T03:38:08Z",
+        "times": {
+          "primary": "PT1M37.576S",
+          "primary_t": 97.576,
+          "realtime": "PT1M37.576S",
+          "realtime_t": 97.576,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31"
+        }
+      },
+      {
+        "id": "zn4jg38m",
+        "weblink": "https://www.speedrun.com/stk/runs/zn4jg38m",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "ndx1j1r2",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/gwqZd8FLjCg"
+            }
+          ]
+        },
+        "comment": "I missed a skid in the last lap, but there is very little room to improve otherwise.",
+        "status": {
+          "status": "verified",
+          "examiner": "o86ywe3j",
+          "verify-date": "2018-12-01T22:51:49Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "qjnq43wj",
+              "names": {
+                "international": "Alayan",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Alayan"
+            }
+          ]
+        },
+        "date": "2018-12-01",
+        "date-time": "2018-12-01T12:00:00Z",
+        "submitted": "2018-12-01T22:44:24Z",
+        "times": {
+          "primary": "PT1M37.714S",
+          "primary_t": 97.714,
+          "realtime": "PT1M37.714S",
+          "realtime_t": 97.714,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31"
+        }
+      },
+      {
+        "id": "z11qv8gz",
+        "weblink": "https://www.speedrun.com/stk/runs/z11qv8gz",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "ndx1j1r2",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/3LKN3q9xgiM"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "0jm6w6o8",
+          "verify-date": "2018-12-01T11:13:57Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "5j5k196j",
+              "names": {
+                "international": "Andet",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Andet"
+            }
+          ]
+        },
+        "date": "2018-12-01",
+        "date-time": "2018-12-01T12:00:00Z",
+        "submitted": "2018-12-01T10:59:33Z",
+        "times": {
+          "primary": "PT1M37.898S",
+          "primary_t": 97.898,
+          "realtime": "PT1M37.898S",
+          "realtime_t": 97.898,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31"
+        }
+      },
+      {
+        "id": "yo2r3ejz",
+        "weblink": "https://www.speedrun.com/stk/runs/yo2r3ejz",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "xd1e7l72",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=L_9XteMHaic"
+            }
+          ]
+        },
+        "comment": "やっぱりsub１分が出た。\r\nAs I expected, sub 1 minute happened.",
+        "status": {
+          "status": "verified",
+          "examiner": "qjnq43wj",
+          "verify-date": "2018-10-05T18:31:35Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "guest",
+              "name": "UbuntuJackson"
+            }
+          ]
+        },
+        "date": "2018-10-05",
+        "date-time": "2018-10-05T12:00:00Z",
+        "submitted": "2018-10-05T17:25:58Z",
+        "times": {
+          "primary": "PT57.660S",
+          "primary_t": 57.66,
+          "realtime": "PT57.660S",
+          "realtime_t": 57.66,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31"
+        }
+      },
+      {
+        "id": "m7pdv60m",
+        "weblink": "https://www.speedrun.com/stk/runs/m7pdv60m",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "ndx1j1r2",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/qoxreXrHAYc"
+            }
+          ]
+        },
+        "comment": "It goes to show that there is often much more room for optimization than it seems at the first glance.",
+        "status": {
+          "status": "verified",
+          "examiner": "0jm6w6o8",
+          "verify-date": "2018-09-15T00:35:25Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "qjnq43wj",
+              "names": {
+                "international": "Alayan",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Alayan"
+            }
+          ]
+        },
+        "date": "2018-09-15",
+        "date-time": "2018-09-15T12:00:00Z",
+        "submitted": "2018-09-14T23:27:22Z",
+        "times": {
+          "primary": "PT1M39.069S",
+          "primary_t": 99.069,
+          "realtime": "PT1M39.069S",
+          "realtime_t": 99.069,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31"
+        }
+      },
+      {
+        "id": "ywpq672z",
+        "weblink": "https://www.speedrun.com/stk/runs/ywpq672z",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "xd1e7l72",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=am8D8-K2i7o"
+            }
+          ]
+        },
+        "comment": "いつかsub1が出るかも。",
+        "status": {
+          "status": "verified",
+          "examiner": "qjnq43wj",
+          "verify-date": "2018-09-09T22:49:10Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "guest",
+              "name": "UbuntuJackson"
+            }
+          ]
+        },
+        "date": "2018-09-09",
+        "date-time": "2018-09-09T12:00:00Z",
+        "submitted": "2018-09-09T19:13:59Z",
+        "times": {
+          "primary": "PT1M2.180S",
+          "primary_t": 62.18,
+          "realtime": "PT1M2.180S",
+          "realtime_t": 62.18,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "8gej2n93",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31"
+        }
+      },
+      {
+        "id": "mr848o4y",
+        "weblink": "https://www.speedrun.com/stk/runs/mr848o4y",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "ndx1j1r2",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/Zp3o52zupJY"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "0jm6w6o8",
+          "verify-date": "2018-08-20T23:02:12Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "qjnq43wj",
+              "names": {
+                "international": "Alayan",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Alayan"
+            }
+          ]
+        },
+        "date": "2018-08-21",
+        "date-time": "2018-08-21T12:00:00Z",
+        "submitted": "2018-08-20T22:40:39Z",
+        "times": {
+          "primary": "PT1M41.962S",
+          "primary_t": 101.962,
+          "realtime": "PT1M41.962S",
+          "realtime_t": 101.962,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31"
+        }
+      },
+      {
+        "id": "z13w3kwm",
+        "weblink": "https://www.speedrun.com/stk/runs/z13w3kwm",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "ndx1j1r2",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://youtu.be/Q6Itr3nynaA"
+            }
+          ]
+        },
+        "comment": "I'll only ever self-verify non-wr's",
+        "status": {
+          "status": "verified",
+          "examiner": "o864lewj",
+          "verify-date": "2018-05-06T09:22:44Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "o864lewj",
+              "names": {
+                "international": "Alistair_Findlay",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Alistair_Findlay"
+            }
+          ]
+        },
+        "date": "2018-05-06",
+        "date-time": "2018-05-06T12:00:00Z",
+        "submitted": "2018-05-06T09:22:44Z",
+        "times": {
+          "primary": "PT1M46.380S",
+          "primary_t": 106.38,
+          "realtime": "PT1M46.380S",
+          "realtime_t": 106.38,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31"
+        }
+      },
+      {
+        "id": "mrqw4vdy",
+        "weblink": "https://www.speedrun.com/stk/runs/mrqw4vdy",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "ndx1j1r2",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=nQSMD24q4Ns"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "0jm6w6o8",
+          "verify-date": "2018-03-23T21:23:35Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "qjnq43wj",
+              "names": {
+                "international": "Alayan",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Alayan"
+            }
+          ]
+        },
+        "date": "2018-03-23",
+        "date-time": "2018-03-23T12:00:00Z",
+        "submitted": "2018-03-23T20:57:37Z",
+        "times": {
+          "primary": "PT1M45.394S",
+          "primary_t": 105.394,
+          "realtime": "PT1M45.394S",
+          "realtime_t": 105.394,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31"
+        }
+      },
+      {
+        "id": "ydqp96qm",
+        "weblink": "https://www.speedrun.com/stk/runs/ydqp96qm",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "wdm3j4kq",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=cM_VWTwW4MI"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "0jm6w6o8",
+          "verify-date": "2018-03-23T19:46:30Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "qjnq43wj",
+              "names": {
+                "international": "Alayan",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Alayan"
+            }
+          ]
+        },
+        "date": "2017-02-25",
+        "date-time": "2017-02-25T12:00:00Z",
+        "submitted": "2018-03-23T12:56:57Z",
+        "times": {
+          "primary": "PT1M49.881S",
+          "primary_t": 109.881,
+          "realtime": "PT1M49.881S",
+          "realtime_t": 109.881,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31"
+        }
+      },
+      {
+        "id": "y97lvovm",
+        "weblink": "https://www.speedrun.com/stk/runs/y97lvovm",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "wdm3j4kq",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=fvGA7qeauLw"
+            }
+          ]
+        },
+        "comment": null,
+        "status": {
+          "status": "verified",
+          "examiner": "o86ng2wx",
+          "verify-date": "2017-10-04T17:07:18Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "o864lewj",
+              "names": {
+                "international": "Alistair_Findlay",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Alistair_Findlay"
+            }
+          ]
+        },
+        "date": "2017-10-02",
+        "date-time": "2017-10-02T12:00:00Z",
+        "submitted": "2017-10-02T06:24:35Z",
+        "times": {
+          "primary": "PT1M59.500S",
+          "primary_t": 119.5,
+          "realtime": "PT1M59.500S",
+          "realtime_t": 119.5,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31"
+        }
+      },
+      {
+        "id": "z5o0q0dy",
+        "weblink": "https://www.speedrun.com/stk/runs/z5o0q0dy",
+        "game": "46w9mq1r",
+        "level": "ldyxxp93",
+        "category": "wdm3j4kq",
+        "videos": {
+          "links": [
+            {
+              "uri": "https://www.youtube.com/watch?v=EYykrf6adiI"
+            },
+            {
+              "uri": "https://www.youtube.com/watch?v=MCAYqZOmupI"
+            }
+          ]
+        },
+        "comment": "This course has some problems https://www.youtube.com/watch?v=EYykrf6adiI",
+        "status": {
+          "status": "verified",
+          "examiner": "o86ng2wx",
+          "verify-date": "2017-08-13T03:10:13Z"
+        },
+        "players": {
+          "data": [
+            {
+              "rel": "user",
+              "id": "o864lewj",
+              "names": {
+                "international": "Alistair_Findlay",
+                "japanese": null
+              },
+              "weblink": "https://www.speedrun.com/users/Alistair_Findlay"
+            }
+          ]
+        },
+        "date": "2017-08-11",
+        "date-time": "2017-08-11T12:00:00Z",
+        "submitted": "2017-08-11T22:03:04Z",
+        "times": {
+          "primary": "PT2M13.530S",
+          "primary_t": 133.53,
+          "realtime": "PT2M13.530S",
+          "realtime_t": 133.53,
+          "realtime_noloads": null,
+          "realtime_noloads_t": 0,
+          "ingame": null,
+          "ingame_t": 0
+        },
+        "system": {
+          "platform": "5neg7key",
+          "emulated": false,
+          "region": null
+        },
+        "splits": null,
+        "values": {
+          "j84kz64n": "4qyn7z31"
+        }
+      }
+    ],
+    "pagination": {
+      "offset": 0,
+      "max": 200,
+      "size": 39,
+      "links": []
+    }
+  }
+}

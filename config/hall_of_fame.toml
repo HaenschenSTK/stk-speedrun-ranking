@@ -1,0 +1,34 @@
+# Inclusion confirms an online STK top-three placement AFTER the online ranking's
+# initial three months. Confirmed by the project owner on 2026-09-19.
+# Exact placement dates were not supplied. Names are labels; matching uses the
+# stable speedrun.com player_id. This is independent of our speedrun ranking.
+# Add further players only after the project owner accepts proof of their online
+# qualification. The export lists them only if their WR history also qualifies.
+
+[[online_top_three]]
+player_id = "jp691l08"
+name = "trolli123"
+
+[[online_top_three]]
+player_id = "xz2vge9x"
+name = "ElTuneado009"
+
+[[online_top_three]]
+player_id = "v8lg5q2j"
+name = "theodorepringle"
+
+[[online_top_three]]
+player_id = "zx7v0z0x"
+name = "Wax-stk"
+
+[[online_top_three]]
+player_id = "5j5k196j"
+name = "Andet"
+
+[[online_top_three]]
+player_id = "x72mkqq8"
+name = "Haenschen"
+
+[[online_top_three]]
+player_id = "qjnq43wj"
+name = "Alayan"
