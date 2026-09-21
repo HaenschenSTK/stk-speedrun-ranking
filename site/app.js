@@ -110,7 +110,7 @@ function controls({search = false} = {}) {
 const scope = () => `${titleCase(state.direction)} · ${state.bonus ? 'Including bonus tracks' : 'Official tracks only'}`;
 
 function renderRanking() {
-  heading('Speedrun ranking', 'The fastest runners, across every track.');
+  heading('Speedrun ranking', 'A cross-track ranking based on distance from the world record.');
   controls({search: true});
   const container = el('div');
   container.id = 'ranking-results';
@@ -157,7 +157,7 @@ function renderRankingRows() {
 }
 
 function renderHall() {
-  heading('STK Hall of Fame', 'Lasting world records, proven online. Ranked by total lifetime WR-hours.');
+  heading('STK Hall of Fame', 'World-record achievement and online racing qualification, ranked by total lifetime WR-hours.');
   const intro = el('p', undefined, 'member-note');
   intro.append('Forward · 21 official tracks · 30-day reigns on at least 3 tracks · Confirmed online top 3. ',
     link('See the qualification rules', {...state, view: 'rules'}));
@@ -326,48 +326,51 @@ function renderTrackDetails(container, board, p) {
 }
 
 function renderRules() {
-  heading('How it works', 'Two ways to recognise great SuperTuxKart players.');
+  heading('How it works', 'Speedrun ranking and Hall of Fame admission criteria');
   const rules = el('div', undefined, 'rules');
   // This template contains only authored text. All source data uses textContent.
   rules.innerHTML = `
     <section class="rule-section" aria-labelledby="speedrun-rules">
       <h2 id="speedrun-rules">Speedrun ranking</h2>
-      <p>Your fastest available verified 1.x run on each track and direction earns points based on its distance from the current world record. Add those points across the selected tracks to get your total.</p>
-      <p class="formula">Points = 10 × 10<sup>−d / 2</sup></p>
-      <p><strong>d = 100 × (PB − WR) / WR</strong>, the percentage slower than the record. PB means personal best; WR means world record.</p>
+      <p>The fastest verified 1.x run on each track and direction earns points based on its distance from the current world record. The points across the selected tracks are added up to get the total score.</p>
+      <p>The distance <var>d</var> between a personal best (PB) time and the world record (WR) time is calculated as the percentage slower than the WR:</p>
+      <p class="formula">d = 100 × (PB − WR) / WR</p>
+      <p>The points are then calculated as an exponential function of <var>d</var>:</p>
+      <p class="formula">Points = 10 × 10<sup>−d/2</sup></p>
+      <p>The function is calibrated such that the WR gives 10 points, while a run 2% slower than the WR gives 1 point.</p>
       <div class="example-table table-wrap"><table>
         <caption class="sr-only">Points at different distances behind the world record</caption>
         <thead><tr><th scope="col">Behind WR</th><th scope="col">Points</th></tr></thead>
         <tbody><tr><td>0% · World record</td><td>10</td></tr><tr><td>0.5%</td><td>5.623</td></tr><tr><td>1%</td><td>3.162</td></tr><tr><td>2%</td><td>1</td></tr><tr><td>5%</td><td>0.0316</td></tr><tr><td>10%</td><td>0.0001</td></tr></tbody>
       </table></div>
-      <p>The curve rewards runs close to the WR. Under the submission guidelines used for this ranking, runs within 2% require the strongest evidence. Runs more than 10% behind can be accepted without evidence unless they are top 3, so their contribution is negligible. The site uses accepted runs from speedrun.com; it does not independently verify their recordings.</p>
+      <p>The exponential function rewards runs close to the WR. Under the speedrun.com submission guidelines used for this ranking, runs within 2% require the strongest evidence. Runs more than 10% behind can be accepted without evidence unless they are top 3, so the scoring was designed such that the contribution of these runs is negligible.</p>
       <ul>
-        <li><strong>Six rankings:</strong> forward, reverse, and combined, each with or without the two bonus tracks, Freytra Peaks and Drainage Dash.</li>
-        <li><strong>Combined adds both directions.</strong> A forward PB and a reverse PB on the same track contribute separately. A board needs a submitted run and a reference WR to count towards the displayed maximum.</li>
-        <li><strong>No PB means zero points.</strong> Equal WRs each earn 10 points. Totals are ranked before rounding; exact ties share a rank, and the next rank skips the tied positions.</li>
-        <li><strong>The current WR is the benchmark.</strong> A new record changes everyone’s points on that board. The current archive combines the Gran Paradiso Island glitch Yes/No submissions.</li>
+        <li><strong>Run submission.</strong> Submit runs via <a href="https://www.speedrun.com/stk">speedrun.com/stk</a>. This site uses verified runs from speedrun.com and does not independently verify any runs. New runs are incorporated into the ranking within seven days after verification.</li>
+        <li><strong>Track selection.</strong> The ranking is based on the 21 official tracks in both forward and reverse directions. The two bonus tracks, Freytra Peaks and Drainage Dash, can be added using the toggle on the ranking site. Forward and reverse rankings can be displayed separately or combined.</li>
+        <li><strong>Missing PBs.</strong> The ranking is designed to encourage speedrunners to submit their PBs even if they are not a WR or a top 3 run. If no PB is submitted for a track, no points are awarded for that track.</li>
+        <li><strong>WR updates.</strong> Since the WR is the benchmark, a newly submitted WR will lower the points of all runs behind it.</li>
+        <li><strong>Glitches.</strong> If a track has a separate category for glitchless runs (variable: Glitches on speedrun.com), those runs are ranked together with glitched runs. If a player has both a glitched and a glitchless run, only the faster run counts.</li>
       </ul>
     </section>
     <section class="rule-section" aria-labelledby="hall-rules">
       <h2 id="hall-rules">STK Hall of Fame</h2>
-      <p>Membership recognises both lasting speedrun achievements and online racing ability. <strong>Both requirements must be met:</strong></p>
+      <p>Hall of Fame membership recognises outstanding speedrun achievements and online ranked racing ability. Two requirements must be met for admission to the Hall of Fame:</p>
       <ol>
-        <li><strong>Hold a WR for at least 30 continuous days on each of three different tracks.</strong> Only the forward direction on the 21 official tracks counts. Bonus tracks are excluded. The reigns can be from any time, including the launch period, and do not need to overlap.</li>
-        <li><strong>Reach the top 3 of the STK online ranking after its first three months.</strong> Players provide evidence to the site owner, who records confirmed eligibility in a separate list. A player appears here once that confirmation and the speedrun requirement are both satisfied.</li>
+        <li><strong>Hold a WR for at least 30 continuous days on each of three different tracks.</strong> Only the forward direction on the 21 official tracks counts. Bonus tracks are excluded. Two separate 15-day reigns do not qualify. Multiple qualifying reigns on the same track still count as one qualifying track. Losing a record later does not undo an earlier qualifying reign. WR reigns can be from any time and do not need to overlap.</li>
+        <li><strong>Reach the top 3 of the STK online ranking after its first three months.</strong> The site tracks the <a href="https://online.supertuxkart.net/rankings.php">STK ranking</a>, but some past top 3 players may have been missed. If you believe you fulfilled both criteria but are not listed in the Hall of Fame, please send a DM to Haenschen on speedrun.com.</li>
       </ol>
-      <p><strong>Members are ranked by total lifetime WR-hours.</strong> Every eligible forward reign contributes, including reigns shorter than 30 days, reigns before qualification, and reigns on tracks that never qualified. Holding two tracks for 100 hours each gives 200 WR-hours. The qualifying-track count determines admission, not the order of the table. Equal exact hour totals share a rank.</p>
-      <p><strong>One qualifying track needs one continuous 30-day reign.</strong> Two separate 15-day reigns do not qualify. Multiple qualifying reigns on the same track still count as one qualifying track. Losing a record later does not undo an earlier qualifying reign.</p>
+      <p><strong>Members are ranked by total lifetime WR-hours.</strong> Every forward WR reign on every official track contributes, including reigns shorter than 30 days and reigns before Hall of Fame admission. The qualifying-track count determines admission, not the order of the table. Equal exact hour totals share a rank.</p>
+      <p>Once admitted to the Hall of Fame, membership is permanent.</p>
     </section>
     <section class="rule-section" aria-labelledby="history-rules">
       <h2 id="history-rules">Reading WR history</h2>
-      <p>Reigns start and end at the runs’ <strong>verification timestamps</strong>, rather than the dates they were played. Improving your own record continues the same reign. Losing and later reclaiming it starts a new one. Tied record holders each receive their full reign time.</p>
-      <p><strong>Total WR days</strong> adds all reigns on that track and direction. <strong>Longest reign</strong> is the longest uninterrupted one. A day is 24 hours; Hall of Fame qualification is exactly 720 hours. Player profiles include short reigns in both figures, without applying the qualification threshold.</p>
-      <p>Ongoing reigns are counted up to the snapshot time below. Missing verification dates are shown as unknown, rather than guessed. Results describe the available verified run history; deleted or missing runs and later corrections can affect it.</p>
+      <p>WR reigns start and end at the runs’ <strong>verification timestamps</strong>, rather than the dates they were played. Improving your own record continues the same reign. Losing and later reclaiming the record starts a new one. Tied record holders each receive their full reign time.</p>
+      <p><strong>Total WR days</strong> adds all reigns on that track and direction. <strong>Longest reign</strong> is the longest uninterrupted reign. Player profiles include short reigns in both figures, without applying the 30-day Hall of Fame qualification threshold. Ongoing reigns are counted up to the snapshot time below.</p>
     </section>`;
   const section = el('section', undefined, 'rule-section');
   section.append(el('h2', 'Data updates'),
-    el('p', `Snapshot and WR-hour cutoff: ${dateTime(data.generated_at)}. The source-check times below show when each track was last synced. Exporting a new snapshot alone does not fetch new runs.`),
-    el('p', 'This static website displays a published snapshot. Rankings change when the archive is refreshed and a new snapshot is published.'));
+    el('p', `Snapshot and WR-hour cutoff: ${dateTime(data.generated_at)}. The source-check times below show when each track was last synced.`),
+    el('p', 'This static website displays a published snapshot, updated every Sunday at 2:00 AM Eastern Time.'));
   const details = el('details');
   details.append(el('summary', 'Source-check times by track'));
   const body = table(details, [['Track', ''], ['Last checked (UTC)', '']], 'Last successful source sync by track');
