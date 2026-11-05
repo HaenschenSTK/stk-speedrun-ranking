@@ -250,3 +250,16 @@ class HallOfFameTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class MedianDateTests(unittest.TestCase):
+    def test_weighted_hours_overlap_and_gap(self):
+        from stk_rankings.hall_of_fame import median_wr_date
+        def reign(start, end):
+            return {"started_at": f"2024-01-{start:02}T00:00:00Z",
+                    "counted_until": f"2024-01-{end:02}T00:00:00Z",
+                    "duration_us": (end - start) * 86400 * 1000000}
+        # Ten days plus a second track held for the first two days: halfway is day 5.
+        self.assertEqual(median_wr_date([reign(1, 11), reign(1, 3)]), "2024-01-05T00:00:00.000000Z")
+        self.assertEqual(median_wr_date([reign(1, 3), reign(10, 16)]), "2024-01-12T00:00:00.000000Z")
+        self.assertIsNone(median_wr_date([]))

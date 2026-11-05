@@ -1,6 +1,7 @@
 import argparse
 import json
 import sqlite3
+import sys
 import tomllib
 from pathlib import Path
 
@@ -18,7 +19,9 @@ def main():
     parser.add_argument("--config", type=Path, default=ROOT / "config/tracks.toml")
     commands = parser.add_subparsers(dest="command", required=True)
     update = commands.add_parser("sync", help="Import verified runs; audit all history every 30 days")
-    update.add_argument("--track", default="old-mine")
+    selection = update.add_mutually_exclusive_group()
+    selection.add_argument("--track", default="old-mine")
+    selection.add_argument("--all", action="store_true", help="Update every configured track, including bonus tracks")
     update.add_argument("--full", action="store_true", help="Read the entire verified run history")
     commands.add_parser("status", help="Show local archive and sync summary")
     export = commands.add_parser("export", help="Calculate six rankings and the Hall of Fame as static JSON")
@@ -40,9 +43,20 @@ def main():
     try:
         if args.command == "sync":
             config = tomllib.loads(args.config.read_text())
-            if args.track not in config["tracks"]:
+            if not args.all and args.track not in config["tracks"]:
                 parser.error(f"Track is not allowlisted: {args.track}")
-            result = sync(db, Api(), config, args.track, args.full)
+            api = Api()
+            slugs = list(config["tracks"]) if args.all else [args.track]
+            results = []
+            for position, slug in enumerate(slugs, 1):
+                if args.all:
+                    print(f"[{position}/{len(slugs)}] Syncing {slug}…", file=sys.stderr, flush=True)
+                try:
+                    results.append(sync(db, api, config, slug, args.full))
+                except (OSError, ValueError, sqlite3.Error) as error:
+                    parser.exit(1, f"Sync failed for {slug}: {error}\n"
+                                "Previously completed tracks are saved. Rerun the command to retry.\n")
+            result = results if args.all else results[0]
         elif args.command == "export":
             try:
                 config = tomllib.loads(args.config.read_text())

@@ -59,7 +59,7 @@ Sub-version (1.0, 1.4, 1.5, etc.) is retained as a variable, but does not split 
 leaderboard: the API marks Mode as a subcategory and Sub-version as an ordinary
 variable. Other version categories, Egg Hunt, Grand Prix and story mode are excluded.
 The config explicitly allowlists 23 tracks; nothing automatically imports every
-level returned by the API. Each sync command updates one track. The resource table
+level returned by the API. Sync defaults to one track; `sync --all` updates every configured track. The resource table
 above lists the two tracks used by the offline import fixtures.
 
 Gran Paradiso Island's **Glitches** variable is stored for every run in
@@ -87,11 +87,11 @@ The agreed score for a PB is:
 
 ```text
 gap_percent = 100 * (time_us - wr_time_us) / wr_time_us
-points = 10 * 10 ** (-gap_percent / 2)
+points = 10 * 10 ** (-gap_percent / 3)
 ```
 
-A WR earns 10 points, WR + 2% earns 1 point, and WR + 10% earns 0.0001
-points. There is no hard cutoff. Each player contributes one current PB per track
+A WR earns 10 points, WR + 3% earns 1 point, and WR + 9% earns 0.01
+points. Individual runs have no hard cutoff; players with totals below 0.01 are omitted from each player ranking, while their profiles and track runs remain available. Each player contributes one current PB per track
 and direction, compared with that board's current WR. Missing runs contribute
 zero. Tied WRs each earn 10 points. Only available, verified runs in configured
 categories count; Glitches Yes and No remain combined as on the archived boards.
@@ -136,7 +136,7 @@ The JSON contract (`schema_version: 1`) is:
 | `hall_of_fame` | Hall of Fame table, eligibility rules, confirmed online players, and audited reign breakdowns |
 
 Each ranking entry contains `rank`, `player_key`, `player_name`, `points`,
-`boards_played`, and `world_records`. Each player's `performances` list contains
+`boards_played`, `world_records`, `second_places`, and `third_places`. Each player's `performances` list contains
 track slug, direction, PB run ID, PB/WR times, gap percentage, points, and a source
 link, together with profile statistics described below. This supports score breakdowns without shipping the private SQLite archive
 or repeating every performance in all six rankings. Raw API JSON, moderator IDs,
@@ -152,9 +152,9 @@ one consistent database snapshot and replaces the JSON file atomically.
 ## Website and GitHub Pages
 
 The website is plain HTML, CSS, and JavaScript. Its default view is the forward
-speedrun ranking without bonus tracks. It includes direction/bonus filters,
+player ranking without bonus tracks. It includes direction/bonus filters,
 player search, shareable player profiles, expandable run and WR-reign histories,
-and Hall of Fame and “How it works” pages. Blue accents, system light/dark mode,
+and Hall of Fame and “How it works” pages. The STK speedrun.com background, blue-gray panels, pale blue accents,
 and responsive tables keep the same information readable on desktop and mobile.
 
 To preview it locally, run from this folder:
@@ -198,20 +198,17 @@ also cover filters, history navigation, track expansion, and mobile layouts.
 To refresh all configured tracks and rebuild the JSON locally:
 
 ```bash
-python3 - <<'PY'
-import subprocess
-import sys
-import tomllib
-from pathlib import Path
-
-config = tomllib.loads(Path('config/tracks.toml').read_text())
-for slug in config['tracks']:
-    subprocess.run([sys.executable, '-m', 'stk_rankings', 'sync', '--track', slug, '--full'], check=True)
-subprocess.run([sys.executable, '-m', 'stk_rankings', 'export'], check=True)
-PY
+python3 -m stk_rankings sync --all --full && python3 -m stk_rankings export
 ```
 
-This stops if a sync fails, before generating a new public snapshot. The website
+`sync --all --full` audits the complete verified history for all configured tracks,
+including bonus tracks and both directions. It reuses one rate-limited API client
+and cached metadata, with progress on stderr and a JSON summary on stdout.
+Use `sync --all` without `--full` for the normal incremental refresh (full audits
+are still performed when due). `--all` and `--track` cannot be combined.
+
+This stops if a sync fails, before generating a new public snapshot. Tracks already
+completed remain saved; rerunning the command safely retries the update. The website
 will change only after the newly generated files are published. Display the
 per-track sync timestamps (or their range) so visitors can judge data freshness.
 
@@ -426,3 +423,28 @@ Run data is sourced from speedrun.com and its contributors. The API documentatio
 licenses original API content under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/);
 linked images/videos belong to their respective owners. Keep source attribution
 when using the data in the website.
+
+## Track rankings, podiums, and WR era
+
+The navigation is Player ranking, Tracks, Hall of Fame, and How it works.
+Tracks always includes all 23 configured tracks, with Forward and Reverse views.
+Each board shows current PBs in the top three competition places, including ties;
+expand it to see every player's PB. Empty directions are explicitly labeled.
+`tracks[].has_glitches` is derived from cached variable metadata, and each
+performance exports its selected `glitches` label (null means unknown).
+Glitched and glitchless runs remain combined. The player ranking cutoff does not
+remove track runs or player profiles.
+
+Gold, silver, and bronze badges count current competition places 1, 2, and 3
+across the selected direction and bonus-track scope. Tied firsts yield ranks
+1, 1, 3, so that board has no silver medal.
+
+Hall of Fame `median_wr_date` is the UTC date at which half of the player's total
+eligible WR-hours had accrued. Every track contributes independently, including
+simultaneous records, short reigns, and ongoing reigns through the export cutoff.
+It is not the median of record submission dates or reign midpoints. The table
+shows the year, with month/year on hover or keyboard focus, colored from blue
+(earliest member median) through purple to red (latest). This describes record
+ownership, rather than proving the player was actively submitting runs then.
+
+Background provenance is recorded in `site/assets/README.md`.

@@ -59,8 +59,8 @@ class RankingTests(unittest.TestCase):
         return build_rankings(self.db, self.config, now=NOW)
 
     def test_curve_calibration_and_slow_tail(self):
-        for time, expected in ((100, 10), (100.5, 5.623413251903491), (101, math.sqrt(10)),
-                               (102, 1), (105, 0.03162277660168379), (110, 0.0001)):
+        for time, expected in ((100, 10), (101, 4.641588833612778), (103, 1),
+                               (106, 0.1), (109, 0.01), (112, 0.001)):
             self.assertAlmostEqual(points(round(time * 1_000_000), 100_000_000), expected)
         self.assertGreater(points(120_000_000, 100_000_000), 0)
         for pair in ((0, 0), (99, 100), (-1, 100)):
@@ -80,13 +80,15 @@ class RankingTests(unittest.TestCase):
         payload = self.build()
         self.assertEqual(payload["generated_at"], STAMP)
         self.assertEqual(len(payload["rankings"]), 6)
+        two_percent = 2.154434690031884
+        five_percent = 0.2154434690031884
         expected = {
-            "forward-without-bonus": {"a": 20, "b": 2},
-            "reverse-without-bonus": {"a": 0.03162277660168379, "b": 10},
-            "combined-without-bonus": {"a": 20.03162277660168, "b": 12},
-            "forward-with-bonus": {"a": 31, "b": 12},
-            "reverse-with-bonus": {"a": 0.03162277660168379, "b": 10},
-            "combined-with-bonus": {"a": 31.03162277660168, "b": 22},
+            "forward-without-bonus": {"a": 20, "b": 2 * two_percent},
+            "reverse-without-bonus": {"a": five_percent, "b": 10},
+            "combined-without-bonus": {"a": 20 + five_percent, "b": 10 + 2 * two_percent},
+            "forward-with-bonus": {"a": 30 + two_percent, "b": 10 + 2 * two_percent},
+            "reverse-with-bonus": {"a": five_percent, "b": 10},
+            "combined-with-bonus": {"a": 30 + two_percent + five_percent, "b": 20 + 2 * two_percent},
         }
         for variant, totals in expected.items():
             ranking = payload["rankings"][variant]
@@ -107,10 +109,48 @@ class RankingTests(unittest.TestCase):
         payload = self.build()
         rows = payload["rankings"]["forward-without-bonus"]["entries"]
         self.assertEqual([(r["player_key"], r["rank"], r["points"]) for r in rows],
-                         [("user:a", 1, 10), ("user:b", 1, 10), ("user:c", 3, 1)])
+                         [("user:a", 1, 10), ("user:b", 1, 10), ("user:c", 3, points(102, 100))])
         self.assertEqual([r["world_records"] for r in rows], [1, 1, 0])
         self.assertEqual(payload["rankings"]["reverse-with-bonus"]["entries"], [])
         self.assertEqual(payload["rankings"]["combined-without-bonus"]["entries"], rows)
+
+    def test_cutoff_uses_total_and_preserves_track_runs(self):
+        self.add("a", 100)
+        self.add("boundary", 109)
+        self.add("below", 110)
+        self.add("below", 110, track="gran-paradiso-island")
+        self.add("a", 100, track="gran-paradiso-island")
+        payload = self.build()
+        entries = payload["rankings"]["forward-without-bonus"]["entries"]
+        self.assertIn("user:boundary", [r["player_key"] for r in entries])
+        self.assertNotIn("user:below", [r["player_key"] for r in entries])
+        self.assertEqual(len(payload["players"]["user:below"]["performances"]), 2)
+
+    def test_podium_counts_respect_ties_and_filters(self):
+        for player, time in (("a", 100), ("b", 100), ("c", 103)):
+            self.add(player, time)
+        self.add("c", 100, direction="reverse")
+        self.add("b", 103, direction="reverse")
+        rows = {r["player_key"]: r for r in self.build()["rankings"]["combined-without-bonus"]["entries"]}
+        self.assertEqual((rows["user:b"]["world_records"], rows["user:b"]["second_places"], rows["user:b"]["third_places"]), (1, 1, 0))
+        self.assertEqual((rows["user:c"]["world_records"], rows["user:c"]["third_places"]), (1, 1))
+
+    def test_glitch_labels_and_track_availability(self):
+        game = copy.deepcopy(FIXTURE["game"]["data"])
+        game["variables"]["data"].append({
+            "id": "ql690vjl", "name": "Glitches",
+            "scope": {"type": "single-level", "level": self.config["tracks"]["gran-paradiso-island"]["id"]},
+            "values": {"values": {"lmoj5py1": {"label": "No"}}},
+        })
+        self.db.execute("INSERT INTO metadata VALUES (?, ?, ?)",
+                        (self.config["game_id"], STAMP, json.dumps(game)))
+        run_id = self.add("a", 100, track="gran-paradiso-island")
+        self.db.execute("INSERT OR REPLACE INTO run_variable_values VALUES (?, ?, ?)",
+                        (run_id, "ql690vjl", "lmoj5py1"))
+        payload = self.build()
+        track = next(t for t in payload["tracks"] if t["slug"] == "gran-paradiso-island")
+        self.assertTrue(track["has_glitches"])
+        self.assertEqual(payload["players"]["user:a"]["performances"][0]["glitches"], "No")
 
     def test_removals_and_rejections_change_wr_and_recalculate(self):
         self.add("a", 100)

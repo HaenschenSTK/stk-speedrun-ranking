@@ -1,6 +1,7 @@
 """Lifetime forward WR achievements on the official, non-bonus tracks."""
 
 import json
+from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 
 from .database import utc
@@ -10,6 +11,30 @@ FORWARD_BOARD = {"j84kz64n": "4qyn7z31"}
 REVERSE_BOARD = {"j84kz64n": "mln5e86l"}
 HOUR_US = 3_600_000_000
 MINIMUM_REIGN_DAYS = 30
+
+
+def median_wr_date(reigns):
+    """Date when half of all track-hours had accrued (overlaps count per track)."""
+    events = defaultdict(int)
+    total_us = sum(r["duration_us"] for r in reigns)
+    if not total_us:
+        return None
+    for reign in reigns:
+        events[datetime.fromisoformat(reign["started_at"])] += 1
+        events[datetime.fromisoformat(reign["counted_until"])] -= 1
+    remaining = total_us / 2
+    active = 0
+    previous = None
+    for date, change in sorted(events.items()):
+        if previous is not None and active:
+            span = date - previous
+            duration_us = (span.days * 86400 + span.seconds) * 1_000_000 + span.microseconds
+            if remaining <= duration_us * active:
+                return utc((previous + timedelta(microseconds=remaining / active)).isoformat())
+            remaining -= duration_us * active
+        active += change
+        previous = date
+    return None
 
 
 def confirmed_players(config):
@@ -90,6 +115,7 @@ def build_hall_of_fame(db, config, online_config, now=None):
                                                  reign["qualifies_at"])
         total_us = sum(r["duration_us"] for r in player["reigns"])
         player.update(
+            median_wr_date=median_wr_date(player["reigns"]),
             qualifying_tracks=sorted(qualifying), qualifying_track_count=len(qualifying),
             total_wr_duration_us=total_us, total_wr_hours=total_us / HOUR_US,
             speedrun_qualified_at=sorted(qualifying.values())[2] if len(qualifying) >= 3 else None,
@@ -97,7 +123,8 @@ def build_hall_of_fame(db, config, online_config, now=None):
         )
         if len(qualifying) >= 3 and key in confirmed:
             entry = {"player_key": key, "player_name": player["name"],
-                     "qualifying_track_count": len(qualifying), "total_wr_hours": player["total_wr_hours"]}
+                     "qualifying_track_count": len(qualifying), "total_wr_hours": player["total_wr_hours"],
+                     "median_wr_date": player["median_wr_date"]}
             members.append(entry)
 
     def rank_table(entries):

@@ -16,10 +16,10 @@ DIRECTIONS = {"4qyn7z31": "forward", "mln5e86l": "reverse"}
 
 
 def points(time_us, wr_time_us):
-    """10 at the WR, 1 at WR + 2%, with no artificial cutoff or rounding."""
+    """10 at the WR, 1 at WR + 3%, with no artificial cutoff or rounding."""
     if wr_time_us <= 0 or time_us < wr_time_us:
         raise ValueError("Times must be positive and the run cannot beat its reference WR")
-    return 10 * 10 ** (-50 * (time_us - wr_time_us) / wr_time_us)
+    return 10 * 10 ** (-100 / 3 * (time_us - wr_time_us) / wr_time_us)
 
 
 def build_rankings(db, config, now=None, hall_of_fame_config=None):
@@ -34,10 +34,18 @@ def build_rankings(db, config, now=None, hall_of_fame_config=None):
         missing = [slug for slug, track in config["tracks"].items() if track["id"] not in states]
         if missing:
             raise ValueError("Sync configured tracks before exporting: " + ", ".join(missing))
+        metadata = db.execute("SELECT raw_json FROM metadata WHERE game_id=?", (config["game_id"],)).fetchone()
+        variables = json.loads(metadata[0])["variables"]["data"] if metadata else []
+        glitch_variables = {v["scope"]["level"]: v for v in variables
+                            if v["name"].casefold() == "glitches" and v["scope"]["type"] == "single-level"}
+        run_values = defaultdict(dict)
+        for value in db.execute("SELECT * FROM run_variable_values"):
+            run_values[value["run_id"]][value["variable_id"]] = value["value_id"]
         for slug, track in sorted(config["tracks"].items()):
             state = states[track["id"]]
             item = {
                 "slug": slug, "id": track["id"], "name": track["name"],
+                "has_glitches": track["id"] in glitch_variables,
                 "category_id": track["category_id"], "bonus": track.get("bonus", False),
                 "last_synced_at": state["last_success_at"], "last_full_audit_at": state["last_full_at"],
             }
@@ -91,12 +99,16 @@ def build_rankings(db, config, now=None, hall_of_fame_config=None):
             if key not in identities or identity_order > identities[key]:
                 identities[key] = identity_order
                 players[key].update(id=run["player_id"], name=run["player_name"], url=run["player_url"])
+            glitch_variable = glitch_variables.get(run["track_id"], {})
+            glitch_value = run_values[run["id"]].get(glitch_variable.get("id"))
+            glitches = glitch_variable.get("values", {}).get("values", {}).get(glitch_value, {}).get("label")
             players[key]["performances"].append({
                 "track": slug, "direction": direction, "run_id": run["id"],
                 "time_us": run["time_us"], "wr_time_us": wr_time,
                 "gap_us": run["time_us"] - wr_time, "board_rank": board_rank, "is_wr": run["time_us"] == wr_time,
                 "gap_percent": 100 * (run["time_us"] - wr_time) / wr_time,
                 "points": points(run["time_us"], wr_time), "source_url": run["source_url"],
+                "glitches": glitches,
                 "played_on": run["played_on"], "verified_at": run["verified_at"],
                 "wr_history": summarize_wr_reigns(reigns.get((key, *board_id), []), board_id not in undated_boards),
             })
@@ -112,12 +124,14 @@ def build_rankings(db, config, now=None, hall_of_fame_config=None):
             entries = []
             for key, player in players.items():
                 performances = [p for p in player["performances"] if eligible(p)]
-                if not performances:
+                if not performances or math.fsum(p["points"] for p in performances) < 0.01:
                     continue
                 entries.append({
                     "player_key": key, "player_name": player["name"],
                     "points": math.fsum(p["points"] for p in performances),
                     "boards_played": len(performances),
+                    "second_places": sum(p["board_rank"] == 2 for p in performances),
+                    "third_places": sum(p["board_rank"] == 3 for p in performances),
                     "world_records": sum(p["time_us"] == p["wr_time_us"] for p in performances),
                 })
             entries.sort(key=lambda r: (-r["points"], r["player_key"]))
@@ -137,8 +151,8 @@ def build_rankings(db, config, now=None, hall_of_fame_config=None):
         "generated_at": utc(now.isoformat()),
         "source": {"name": "speedrun.com", "url": "https://www.speedrun.com/stk"},
         "scoring": {
-            "id": "exponential-v1", "formula": "10 * 10 ** (-50 * (time_us - wr_time_us) / wr_time_us)",
-            "wr_points": 10, "gap_percent_for_one_point": 2,
+            "id": "exponential-v2", "formula": "10 * 10 ** (-100 / 3 * (time_us - wr_time_us) / wr_time_us)",
+            "wr_points": 10, "gap_percent_for_one_point": 3, "minimum_ranking_points": 0.01,
             "aggregation": "sum of each player's best accepted run per track and direction",
             "ties": "equal unrounded totals share a rank; subsequent ranks skip tied positions",
         },

@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="dark">
   <meta name="description" content="SuperTuxKart speedrun rankings across every track. Explore player points, world-record reigns, and the STK Hall of Fame.">
-  <title>Speedrun ranking · STK Rankings</title>
+  <title>Player ranking · STK Rankings</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
   <script type="module" src="./app.js"></script>
@@ -16,7 +16,8 @@
     <div class="header-inner">
       <a class="brand route-link" href="#ranking"><span>STK</span> Rankings</a>
       <nav aria-label="Main navigation">
-        <a class="route-link" data-view="ranking" href="#ranking" aria-current="page">Speedrun ranking</a>
+        <a class="route-link" data-view="ranking" href="#ranking" aria-current="page">Player ranking</a>
+        <a class="route-link" data-view="tracks" href="#tracks">Tracks</a>
         <a class="route-link" data-view="hall" href="#hall">Hall of Fame</a>
         <a class="route-link" data-view="rules" href="#rules">How it works</a>
       </nav>
@@ -24,7 +25,7 @@
   </header>
   <main id="main" tabindex="-1">
     <p class="eyebrow">SuperTuxKart · 1.x individual levels</p>
-    <h1>Speedrun ranking</h1>
+    <h1>Player ranking</h1>
     <p role="status" id="loading">Loading rankings…</p>
     <noscript><p>Enable JavaScript to explore the rankings and player profiles. You can also <a href="./data/rankings.json">download the ranking data</a>.</p></noscript>
   </main>

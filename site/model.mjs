@@ -6,11 +6,11 @@ export function parseRoute(hash) {
   const [page, query = ''] = hash.replace(/^#/, '').split('?');
   const params = new URLSearchParams(query);
   return {
-    view: ['ranking', 'hall', 'rules', 'player'].includes(page) ? page : 'ranking',
-    direction: directions.includes(params.get('direction')) ? params.get('direction') : 'forward',
-    bonus: params.get('bonus') === '1',
+    view: ['ranking', 'tracks', 'hall', 'rules', 'player'].includes(page) ? page : 'ranking',
+    direction: page === 'tracks' ? (params.get('direction') === 'reverse' ? 'reverse' : 'forward') : (directions.includes(params.get('direction')) ? params.get('direction') : 'forward'),
+    bonus: page === 'tracks' || params.get('bonus') === '1',
     player: params.get('player') || '',
-    from: params.get('from') === 'hall' ? 'hall' : 'ranking',
+    from: ['hall', 'tracks'].includes(params.get('from')) ? params.get('from') : 'ranking',
     search: params.get('q') || '',
   };
 }
@@ -22,7 +22,7 @@ export function routeHash(state) {
   if (state.search) params.set('q', state.search);
   if (state.view === 'player') {
     params.set('player', state.player);
-    if (state.from === 'hall') params.set('from', 'hall');
+    if (['hall', 'tracks'].includes(state.from)) params.set('from', state.from);
   }
   return `#${state.view}${params.size ? '?' + params.toString() : ''}`;
 }
@@ -75,4 +75,15 @@ export function safeExternalURL(value) {
     const url = new URL(value);
     return url.protocol === 'https:' ? url.href : null;
   } catch { return null; }
+}
+
+export function trackRuns(data, track, direction) {
+  return Object.entries(data.players).flatMap(([player_key, player]) =>
+    player.performances.filter(p => p.track === track && p.direction === direction)
+      .map(p => ({...p, player_key, player_name: player.name})))
+    .sort((a, b) => a.board_rank - b.board_rank || a.player_key.localeCompare(b.player_key, 'en'));
+}
+
+export function podiumCounts(performances) {
+  return [1, 2, 3].map(rank => performances.filter(p => p.board_rank === rank).length);
 }

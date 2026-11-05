@@ -1,5 +1,5 @@
 import {
-  directions, titleCase, parseRoute, routeHash, variant, profileRows,
+  trackRuns, podiumCounts, directions, titleCase, parseRoute, routeHash, variant, profileRows,
   number, points, days, raceTime, dateTime, safeExternalURL,
 } from './model.mjs';
 
@@ -33,7 +33,7 @@ function externalLink(text, url) {
 }
 
 function playerLink(key, from = state.view) {
-  const next = {...state, view: 'player', player: key, from: from === 'hall' ? 'hall' : 'ranking'};
+  const next = {...state, view: 'player', player: key, from: ['hall', 'tracks'].includes(from) ? from : 'ranking'};
   if (from === 'hall') Object.assign(next, {direction: 'forward', bonus: false});
   return link(data.players[key]?.name || data.hall_of_fame.players[key]?.name || key, next, 'player-link');
 }
@@ -47,7 +47,7 @@ function heading(title, subtitle) {
 }
 
 function table(container, headers, caption, className = '') {
-  const wrap = el('div', undefined, 'table-wrap');
+  const wrap = el('div', undefined, `table-wrap ${className === 'hall-table' ? 'hall-wrap' : ''}`);
   const table = el('table', undefined, className);
   table.append(el('caption', caption, 'sr-only'));
   const row = el('tr');
@@ -70,7 +70,7 @@ function controls({search = false} = {}) {
   const segments = el('div', undefined, 'segments');
   segments.setAttribute('role', 'group');
   segments.setAttribute('aria-label', 'Direction');
-  for (const direction of directions) {
+  for (const direction of (state.view === 'tracks' ? directions.slice(0, 2) : directions)) {
     const a = link(titleCase(direction), {...state, direction});
     a.dataset.direction = direction;
     if (state.direction === direction) a.setAttribute('aria-current', 'true');
@@ -84,7 +84,8 @@ function controls({search = false} = {}) {
   checkbox.addEventListener('change', () => navigate(routeHash({...state, bonus: checkbox.checked}), 'bonus'));
   label.append(checkbox, el('span', 'Include bonus tracks'));
   label.title = 'Freytra Peaks and Drainage Dash';
-  wrapper.append(segments, label);
+  wrapper.append(segments);
+  if (state.view !== 'tracks') wrapper.append(label);
   if (search) {
     const label = el('label', undefined, 'search');
     label.append(el('span', 'Find a player', 'sr-only'));
@@ -110,7 +111,7 @@ function controls({search = false} = {}) {
 const scope = () => `${titleCase(state.direction)} · ${state.bonus ? 'Including bonus tracks' : 'Official tracks only'}`;
 
 function renderRanking() {
-  heading('Speedrun ranking', 'A cross-track ranking based on distance from the world record.');
+  heading('Player ranking', 'A cross-track ranking based on distance from the world record.');
   controls({search: true});
   const container = el('div');
   container.id = 'ranking-results';
@@ -132,18 +133,18 @@ function renderRankingRows() {
   container.append(caption);
   const body = table(container, [
     ['Rank', 'rank'], ['Player', 'name'], ['Points', ''],
-    [state.direction === 'combined' ? 'Boards' : 'Tracks', 'secondary'], ['WRs', 'secondary'],
-  ], `${scope()} speedrun ranking`);
+    [state.direction === 'combined' ? 'Boards' : 'Tracks', 'secondary'], ['Podiums', 'podium-cell'],
+  ], `${scope()} player ranking`);
   for (const row of matching) {
     const tr = el('tr');
     const name = el('td', undefined, 'name');
     const player = playerLink(row.player_key);
     player.id = `ranking-player-${row.player_key}`;
-    name.append(player, el('span', `${row.boards_played}/${ranking.board_count} ${state.direction === 'combined' ? 'boards' : 'tracks'} · ${row.world_records} WRs`, 'mobile-meta'));
+    name.append(player, el('span', `${row.boards_played}/${ranking.board_count} ${state.direction === 'combined' ? 'boards' : 'tracks'}`, 'mobile-meta'));
     const score = el('td', points(row.points), 'points');
     score.title = `${row.points} points (unrounded)`;
     tr.append(el('td', row.rank, `rank ${row.rank <= 3 ? 'rank-top' : ''}`), name, score,
-      el('td', `${row.boards_played} / ${ranking.board_count}`, 'secondary'), el('td', row.world_records, 'secondary'));
+      el('td', `${row.boards_played} / ${ranking.board_count}`, 'secondary'), medalCell([row.world_records, row.second_places, row.third_places]));
     body.append(tr);
   }
   if (!matching.length) {
@@ -156,6 +157,86 @@ function renderRankingRows() {
   status.textContent = `${matching.length} ${matching.length === 1 ? 'player' : 'players'}. ${scope()}.`;
 }
 
+function medals(counts) {
+  const group = el('span', undefined, 'medals');
+  counts.forEach((count, i) => {
+    const badge = el('span', undefined, `medal medal-${i + 1}`);
+    const label = `${count || 0} ${['first places (WRs)', 'second places', 'third places'][i]}`;
+    badge.title = label;
+    badge.setAttribute('aria-label', label);
+    const icon = el('span', ['🥇', '🥈', '🥉'][i]);
+    icon.setAttribute('aria-hidden', 'true');
+    badge.append(icon, String(count || 0));
+    group.append(badge);
+  });
+  return group;
+}
+
+function medalCell(counts) {
+  const cell = el('td', undefined, 'podium-cell');
+  cell.append(medals(counts));
+  return cell;
+}
+
+function renderTracks() {
+  heading('Tracks', 'Every track, every podium. Explore the fastest verified runs, then expand the full ranking.');
+  controls();
+  main.append(el('p', 'Bonus tracks always included · One personal best per player · Glitched and glitchless runs ranked together · Ties share places', 'note'));
+  for (const track of [...data.tracks].sort((a, b) => a.name.localeCompare(b.name, 'en'))) {
+    const runs = trackRuns(data, track.slug, state.direction);
+    const section = el('section', undefined, 'track-card');
+    const title = el('h2', track.name);
+    if (track.bonus) title.append(el('span', 'Bonus', 'tag'));
+    section.append(title);
+    if (!runs.length) {
+      section.append(el('p', 'No verified runs in this direction yet.', 'note'));
+      main.append(section);
+      continue;
+    }
+    const headers = [['Rank', 'rank'], ['Player', 'name']];
+    if (track.has_glitches) headers.push(['Glitches', '']);
+    headers.push(['Time', ''], ['+%', ''], ['Points', '']);
+    const body = table(section, headers, `${track.name} · ${titleCase(state.direction)} ranking`, 'track-ranking');
+    const extra = [];
+    for (const run of runs) {
+      const row = el('tr');
+      const rank = el('td', run.board_rank <= 3 ? ['🥇', '🥈', '🥉'][run.board_rank - 1] : run.board_rank, 'rank');
+      rank.setAttribute('aria-label', `Rank ${run.board_rank}`);
+      const name = el('td', undefined, 'name');
+      name.append(playerLink(run.player_key, 'tracks'));
+      const time = el('td', undefined, 'run-time');
+      time.append(externalLink(raceTime(run.time_us), run.source_url));
+      row.append(rank, name);
+      if (track.has_glitches) row.append(el('td', run.glitches || 'Unknown'));
+      const gap = el('td', run.gap_percent > 0 && run.gap_percent < .001
+        ? '<0.001%' : `${number(run.gap_percent)}%`, 'run-gap');
+      gap.title = 'Percentage slower than the world record';
+      const score = el('td', points(run.points), 'points');
+      score.title = `${run.points} points (unrounded)`;
+      row.append(time, gap, score);
+      if (run.board_rank > 3) { row.hidden = true; extra.push(row); }
+      body.append(row);
+    }
+    if (extra.length) {
+      const button = el('button', `Show full ranking · ${runs.length} players`, 'expand-ranking');
+      button.type = 'button';
+      button.id = `expand-${track.slug}`;
+      body.id = `track-ranking-${track.slug}`;
+      button.setAttribute('aria-controls', body.id);
+      button.setAttribute('aria-expanded', 'false');
+      button.addEventListener('click', () => {
+        const opening = button.getAttribute('aria-expanded') !== 'true';
+        for (const row of extra) row.hidden = !opening;
+        button.setAttribute('aria-expanded', String(opening));
+        button.textContent = opening ? 'Show top 3' : `Show full ranking · ${runs.length} players`;
+      });
+      section.append(button);
+    }
+    main.append(section);
+  }
+  status.textContent = `${data.tracks.length} tracks. ${titleCase(state.direction)}. Bonus tracks included.`;
+}
+
 function renderHall() {
   heading('STK Hall of Fame', 'World-record achievement and online racing qualification, ranked by total lifetime WR-hours.');
   const intro = el('p', undefined, 'member-note');
@@ -165,33 +246,47 @@ function renderHall() {
   const caption = el('div', undefined, 'caption');
   caption.append(el('span', `${data.hall_of_fame.members.length} members`), el('span', `WR-hours as of ${dateTime(data.hall_of_fame.as_of)}`));
   main.append(caption);
-  const body = table(main, [['Rank', 'rank'], ['Player', 'name'], ['Total WR-hours', ''], ['Qualifying tracks', 'secondary']], 'Hall of Fame, ranked by total lifetime WR-hours', 'hall-table');
+  const body = table(main, [['Rank', 'rank'], ['Player', 'name'], ['Total WR-hours', ''], ['WR era', ''], ['Qualifying tracks', 'secondary']], 'Hall of Fame, ranked by total lifetime WR-hours', 'hall-table');
+  const dates = data.hall_of_fame.members.map(row => Date.parse(row.median_wr_date)).filter(Number.isFinite);
+  const oldest = Math.min(...dates), newest = Math.max(...dates);
   for (const row of data.hall_of_fame.members) {
     const name = el('td', undefined, 'name');
     const player = playerLink(row.player_key, 'hall');
     player.id = `hall-player-${row.player_key}`;
     name.append(player, el('span', `${row.qualifying_track_count} qualifying tracks`, 'mobile-meta'));
     const tr = el('tr');
-    const hours = el('td', number(row.total_wr_hours, 1), 'points');
-    hours.title = `${row.total_wr_hours} hours (unrounded)`;
-    tr.append(el('td', row.rank, `rank ${row.rank <= 3 ? 'rank-top' : ''}`), name, hours,
+    const hours = el('td', number(row.total_wr_hours, 0), 'points');
+    hours.title = 'Rounded to whole hours; ranking uses full precision.';
+    const era = el('td');
+    if (row.median_wr_date) {
+      const date = new Date(row.median_wr_date);
+      const badge = el('time', String(date.getUTCFullYear()), 'era');
+      badge.dateTime = row.median_wr_date;
+      badge.title = `${String(date.getUTCMonth() + 1).padStart(2, '0')}/${date.getUTCFullYear()} · Median date of accrued WR-hours`;
+      badge.tabIndex = 0;
+      badge.setAttribute('aria-label', badge.title);
+      const fraction = newest === oldest ? .5 : (date.getTime() - oldest) / (newest - oldest);
+      badge.style.setProperty('--era-color', `hsl(${220 + 140 * fraction} 85% 77%)`);
+      era.append(badge);
+    } else era.textContent = '—';
+    tr.append(el('td', row.rank, `rank ${row.rank <= 3 ? 'rank-top' : ''}`), name, hours, era,
       el('td', `${row.qualifying_track_count} / 21`, 'secondary'));
     body.append(tr);
   }
   if (!data.hall_of_fame.members.length) {
     const tr = el('tr');
     const cell = el('td', 'No players meet both qualification requirements yet.', 'empty');
-    cell.colSpan = 4;
+    cell.colSpan = 5;
     tr.append(cell);
     body.append(tr);
   }
-  main.append(el('p', 'All forward WR reigns on official tracks contribute hours, including reigns shorter than 30 days. Hours on different tracks add together. Qualifying tracks determine admission, not position.', 'note'));
+  main.append(el('p', 'All forward WR reigns on official tracks contribute hours, including reigns shorter than 30 days. Hours on different tracks add together. Qualifying tracks determine admission, not position. WR era is the date when half of a player’s lifetime WR-hours had accrued: blue is earlier, purple to red is more recent. Hover or focus a year for the month.', 'note'));
 }
 
 function renderProfile() {
   const player = data.players[state.player];
   const backState = {...state, view: state.from};
-  const back = link(`← Back to ${state.from === 'hall' ? 'Hall of Fame' : 'ranking'}`, backState, 'back');
+  const back = link(`← Back to ${state.from === 'hall' ? 'Hall of Fame' : state.from === 'tracks' ? 'Tracks' : 'ranking'}`, backState, 'back');
   const returnHash = history.state?.returnHash;
   if (returnHash && parseRoute(returnHash).view === state.from) back.href = returnHash;
   back.dataset.back = 'true';
@@ -204,22 +299,26 @@ function renderProfile() {
   controls();
   const ranking = data.rankings[variant(state)];
   const entry = ranking.entries.find(row => row.player_key === state.player);
+  const performances = profileRows(data, state.player, state).map(row => row.performance).filter(Boolean);
   const summary = el('div', undefined, 'summary');
   for (const [value, label] of [
-    [entry ? `#${entry.rank}` : '—', 'Overall rank'], [points(entry?.points || 0), 'Points'],
-    [`${entry?.boards_played || 0} / ${ranking.board_count}`, state.direction === 'combined' ? 'Boards with a PB' : 'Tracks with a PB'],
-    [entry?.world_records || 0, 'Current WRs'],
+    [entry ? `#${entry.rank}` : '—', 'Overall rank'], [points(performances.reduce((sum, p) => sum + p.points, 0)), 'Points'],
+    [`${performances.length} / ${ranking.board_count}`, state.direction === 'combined' ? 'Boards with a PB' : 'Tracks with a PB'],
+
   ]) {
     const item = el('div');
     item.append(el('strong', value), el('span', label));
     summary.append(item);
   }
+  const podium = el('div');
+  podium.append(medals(podiumCounts(performances)), el('span', 'Current track podiums'));
+  summary.append(podium);
   main.append(summary);
   const member = data.hall_of_fame.members.find(row => row.player_key === state.player);
   if (member) {
     const note = el('p', undefined, 'member-note');
     note.append(link(`Hall of Fame #${member.rank}`, {...state, view: 'hall'}),
-      ` · ${member.qualifying_track_count} qualifying tracks · ${number(member.total_wr_hours, 1)} lifetime WR-hours. Forward, official tracks only.`);
+      ` · ${member.qualifying_track_count} qualifying tracks · ${number(member.total_wr_hours, 0)} lifetime WR-hours. Forward, official tracks only.`);
     main.append(note);
   }
   const caption = el('div', undefined, 'caption');
@@ -326,24 +425,25 @@ function renderTrackDetails(container, board, p) {
 }
 
 function renderRules() {
-  heading('How it works', 'Speedrun ranking and Hall of Fame admission criteria');
+  heading('How it works', 'Player ranking and Hall of Fame admission criteria');
   const rules = el('div', undefined, 'rules');
   // This template contains only authored text. All source data uses textContent.
   rules.innerHTML = `
     <section class="rule-section" aria-labelledby="speedrun-rules">
-      <h2 id="speedrun-rules">Speedrun ranking</h2>
+      <h2 id="speedrun-rules">Player ranking</h2>
       <p>The fastest verified 1.x run on each track and direction earns points based on its distance from the current world record. The points across the selected tracks are added up to get the total score.</p>
       <p>The distance <var>d</var> between a personal best (PB) time and the world record (WR) time is calculated as the percentage slower than the WR:</p>
       <p class="formula">d = 100 × (PB − WR) / WR</p>
       <p>The points are then calculated as an exponential function of <var>d</var>:</p>
-      <p class="formula">Points = 10 × 10<sup>−d/2</sup></p>
-      <p>The function is calibrated such that the WR gives 10 points, while a run 2% slower than the WR gives 1 point.</p>
+      <p class="formula">Points = 10 × 10<sup>−d/3</sup></p>
+      <p>The function is calibrated such that the WR gives 10 points, while a run 3% slower than the WR gives 1 point.</p>
       <div class="example-table table-wrap"><table>
         <caption class="sr-only">Points at different distances behind the world record</caption>
         <thead><tr><th scope="col">Behind WR</th><th scope="col">Points</th></tr></thead>
-        <tbody><tr><td>0% · World record</td><td>10</td></tr><tr><td>0.5%</td><td>5.623</td></tr><tr><td>1%</td><td>3.162</td></tr><tr><td>2%</td><td>1</td></tr><tr><td>5%</td><td>0.0316</td></tr><tr><td>10%</td><td>0.0001</td></tr></tbody>
+        <tbody><tr><td>0% · World record</td><td>10</td></tr><tr><td>0.5%</td><td>6.813</td></tr><tr><td>1%</td><td>4.642</td></tr><tr><td>3%</td><td>1</td></tr><tr><td>5%</td><td>0.2154</td></tr><tr><td>10%</td><td>0.0046</td></tr></tbody>
       </table></div>
       <p>The exponential function rewards runs close to the WR. Under the speedrun.com submission guidelines used for this ranking, runs within 2% require the strongest evidence. Runs more than 10% behind can be accepted without evidence unless they are top 3, so the scoring was designed such that the contribution of these runs is negligible.</p>
+      <p>Players with fewer than 0.01 total points are omitted from the player ranking. Their runs remain visible in Tracks. Gold, silver, and bronze count current first, second, and third places on the selected boards; ties share competition ranks (1, 1, 3).</p>
       <ul>
         <li><strong>Run submission.</strong> Submit runs via <a href="https://www.speedrun.com/stk">speedrun.com/stk</a>. This site uses verified runs from speedrun.com and does not independently verify any runs. New runs are incorporated into the ranking within seven days after verification.</li>
         <li><strong>Track selection.</strong> The ranking is based on the 21 official tracks in both forward and reverse directions. The two bonus tracks, Freytra Peaks and Drainage Dash, can be added using the toggle on the ranking site. Forward and reverse rankings can be displayed separately or combined.</li>
@@ -402,7 +502,7 @@ function render({restore = false, focusId = null} = {}) {
   renderedHash = location.hash;
   main.replaceChildren();
   updateNav();
-  ({ranking: renderRanking, hall: renderHall, player: renderProfile, rules: renderRules}[state.view])();
+  ({ranking: renderRanking, tracks: renderTracks, hall: renderHall, player: renderProfile, rules: renderRules}[state.view])();
   if (restore) {
     const saved = history.state;
     if (saved?.focusId) document.getElementById(saved.focusId)?.focus({preventScroll: true});

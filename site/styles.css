@@ -1,20 +1,16 @@
+/* STK community palette, inspired by speedrun.com/stk. */
 :root {
-  color-scheme: light dark;
-  --page: #f3f6fa; --panel: #fff; --ink: #192d40; --muted: #53677c;
-  --line: #d7e1eb; --accent: #1569ae; --selected: #e3f0fc; --hover: #f0f6fc;
-  --focus: #007ac2; --header: #fff;
+  color-scheme: dark;
+  --page: #243747; --panel: #2b4052; --ink: #eef5fa; --muted: #b4cbdc;
+  --line: #4a6173; --accent: #a9d9fa; --selected: #385c76; --hover: #354f64;
+  --focus: #e6d47b; --header: #243b4eee;
   font: 400 15px/1.55 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: var(--page); color: var(--ink);
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --page: #101d2b; --panel: #172738; --ink: #e1ecf7; --muted: #a9bed2;
-    --line: #33495f; --accent: #83c6ff; --selected: #243e58; --hover: #1e3247;
-    --focus: #8cd1ff; --header: #152435;
-  }
+  background: #263e50; color: var(--ink);
 }
 * { box-sizing: border-box; }
-body { margin: 0; min-width: 280px; }
+body { margin: 0; min-width: 280px;
+  background: linear-gradient(#162c3d30, #162c3d88), url('./assets/stk-background.jpg') center top / cover fixed;
+}
 [hidden] { display: none !important; }
 a { color: var(--accent); text-underline-offset: 3px; }
 button, input { font: inherit; }
@@ -33,7 +29,7 @@ nav { display: flex; gap: 5px; flex-wrap: wrap; }
 nav a { padding: 8px 12px; border-radius: 6px; text-decoration: none; color: var(--muted); font-size: 14px; }
 nav a:hover { color: var(--accent); background: var(--hover); }
 nav a[aria-current="page"] { background: var(--selected); color: var(--accent); font-weight: 600; }
-main { padding-top: 30px; padding-bottom: 32px; min-height: calc(100vh - 200px); }
+main { background: #243747f2; margin-top: 42px; margin-bottom: 32px; border: 1px solid #7594ab66; border-radius: 12px; box-shadow: 0 12px 40px #07152255; padding-top: 30px; padding-bottom: 32px; min-height: calc(100vh - 200px); }
 .eyebrow { color: var(--muted); font-size: 11px; letter-spacing: 1.1px; text-transform: uppercase; margin: 0 0 6px; }
 h1 { font-size: 29px; font-weight: 600; letter-spacing: -.7px; line-height: 1.25; margin: 0; overflow-wrap: anywhere; }
 h2 { font-size: 21px; font-weight: 600; letter-spacing: -.3px; line-height: 1.35; margin: 0 0 12px; }
@@ -100,7 +96,7 @@ dd { margin: 2px 0 0; }
 .rules ol, .rules ul { padding-left: 22px; }
 .formula { background: var(--selected); color: var(--ink) !important; padding: 14px 18px; border-radius: 6px; font-family: ui-monospace, monospace; font-size: 15px; overflow-wrap: anywhere; }
 .example-table { max-width: 430px; margin: 18px 0; }
-.site-footer { border-top: 1px solid var(--line); }
+.site-footer { background: var(--header); border-top: 1px solid var(--line); }
 .footer-inner { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; padding-top: 18px; padding-bottom: 22px; font-size: 11px; color: var(--muted); }
 .footer-inner > :last-child { margin-left: auto; }
 #freshness { flex-basis: 50%; }
@@ -148,4 +144,34 @@ dd { margin: 2px 0 0; }
   button, .segments a, nav a, .check { min-height: 44px; }
   .segments a, nav a { display: inline-flex; align-items: center; }
   .player-link { display: inline-block; padding: 6px 0; }
+}
+
+.track-card { margin-top: 24px; padding: 20px; background: #293f51; border: 1px solid var(--line); border-radius: 10px; }
+.track-card h2 { font-size: 18px; display: flex; align-items: center; gap: 8px; }
+.track-card .table-wrap { overflow-x: auto; }
+.track-ranking { min-width: 540px; }
+.track-ranking .run-gap { white-space: nowrap; }
+.track-ranking .run-time { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.track-ranking .run-time a { text-decoration: none; }
+.track-ranking .run-time a:hover { text-decoration: underline; }
+.expand-ranking { margin-top: 12px; color: var(--accent); font-size: 13px; }
+.medals { display: inline-flex; gap: 7px; white-space: nowrap; }
+.medal { display: inline-flex; align-items: center; gap: 4px; padding: 3px 7px; border-radius: 6px; font-size: 13px; font-weight: 650; font-variant-numeric: tabular-nums; border: 1px solid #ffffff20; }
+.medal-1 { background: #dcb55b18; color: #ffe3a3; }
+.medal-2 { background: #cad7e418; color: #e1eaf3; }
+.medal-3 { background: #d9956518; color: #ffc29a; }
+.summary .medals { margin-bottom: 4px; }
+.summary > div > span:last-child { display: block; }
+.era { color: var(--era-color); border: 1px solid currentColor; border-radius: 5px; padding: 3px 7px; font-weight: 650; cursor: help; position: relative; }
+.era:hover::after, .era:focus::after { content: attr(title); position: absolute; right: 0; top: 100%; margin-top: 6px; width: 180px; padding: 8px; background: #132635; color: var(--ink); border: 1px solid var(--line); border-radius: 6px; z-index: 2; font-size: 12px; white-space: normal; }
+.hall-wrap { overflow: visible; }
+@media (max-width: 1160px) { main { margin-left: 16px; margin-right: 16px; } }
+@media (max-width: 520px) {
+  main { margin: 16px 8px; padding-left: 12px; padding-right: 12px; }
+  .track-card { padding: 12px 8px; }
+  .medals { gap: 3px; }
+  .medal { padding: 2px 3px; gap: 1px; font-size: 11px; }
+  .podium-cell { padding-left: 4px; padding-right: 4px; }
+  nav a { padding: 7px 6px; font-size: 12px; }
+  .era { padding: 2px 4px; }
 }

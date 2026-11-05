@@ -72,3 +72,31 @@ test('published Hall of Fame is ordered by hours and contains only eligible memb
   }
   assert.equal('apprentices' in hall, false);
 });
+
+test('track routes include bonus tracks and constrain directions', () => {
+  const route = parseRoute('#tracks?direction=combined');
+  assert.equal(route.direction, 'forward');
+  assert.equal(route.bonus, true);
+  assert.equal(parseRoute('#tracks?direction=reverse').direction, 'reverse');
+  const profile = {...route, view: 'player', from: 'tracks', player: 'user:a'};
+  assert.deepEqual(parseRoute(routeHash(profile)), profile);
+});
+
+test('track rankings retain low-scoring players and medals match all variants', async () => {
+  const {trackRuns, podiumCounts} = await import('../site/model.mjs');
+  for (const board of data.boards) {
+    const runs = trackRuns(data, board.track, board.direction);
+    assert.equal(runs.length, board.player_count);
+    assert.equal(runs[0].time_us, board.wr_time_us);
+    assert.ok(runs.every((run, i) => i === 0 || run.time_us >= runs[i - 1].time_us));
+  }
+  for (const ranking of Object.values(data.rankings)) {
+    for (const entry of ranking.entries) {
+      assert.ok(entry.points >= .01);
+      const rows = profileRows(data, entry.player_key, {direction: ranking.direction, bonus: ranking.include_bonus});
+      assert.deepEqual(podiumCounts(rows.map(row => row.performance).filter(Boolean)),
+        [entry.world_records, entry.second_places, entry.third_places]);
+    }
+  }
+  assert.equal(data.scoring.gap_percent_for_one_point, 3);
+});
