@@ -1,5 +1,5 @@
 import {
-  trackRuns, podiumCounts, directions, titleCase, parseRoute, routeHash, variant, profileRows,
+  trackRuns, podiumCounts, historicPodiumCounts, directions, titleCase, parseRoute, routeHash, variant, profileRows,
   number, points, days, raceTime, dateTime, safeExternalURL,
 } from './model.mjs';
 
@@ -262,7 +262,7 @@ function renderHall() {
       const date = new Date(row.median_wr_date);
       const badge = el('time', String(date.getUTCFullYear()), 'era');
       badge.dateTime = row.median_wr_date;
-      badge.title = `${String(date.getUTCMonth() + 1).padStart(2, '0')}/${date.getUTCFullYear()} · Median date of accrued WR-hours`;
+      badge.title = `${String(date.getUTCMonth() + 1).padStart(2, '0')}/${date.getUTCFullYear()} · Median submission date of WR runs`;
       badge.tabIndex = 0;
       badge.setAttribute('aria-label', badge.title);
       const fraction = newest === oldest ? .5 : (date.getTime() - oldest) / (newest - oldest);
@@ -280,7 +280,7 @@ function renderHall() {
     tr.append(cell);
     body.append(tr);
   }
-  main.append(el('p', 'All forward WR reigns on official tracks contribute hours, including reigns shorter than 30 days. Hours on different tracks add together. Qualifying tracks determine admission, not position. WR era is the date when half of a player’s lifetime WR-hours had accrued: blue is earlier, purple to red is more recent. Hover or focus a year for the month.', 'note'));
+  main.append(el('p', 'All forward WR reigns on official tracks contribute hours, including reigns shorter than 30 days. Hours on different tracks add together. Qualifying tracks determine admission, not position. WR era is the median submission date of record-setting runs, including self-improvements (verification date used if submission date is missing): blue is earlier, purple to red is more recent. Hover or focus a year for the month.', 'note'));
 }
 
 function renderProfile() {
@@ -312,8 +312,12 @@ function renderProfile() {
   }
   const podium = el('div');
   podium.append(medals(podiumCounts(performances)), el('span', 'Current track podiums'));
-  summary.append(podium);
+  const historicPodium = el('div');
+  historicPodium.append(medals(historicPodiumCounts(performances)), el('span', 'Historic track podiums'));
+  historicPodium.title = 'Best accepted position ever achieved: one medal per track and direction.';
+  summary.append(podium, historicPodium);
   main.append(summary);
+  main.append(el('p', 'Historic podiums count your best accepted placement on each track and direction. Combined counts both directions separately. Based on available verified history; boards with incomplete dates are omitted.', 'note'));
   const member = data.hall_of_fame.members.find(row => row.player_key === state.player);
   if (member) {
     const note = el('p', undefined, 'member-note');
@@ -325,7 +329,7 @@ function renderProfile() {
   caption.append(el('span', scope()), externalLink('speedrun.com profile ↗', player.url));
   main.append(caption);
   const body = table(main, [
-    ['Track', 'track-cell'], ['PB', ''], ['WR', ''], ['Behind WR (%)', ''], ['Points', ''], ['Total WR days', ''], ['Longest reign (days)', ''],
+    ['Track', 'track-cell'], ['Position', ''], ['PB', ''], ['WR', ''], ['Behind WR (%)', ''], ['Points', ''], ['Total WR days', ''], ['Longest reign (days)', ''],
   ], `${player.name}: ${scope()} points and WR history`, 'profile-table');
   for (const {board, performance: p} of profileRows(data, state.player, state)) {
     const track = tracks.get(board.track);
@@ -345,6 +349,7 @@ function renderProfile() {
     row.append(name);
     const history = p?.wr_history;
     const cells = [
+      ['Position', p ? `#${p.board_rank}` : '—'],
       ['PB', p ? raceTime(p.time_us) : 'No PB'], ['WR', raceTime(board.wr_time_us)],
       ['Behind WR (%)', p ? (p.gap_percent > 0 && p.gap_percent < .001 ? '<0.001%' : `${number(p.gap_percent)}%`) : '—'],
       ['Points', points(p?.points || 0)], ['Total WR days', days(p ? history.total_days : 0)],
@@ -362,7 +367,7 @@ function renderProfile() {
     detailRow.id = detailId;
     detailRow.hidden = true;
     const cell = el('td');
-    cell.colSpan = 7;
+    cell.colSpan = 8;
     detailRow.append(cell);
     button.addEventListener('click', () => {
       const opening = detailRow.hidden;
@@ -385,6 +390,7 @@ function renderTrackDetails(container, board, p) {
     stats.append(group);
   };
   if (p) {
+    stat('Best historic position', p.historic_board_rank == null ? 'Unknown (incomplete dates)' : `#${p.historic_board_rank}`);
     stat('Board rank', `#${p.board_rank} of ${board.player_count}`);
     stat('Time behind WR', `+${number(p.gap_us / 1_000_000, 3)} seconds`);
     stat('Run played', dateTime(p.played_on, false));

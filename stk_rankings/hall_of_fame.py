@@ -13,28 +13,19 @@ HOUR_US = 3_600_000_000
 MINIMUM_REIGN_DAYS = 30
 
 
-def median_wr_date(reigns):
-    """Date when half of all track-hours had accrued (overlaps count per track)."""
-    events = defaultdict(int)
-    total_us = sum(r["duration_us"] for r in reigns)
-    if not total_us:
+def median_wr_date(records):
+    """Median submission date of WR performances, including self-improvements.
+
+    Verification date is the fallback when the submission timestamp is missing.
+    Records are selected by the existing verification-ordered WR history.
+    """
+    dates = sorted(datetime.fromisoformat(r["submitted_at"] or r["verified_at"])
+                   for r in records)
+    if not dates:
         return None
-    for reign in reigns:
-        events[datetime.fromisoformat(reign["started_at"])] += 1
-        events[datetime.fromisoformat(reign["counted_until"])] -= 1
-    remaining = total_us / 2
-    active = 0
-    previous = None
-    for date, change in sorted(events.items()):
-        if previous is not None and active:
-            span = date - previous
-            duration_us = (span.days * 86400 + span.seconds) * 1_000_000 + span.microseconds
-            if remaining <= duration_us * active:
-                return utc((previous + timedelta(microseconds=remaining / active)).isoformat())
-            remaining -= duration_us * active
-        active += change
-        previous = date
-    return None
+    middle = len(dates) // 2
+    median = dates[middle] if len(dates) % 2 else dates[middle - 1] + (dates[middle] - dates[middle - 1]) / 2
+    return utc(median.isoformat())
 
 
 def confirmed_players(config):
@@ -93,6 +84,10 @@ def build_hall_of_fame(db, config, online_config, now=None):
     for run in sorted(active, key=lambda r: (r["last_seen_at"], r["verified_at"], r["id"])):
         identities[run["player_key"]] = {"id": run["player_id"], "name": run["player_name"], "url": run["player_url"]}
 
+    record_submissions = defaultdict(list)
+    for record in history:
+        if datetime.fromisoformat(record["verified_at"]) <= now:
+            record_submissions[record["player_key"]].append(record)
     players = {}
     merged = merge_wr_reigns(history, now)
     for (key, track_id, _, _), reigns in sorted(merged.items(), key=lambda item: (item[0][0], tracks[item[0][1]]["slug"])):
@@ -115,7 +110,7 @@ def build_hall_of_fame(db, config, online_config, now=None):
                                                  reign["qualifies_at"])
         total_us = sum(r["duration_us"] for r in player["reigns"])
         player.update(
-            median_wr_date=median_wr_date(player["reigns"]),
+            median_wr_date=median_wr_date(record_submissions[key]),
             qualifying_tracks=sorted(qualifying), qualifying_track_count=len(qualifying),
             total_wr_duration_us=total_us, total_wr_hours=total_us / HOUR_US,
             speedrun_qualified_at=sorted(qualifying.values())[2] if len(qualifying) >= 3 else None,
@@ -144,6 +139,7 @@ def build_hall_of_fame(db, config, online_config, now=None):
             "qualifying_reigns": "all lifetime reigns; no release-date cutoff",
             "reign_dates": "verification dates; successive self-improvements remain one continuous reign",
             "total_wr_hours": "all lifetime reigns on eligible tracks, including short reigns and the launch period, added across tracks",
+            "wr_era": "median submission date of WR performances, including self-improvements; verification date fallback",
             "online_requirement": "top three after the online ranking's initial three months; owner-confirmed config",
             "ordering": ["total_wr_hours descending"],
         },

@@ -439,12 +439,20 @@ Gold, silver, and bronze badges count current competition places 1, 2, and 3
 across the selected direction and bonus-track scope. Tied firsts yield ranks
 1, 1, 3, so that board has no silver medal.
 
-Hall of Fame `median_wr_date` is the UTC date at which half of the player's total
-eligible WR-hours had accrued. Every track contributes independently, including
-simultaneous records, short reigns, and ongoing reigns through the export cutoff.
-It is not the median of record submission dates or reign midpoints. The table
-shows the year, with month/year on hover or keyboard focus, colored from blue
-(earliest member median) through purple to red (latest). This describes record
-ownership, rather than proving the player was actively submitting runs then.
+Profiles show current Position on every track/direction row. Historic track podiums
+use each player's best accepted position in the available verified history,
+including superseded PBs. Each track/direction earns at most one medal; Combined counts both directions
+separately, just like current podiums. The direction and bonus
+filters apply; boards with unknown verification dates are excluded. Equal-time
+runs share competition ranks, and simultaneous verifications enter together.
+
+Hall of Fame `median_wr_date` is the median UTC submission timestamp of all
+record-setting performances on official forward tracks, including self-improved
+WRs. Record status follows the existing verification-ordered WR history; when a
+submission timestamp is missing, its verification date is used. With an even
+number of records, the two middle dates are averaged. Each record counts once,
+regardless of how long it was held. Year is displayed with month/year on hover
+or focus, colored from blue (earliest member median) through purple to red
+(latest). The Hall of Fame ranking itself still uses full-precision WR-hours.
 
 Background provenance is recorded in `site/assets/README.md`.

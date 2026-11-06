@@ -235,6 +235,21 @@ class RankingTests(unittest.TestCase):
         board = next(b for b in payload["boards"] if (b["track"], b["direction"]) == ("old-mine", "reverse"))
         self.assertEqual((board["player_count"], board["wr_holders"]), (3, ["user:a", "user:d"]))
 
+    def test_historic_rank_is_exported_and_undated_boards_are_unknown(self):
+        first = self.add('a', 100)
+        self.db.execute("UPDATE runs SET verified_at='2026-01-01T00:00:00Z' WHERE id=?", (first,))
+        self.add('b', 99)
+        self.add('c', 98)
+        self.add('d', 97)
+        self.add('a', 100, direction='reverse')
+        missing = self.add('b', 99, direction='reverse')
+        self.db.execute('UPDATE runs SET verified_at=NULL WHERE id=?', (missing,))
+        performances = self.build()['players']['user:a']['performances']
+        forward = next(p for p in performances if p['direction'] == 'forward')
+        reverse = next(p for p in performances if p['direction'] == 'reverse')
+        self.assertEqual((forward['board_rank'], forward['historic_board_rank']), (4, 1))
+        self.assertIsNone(reverse['historic_board_rank'])
+
     def test_undated_reverse_run_marks_history_unknown_without_changing_scores(self):
         self.add("a", 100)
         self.add("a", 200, direction="reverse")

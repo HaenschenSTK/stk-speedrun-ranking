@@ -52,6 +52,22 @@ class HallOfFameTests(unittest.TestCase):
         online = {"online_top_three": [{"player_id": player, "name": player} for player in confirmed]}
         return build_hall_of_fame(self.db, self.config, online, now=now)
 
+    def test_wr_era_counts_improvements_not_duration_or_non_records(self):
+        for time, verified, submitted in ((100, '2024-01-02', '2024-01-01'),
+                                          (99, '2024-01-04', '2024-01-03'),
+                                          (98, '2024-01-22', '2024-01-21'),
+                                          (105, '2024-02-01', '2024-02-01')):
+            run_id = self.add('a', time, verified)
+            self.db.execute('UPDATE runs SET submitted_at=? WHERE id=?', (submitted + 'T00:00:00Z', run_id))
+        self.add('a', 50, '2024-03-01', direction='reverse')
+        self.add('a', 50, '2024-03-01', track='drainage-dash')
+        a = self.build()['players']['user:a']
+        self.assertEqual(len(a['reigns']), 1)
+        self.assertEqual(a['median_wr_date'], '2024-01-03T00:00:00.000000Z')
+        later = self.build(now=NOW + timedelta(days=30))['players']['user:a']
+        self.assertEqual(a['median_wr_date'], later['median_wr_date'])
+        self.assertGreater(later['total_wr_hours'], a['total_wr_hours'])
+
     def test_thirty_days_exact_boundary_not_calendar_month(self):
         self.add("a", 100, "2024-01-31T12:34:56Z")
         threshold = datetime(2024, 3, 1, 12, 34, 56, tzinfo=timezone.utc)
@@ -253,13 +269,11 @@ if __name__ == "__main__":
 
 
 class MedianDateTests(unittest.TestCase):
-    def test_weighted_hours_overlap_and_gap(self):
+    def test_submission_median_even_odd_and_missing_dates(self):
         from stk_rankings.hall_of_fame import median_wr_date
-        def reign(start, end):
-            return {"started_at": f"2024-01-{start:02}T00:00:00Z",
-                    "counted_until": f"2024-01-{end:02}T00:00:00Z",
-                    "duration_us": (end - start) * 86400 * 1000000}
-        # Ten days plus a second track held for the first two days: halfway is day 5.
-        self.assertEqual(median_wr_date([reign(1, 11), reign(1, 3)]), "2024-01-05T00:00:00.000000Z")
-        self.assertEqual(median_wr_date([reign(1, 3), reign(10, 16)]), "2024-01-12T00:00:00.000000Z")
+        def record(day, submitted=True):
+            return {"submitted_at": f"2024-01-{day:02}T00:00:00Z" if submitted else None,
+                    "verified_at": f"2024-01-{day:02}T00:00:00Z"}
+        self.assertEqual(median_wr_date([record(1), record(3), record(21)]), '2024-01-03T00:00:00.000000Z')
+        self.assertEqual(median_wr_date([record(1), record(3, False)]), '2024-01-02T00:00:00.000000Z')
         self.assertIsNone(median_wr_date([]))

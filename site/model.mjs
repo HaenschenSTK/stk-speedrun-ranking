@@ -8,7 +8,7 @@ export function parseRoute(hash) {
   return {
     view: ['ranking', 'tracks', 'hall', 'rules', 'player'].includes(page) ? page : 'ranking',
     direction: page === 'tracks' ? (params.get('direction') === 'reverse' ? 'reverse' : 'forward') : (directions.includes(params.get('direction')) ? params.get('direction') : 'forward'),
-    bonus: page === 'tracks' || params.get('bonus') === '1',
+    bonus: params.get('bonus') === '1',
     player: params.get('player') || '',
     from: ['hall', 'tracks'].includes(params.get('from')) ? params.get('from') : 'ranking',
     search: params.get('q') || '',
@@ -86,4 +86,9 @@ export function trackRuns(data, track, direction) {
 
 export function podiumCounts(performances) {
   return [1, 2, 3].map(rank => performances.filter(p => p.board_rank === rank).length);
+}
+
+// One best historic placement per selected track/direction board.
+export function historicPodiumCounts(performances) {
+  return [1, 2, 3].map(rank => performances.filter(p => p.historic_board_rank === rank).length);
 }

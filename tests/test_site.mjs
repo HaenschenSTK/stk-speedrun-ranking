@@ -73,10 +73,10 @@ test('published Hall of Fame is ordered by hours and contains only eligible memb
   assert.equal('apprentices' in hall, false);
 });
 
-test('track routes include bonus tracks and constrain directions', () => {
+test('track routes preserve bonus preference and constrain directions', () => {
   const route = parseRoute('#tracks?direction=combined');
   assert.equal(route.direction, 'forward');
-  assert.equal(route.bonus, true);
+  assert.equal(route.bonus, false);
   assert.equal(parseRoute('#tracks?direction=reverse').direction, 'reverse');
   const profile = {...route, view: 'player', from: 'tracks', player: 'user:a'};
   assert.deepEqual(parseRoute(routeHash(profile)), profile);
@@ -99,4 +99,25 @@ test('track rankings retain low-scoring players and medals match all variants', 
     }
   }
   assert.equal(data.scoring.gap_percent_for_one_point, 3);
+});
+
+
+test('Tracks never switches the player bonus preference on or off', () => {
+  for (const bonus of [false, true]) {
+    const ranking = {...parseRoute(''), bonus};
+    const tracks = parseRoute(routeHash({...ranking, view: 'tracks'}));
+    assert.equal(tracks.bonus, bonus);
+    const returned = parseRoute(routeHash({...tracks, view: 'ranking'}));
+    assert.equal(returned.bonus, bonus);
+  }
+});
+
+test('historic podiums count one best medal per track and direction', async () => {
+  const {historicPodiumCounts} = await import('../site/model.mjs');
+  const rows = [
+    {track: 'a', direction: 'forward', historic_board_rank: 2}, {track: 'a', direction: 'reverse', historic_board_rank: 1},
+    {track: 'b', historic_board_rank: 2}, {track: 'c', historic_board_rank: 3},
+    {track: 'd', historic_board_rank: 4}, {track: 'e', historic_board_rank: null},
+  ];
+  assert.deepEqual(historicPodiumCounts(rows), [1, 2, 1]);
 });

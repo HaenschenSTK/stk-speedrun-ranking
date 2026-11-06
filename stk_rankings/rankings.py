@@ -9,6 +9,7 @@ from pathlib import Path
 
 from .database import utc
 from .hall_of_fame import build_hall_of_fame
+from .historic_positions import best_positions
 from .wr_reigns import merge_wr_reigns, summarize_wr_reigns
 
 MODE_VARIABLE = "j84kz64n"
@@ -52,6 +53,8 @@ def build_rankings(db, config, now=None, hall_of_fame_config=None):
             tracks.append(item)
             by_id[track["id"]] = item
         rows = [dict(r) for r in db.execute("SELECT * FROM current_pbs")]
+        active = [dict(r) for r in db.execute("SELECT * FROM active_runs")
+                  if r["track_id"] in by_id and r["category_id"] == by_id[r["track_id"]]["category_id"]]
         history = [dict(r) for r in db.execute("SELECT * FROM wr_history")
                    if r["track_id"] in by_id and r["category_id"] == by_id[r["track_id"]]["category_id"]]
         undated_boards = {tuple(r) for r in db.execute("""
@@ -78,6 +81,7 @@ def build_rankings(db, config, now=None, hall_of_fame_config=None):
     identities = {}
     board_records = []
     reigns = merge_wr_reigns(history, now)
+    historic_ranks = best_positions(active, now)
     for (slug, direction), runs in sorted(boards.items()):
         wr_time = min(r["time_us"] for r in runs)
         board_records.append({
@@ -106,6 +110,7 @@ def build_rankings(db, config, now=None, hall_of_fame_config=None):
                 "track": slug, "direction": direction, "run_id": run["id"],
                 "time_us": run["time_us"], "wr_time_us": wr_time,
                 "gap_us": run["time_us"] - wr_time, "board_rank": board_rank, "is_wr": run["time_us"] == wr_time,
+                "historic_board_rank": historic_ranks.get((key, *board_id)),
                 "gap_percent": 100 * (run["time_us"] - wr_time) / wr_time,
                 "points": points(run["time_us"], wr_time), "source_url": run["source_url"],
                 "glitches": glitches,
