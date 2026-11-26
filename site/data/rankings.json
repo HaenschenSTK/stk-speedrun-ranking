@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-21T23:23:18.393189Z",
+  "generated_at": "2026-11-26T16:34:50.578084Z",
   "source": {
     "name": "speedrun.com",
     "url": "https://www.speedrun.com/stk"
@@ -22,8 +22,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:04.821712Z",
-      "last_full_audit_at": "2026-11-21T23:23:04.821712Z"
+      "last_synced_at": "2026-11-26T16:34:36.782121Z",
+      "last_full_audit_at": "2026-11-26T16:34:36.782121Z"
     },
     {
       "slug": "around-the-lighthouse",
@@ -32,8 +32,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:05.373864Z",
-      "last_full_audit_at": "2026-11-21T23:23:05.373864Z"
+      "last_synced_at": "2026-11-26T16:34:37.593497Z",
+      "last_full_audit_at": "2026-11-26T16:34:37.593497Z"
     },
     {
       "slug": "black-forest",
@@ -42,8 +42,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:06.050332Z",
-      "last_full_audit_at": "2026-11-21T23:23:06.050332Z"
+      "last_synced_at": "2026-11-26T16:34:38.134414Z",
+      "last_full_audit_at": "2026-11-26T16:34:38.134414Z"
     },
     {
       "slug": "candela-city",
@@ -52,8 +52,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:06.664396Z",
-      "last_full_audit_at": "2026-11-21T23:23:06.664396Z"
+      "last_synced_at": "2026-11-26T16:34:38.719608Z",
+      "last_full_audit_at": "2026-11-26T16:34:38.719608Z"
     },
     {
       "slug": "cocoa-temple",
@@ -62,8 +62,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:07.307791Z",
-      "last_full_audit_at": "2026-11-21T23:23:07.307791Z"
+      "last_synced_at": "2026-11-26T16:34:39.345629Z",
+      "last_full_audit_at": "2026-11-26T16:34:39.345629Z"
     },
     {
       "slug": "cornfield-crossing",
@@ -72,8 +72,8 @@
       "has_glitches": true,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:08.102184Z",
-      "last_full_audit_at": "2026-11-21T23:23:08.102184Z"
+      "last_synced_at": "2026-11-26T16:34:40.056542Z",
+      "last_full_audit_at": "2026-11-26T16:34:40.056542Z"
     },
     {
       "slug": "drainage-dash",
@@ -82,8 +82,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": true,
-      "last_synced_at": "2026-11-21T23:23:08.582071Z",
-      "last_full_audit_at": "2026-11-21T23:23:08.582071Z"
+      "last_synced_at": "2026-11-26T16:34:40.678563Z",
+      "last_full_audit_at": "2026-11-26T16:34:40.678563Z"
     },
     {
       "slug": "fort-magma",
@@ -92,8 +92,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:09.205812Z",
-      "last_full_audit_at": "2026-11-21T23:23:09.205812Z"
+      "last_synced_at": "2026-11-26T16:34:41.264349Z",
+      "last_full_audit_at": "2026-11-26T16:34:41.264349Z"
     },
     {
       "slug": "freytra-peaks",
@@ -102,8 +102,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": true,
-      "last_synced_at": "2026-11-21T23:23:10.079003Z",
-      "last_full_audit_at": "2026-11-21T23:23:10.079003Z"
+      "last_synced_at": "2026-11-26T16:34:42.032210Z",
+      "last_full_audit_at": "2026-11-26T16:34:42.032210Z"
     },
     {
       "slug": "gran-paradiso-island",
@@ -112,8 +112,8 @@
       "has_glitches": true,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:04.044988Z",
-      "last_full_audit_at": "2026-11-21T23:23:04.044988Z"
+      "last_synced_at": "2026-11-26T16:34:36.097042Z",
+      "last_full_audit_at": "2026-11-26T16:34:36.097042Z"
     },
     {
       "slug": "hacienda",
@@ -122,8 +122,8 @@
       "has_glitches": true,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:10.523182Z",
-      "last_full_audit_at": "2026-11-21T23:23:10.523182Z"
+      "last_synced_at": "2026-11-26T16:34:42.549362Z",
+      "last_full_audit_at": "2026-11-26T16:34:42.549362Z"
     },
     {
       "slug": "minigolf",
@@ -132,8 +132,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:11.399549Z",
-      "last_full_audit_at": "2026-11-21T23:23:11.399549Z"
+      "last_synced_at": "2026-11-26T16:34:43.350074Z",
+      "last_full_audit_at": "2026-11-26T16:34:43.350074Z"
     },
     {
       "slug": "nessies-pond",
@@ -142,8 +142,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:11.801595Z",
-      "last_full_audit_at": "2026-11-21T23:23:11.801595Z"
+      "last_synced_at": "2026-11-26T16:34:43.868147Z",
+      "last_full_audit_at": "2026-11-26T16:34:43.868147Z"
     },
     {
       "slug": "northern-resort",
@@ -152,8 +152,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:12.534191Z",
-      "last_full_audit_at": "2026-11-21T23:23:12.534191Z"
+      "last_synced_at": "2026-11-26T16:34:44.609979Z",
+      "last_full_audit_at": "2026-11-26T16:34:44.609979Z"
     },
     {
       "slug": "old-mine",
@@ -162,8 +162,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:03.211513Z",
-      "last_full_audit_at": "2026-11-21T23:23:03.211513Z"
+      "last_synced_at": "2026-11-26T16:34:35.272362Z",
+      "last_full_audit_at": "2026-11-26T16:34:35.272362Z"
     },
     {
       "slug": "olivers-math-class",
@@ -172,8 +172,8 @@
       "has_glitches": true,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:13.329739Z",
-      "last_full_audit_at": "2026-11-21T23:23:13.329739Z"
+      "last_synced_at": "2026-11-26T16:34:45.226602Z",
+      "last_full_audit_at": "2026-11-26T16:34:45.226602Z"
     },
     {
       "slug": "ravenbridge-mansion",
@@ -182,8 +182,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:13.976707Z",
-      "last_full_audit_at": "2026-11-21T23:23:13.976707Z"
+      "last_synced_at": "2026-11-26T16:34:45.983243Z",
+      "last_full_audit_at": "2026-11-26T16:34:45.983243Z"
     },
     {
       "slug": "shifting-sands",
@@ -192,8 +192,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:14.475302Z",
-      "last_full_audit_at": "2026-11-21T23:23:14.475302Z"
+      "last_synced_at": "2026-11-26T16:34:46.541528Z",
+      "last_full_audit_at": "2026-11-26T16:34:46.541528Z"
     },
     {
       "slug": "snow-peak",
@@ -202,8 +202,8 @@
       "has_glitches": true,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:15.257871Z",
-      "last_full_audit_at": "2026-11-21T23:23:15.257871Z"
+      "last_synced_at": "2026-11-26T16:34:47.206085Z",
+      "last_full_audit_at": "2026-11-26T16:34:47.206085Z"
     },
     {
       "slug": "stk-enterprise",
@@ -212,8 +212,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:15.880119Z",
-      "last_full_audit_at": "2026-11-21T23:23:15.880119Z"
+      "last_synced_at": "2026-11-26T16:34:47.930293Z",
+      "last_full_audit_at": "2026-11-26T16:34:47.930293Z"
     },
     {
       "slug": "volcan-island",
@@ -222,8 +222,8 @@
       "has_glitches": true,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:16.424596Z",
-      "last_full_audit_at": "2026-11-21T23:23:16.424596Z"
+      "last_synced_at": "2026-11-26T16:34:48.449439Z",
+      "last_full_audit_at": "2026-11-26T16:34:48.449439Z"
     },
     {
       "slug": "xr591",
@@ -232,8 +232,8 @@
       "has_glitches": false,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:17.112226Z",
-      "last_full_audit_at": "2026-11-21T23:23:17.112226Z"
+      "last_synced_at": "2026-11-26T16:34:49.139139Z",
+      "last_full_audit_at": "2026-11-26T16:34:49.139139Z"
     },
     {
       "slug": "zen-garden",
@@ -242,8 +242,8 @@
       "has_glitches": true,
       "category_id": "7kj1gq4k",
       "bonus": false,
-      "last_synced_at": "2026-11-21T23:23:17.825110Z",
-      "last_full_audit_at": "2026-11-21T23:23:17.825110Z"
+      "last_synced_at": "2026-11-26T16:34:49.833993Z",
+      "last_full_audit_at": "2026-11-26T16:34:49.833993Z"
     }
   ],
   "boards": [
@@ -637,10 +637,10 @@
     {
       "track": "zen-garden",
       "direction": "reverse",
-      "wr_time_us": 69280000,
+      "wr_time_us": 68854000,
       "player_count": 10,
       "wr_holders": [
-        "user:jp691l08"
+        "user:j9lyr5vj"
       ]
     }
   ],
@@ -2701,13 +2701,13 @@
           "direction": "reverse",
           "run_id": "yoj6v8dm",
           "time_us": 78536000,
-          "wr_time_us": 69280000,
-          "gap_us": 9256000,
+          "wr_time_us": 68854000,
+          "gap_us": 9682000,
           "board_rank": 7,
           "is_wr": false,
           "historic_board_rank": 2,
-          "gap_percent": 13.360277136258661,
-          "points": 0.0003520256328530974,
+          "gap_percent": 14.061637668109332,
+          "points": 0.00020548846310134425,
           "source_url": "https://www.speedrun.com/stk/runs/yoj6v8dm",
           "glitches": "No",
           "played_on": "2019-08-22",
@@ -3671,24 +3671,24 @@
           "verified_at": "2025-10-05T09:15:55.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 35647643393189,
-            "total_days": 412.5884651989468,
-            "longest_reign_days": 412.5884651989468,
-            "current_reign_days": 412.5884651989468,
+            "total_duration_us": 36055135578084,
+            "total_days": 417.30480993152776,
+            "longest_reign_days": 417.30480993152776,
+            "current_reign_days": 417.30480993152776,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2025-10-05T09:15:55.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 35647643393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 36055135578084,
                 "records": [
                   {
                     "run_id": "zg6439vm",
                     "source_url": "https://www.speedrun.com/stk/runs/zg6439vm"
                   }
                 ],
-                "days": 412.5884651989468
+                "days": 417.30480993152776
               }
             ]
           }
@@ -4646,13 +4646,13 @@
           "direction": "reverse",
           "run_id": "zqrgen1y",
           "time_us": 160715000,
-          "wr_time_us": 69280000,
-          "gap_us": 91435000,
+          "wr_time_us": 68854000,
+          "gap_us": 91861000,
           "board_rank": 10,
           "is_wr": false,
           "historic_board_rank": 1,
-          "gap_percent": 131.9789260969977,
-          "points": 1.0163063388249994e-43,
+          "gap_percent": 133.4141807302408,
+          "points": 3.3775860577401047e-44,
           "source_url": "https://www.speedrun.com/stk/runs/zqrgen1y",
           "glitches": "No",
           "played_on": "2019-08-07",
@@ -4941,13 +4941,13 @@
           "direction": "reverse",
           "run_id": "yjpnr8dy",
           "time_us": 69646000,
-          "wr_time_us": 69280000,
-          "gap_us": 366000,
-          "board_rank": 2,
+          "wr_time_us": 68854000,
+          "gap_us": 792000,
+          "board_rank": 3,
           "is_wr": false,
           "historic_board_rank": 1,
-          "gap_percent": 0.5282909930715936,
-          "points": 6.666578575948273,
+          "gap_percent": 1.1502599703720917,
+          "points": 4.1359950457880155,
           "source_url": "https://www.speedrun.com/stk/runs/yjpnr8dy",
           "glitches": "Yes",
           "played_on": "2022-07-28",
@@ -5632,17 +5632,17 @@
           "verified_at": "2026-11-13T11:07:39.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 830600393189,
-            "total_days": 9.613430476724536,
-            "longest_reign_days": 9.613430476724536,
-            "current_reign_days": 9.613430476724536,
+            "total_duration_us": 1238092578084,
+            "total_days": 14.329775209305556,
+            "longest_reign_days": 14.329775209305556,
+            "current_reign_days": 14.329775209305556,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2026-11-12T08:39:58.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 830600393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 1238092578084,
                 "records": [
                   {
                     "run_id": "yvkwkoxm",
@@ -5653,7 +5653,7 @@
                     "source_url": "https://www.speedrun.com/stk/runs/mrgjqo4z"
                   }
                 ],
-                "days": 9.613430476724536
+                "days": 14.329775209305556
               }
             ]
           }
@@ -5923,13 +5923,13 @@
           "direction": "reverse",
           "run_id": "znljnv7y",
           "time_us": 85207000,
-          "wr_time_us": 69280000,
-          "gap_us": 15927000,
+          "wr_time_us": 68854000,
+          "gap_us": 16353000,
           "board_rank": 9,
           "is_wr": false,
           "historic_board_rank": 8,
-          "gap_percent": 22.98931870669746,
-          "points": 2.172169765456343e-07,
+          "gap_percent": 23.7502541609783,
+          "points": 1.21129134200045e-07,
           "source_url": "https://www.speedrun.com/stk/runs/znljnv7y",
           "glitches": "No",
           "played_on": "2026-08-11",
@@ -6179,10 +6179,10 @@
           "verified_at": "2026-11-21T21:16:34.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 443738393189,
-            "total_days": 5.135861032280093,
+            "total_duration_us": 851230578084,
+            "total_days": 9.852205764861111,
             "longest_reign_days": 5.047847222222222,
-            "current_reign_days": 0.08801381005787037,
+            "current_reign_days": 4.804358542638889,
             "reign_count": 2,
             "reigns": [
               {
@@ -6201,15 +6201,15 @@
               {
                 "started_at": "2026-11-21T21:16:34.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 7604393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 415096578084,
                 "records": [
                   {
                     "run_id": "y4d5gxdy",
                     "source_url": "https://www.speedrun.com/stk/runs/y4d5gxdy"
                   }
                 ],
-                "days": 0.08801381005787037
+                "days": 4.804358542638889
               }
             ]
           }
@@ -6232,24 +6232,24 @@
           "verified_at": "2026-11-09T01:47:59.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 1114519393189,
-            "total_days": 12.899530013761574,
-            "longest_reign_days": 12.899530013761574,
-            "current_reign_days": 12.899530013761574,
+            "total_duration_us": 1522011578084,
+            "total_days": 17.61587474634259,
+            "longest_reign_days": 17.61587474634259,
+            "current_reign_days": 17.61587474634259,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2026-11-09T01:47:59.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 1114519393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 1522011578084,
                 "records": [
                   {
                     "run_id": "y44p7eny",
                     "source_url": "https://www.speedrun.com/stk/runs/y44p7eny"
                   }
                 ],
-                "days": 12.899530013761574
+                "days": 17.61587474634259
               }
             ]
           }
@@ -6272,24 +6272,24 @@
           "verified_at": "2026-10-03T19:32:55.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 4247423393189,
-            "total_days": 49.15999297672454,
-            "longest_reign_days": 49.15999297672454,
-            "current_reign_days": 49.15999297672454,
+            "total_duration_us": 4654915578084,
+            "total_days": 53.87633770930555,
+            "longest_reign_days": 53.87633770930555,
+            "current_reign_days": 53.87633770930555,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2026-10-03T19:32:55.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 4247423393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 4654915578084,
                 "records": [
                   {
                     "run_id": "y24noq9z",
                     "source_url": "https://www.speedrun.com/stk/runs/y24noq9z"
                   }
                 ],
-                "days": 49.15999297672454
+                "days": 53.87633770930555
               }
             ]
           }
@@ -6312,24 +6312,24 @@
           "verified_at": "2026-10-15T03:22:21.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 3268857393189,
-            "total_days": 37.83399760635417,
-            "longest_reign_days": 37.83399760635417,
-            "current_reign_days": 37.83399760635417,
+            "total_duration_us": 3676349578084,
+            "total_days": 42.55034233893519,
+            "longest_reign_days": 42.55034233893519,
+            "current_reign_days": 42.55034233893519,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2026-10-15T03:22:21.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 3268857393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 3676349578084,
                 "records": [
                   {
                     "run_id": "z04kn29y",
                     "source_url": "https://www.speedrun.com/stk/runs/z04kn29y"
                   }
                 ],
-                "days": 37.83399760635417
+                "days": 42.55034233893519
               }
             ]
           }
@@ -6404,24 +6404,24 @@
           "verified_at": "2026-09-17T07:32:27.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 5673051393189,
-            "total_days": 65.66031705079861,
-            "longest_reign_days": 65.66031705079861,
-            "current_reign_days": 65.66031705079861,
+            "total_duration_us": 6080543578084,
+            "total_days": 70.37666178337963,
+            "longest_reign_days": 70.37666178337963,
+            "current_reign_days": 70.37666178337963,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2026-09-17T07:32:27.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 5673051393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 6080543578084,
                 "records": [
                   {
                     "run_id": "zqo8vqxy",
                     "source_url": "https://www.speedrun.com/stk/runs/zqo8vqxy"
                   }
                 ],
-                "days": 65.66031705079861
+                "days": 70.37666178337963
               }
             ]
           }
@@ -6731,24 +6731,24 @@
           "verified_at": "2026-10-02T03:46:15.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 4390623393189,
-            "total_days": 50.81740038413194,
-            "longest_reign_days": 50.81740038413194,
-            "current_reign_days": 50.81740038413194,
+            "total_duration_us": 4798115578084,
+            "total_days": 55.533745116712964,
+            "longest_reign_days": 55.533745116712964,
+            "current_reign_days": 55.533745116712964,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2026-10-02T03:46:15.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 4390623393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 4798115578084,
                 "records": [
                   {
                     "run_id": "z048nqey",
                     "source_url": "https://www.speedrun.com/stk/runs/z048nqey"
                   }
                 ],
-                "days": 50.81740038413194
+                "days": 55.533745116712964
               }
             ]
           }
@@ -6771,10 +6771,10 @@
           "verified_at": "2026-10-15T03:16:05.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 12889133393189,
-            "total_days": 149.1797846433912,
+            "total_duration_us": 13296625578084,
+            "total_days": 153.8961293759722,
             "longest_reign_days": 111.34143518518519,
-            "current_reign_days": 37.83834945820602,
+            "current_reign_days": 42.55469419078704,
             "reign_count": 2,
             "reigns": [
               {
@@ -6797,15 +6797,15 @@
               {
                 "started_at": "2026-10-15T03:16:05.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 3269233393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 3676725578084,
                 "records": [
                   {
                     "run_id": "znl5jg7y",
                     "source_url": "https://www.speedrun.com/stk/runs/znl5jg7y"
                   }
                 ],
-                "days": 37.83834945820602
+                "days": 42.55469419078704
               }
             ]
           }
@@ -6828,17 +6828,17 @@
           "verified_at": "2026-07-27T15:34:10.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 11576337393189,
-            "total_days": 133.98538649524306,
-            "longest_reign_days": 133.98538649524306,
-            "current_reign_days": 133.98538649524306,
+            "total_duration_us": 11983829578084,
+            "total_days": 138.70173122782407,
+            "longest_reign_days": 138.70173122782407,
+            "current_reign_days": 138.70173122782407,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2026-07-10T23:44:21.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 11576337393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 11983829578084,
                 "records": [
                   {
                     "run_id": "m34oe3qz",
@@ -6849,7 +6849,7 @@
                     "source_url": "https://www.speedrun.com/stk/runs/mkn7lk5m"
                   }
                 ],
-                "days": 133.98538649524306
+                "days": 138.70173122782407
               }
             ]
           }
@@ -6883,27 +6883,41 @@
         {
           "track": "zen-garden",
           "direction": "reverse",
-          "run_id": "znl90dvy",
-          "time_us": 76442000,
-          "wr_time_us": 69280000,
-          "gap_us": 7162000,
-          "board_rank": 5,
-          "is_wr": false,
-          "historic_board_rank": 5,
-          "gap_percent": 10.337759815242494,
-          "points": 0.0035816245776973984,
-          "source_url": "https://www.speedrun.com/stk/runs/znl90dvy",
-          "glitches": "No",
-          "played_on": "2026-09-29",
-          "verified_at": "2026-10-02T03:43:04.000000Z",
+          "run_id": "y9r22evy",
+          "time_us": 68854000,
+          "wr_time_us": 68854000,
+          "gap_us": 0,
+          "board_rank": 1,
+          "is_wr": true,
+          "historic_board_rank": 1,
+          "gap_percent": 0.0,
+          "points": 10.0,
+          "source_url": "https://www.speedrun.com/stk/runs/y9r22evy",
+          "glitches": "Yes",
+          "played_on": "2026-11-25",
+          "verified_at": "2026-11-26T05:19:47.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 0,
-            "total_days": 0.0,
-            "longest_reign_days": 0.0,
-            "current_reign_days": 0.0,
-            "reign_count": 0,
-            "reigns": []
+            "total_duration_us": 40503578084,
+            "total_days": 0.46879141300925925,
+            "longest_reign_days": 0.46879141300925925,
+            "current_reign_days": 0.46879141300925925,
+            "reign_count": 1,
+            "reigns": [
+              {
+                "started_at": "2026-11-26T05:19:47.000000Z",
+                "ended_at": null,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 40503578084,
+                "records": [
+                  {
+                    "run_id": "y9r22evy",
+                    "source_url": "https://www.speedrun.com/stk/runs/y9r22evy"
+                  }
+                ],
+                "days": 0.46879141300925925
+              }
+            ]
           }
         }
       ],
@@ -7020,19 +7034,19 @@
         {
           "track": "xr591",
           "direction": "forward",
-          "run_id": "z54n3p5m",
-          "time_us": 99781000,
+          "run_id": "yj0kvqgz",
+          "time_us": 99329000,
           "wr_time_us": 94575000,
-          "gap_us": 5206000,
-          "board_rank": 9,
+          "gap_us": 4754000,
+          "board_rank": 8,
           "is_wr": false,
-          "historic_board_rank": 9,
-          "gap_percent": 5.504625958234206,
-          "points": 0.14625970077486944,
-          "source_url": "https://www.speedrun.com/stk/runs/z54n3p5m",
+          "historic_board_rank": 8,
+          "gap_percent": 5.02669838752313,
+          "points": 0.21107357737152885,
+          "source_url": "https://www.speedrun.com/stk/runs/yj0kvqgz",
           "glitches": null,
-          "played_on": "2026-10-15",
-          "verified_at": "2026-10-19T17:44:29.000000Z",
+          "played_on": "2026-11-24",
+          "verified_at": "2026-11-25T21:54:38.000000Z",
           "wr_history": {
             "dates_complete": true,
             "total_duration_us": 0,
@@ -7344,10 +7358,10 @@
           "verified_at": "2025-01-20T16:37:52.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 96126113393189,
-            "total_days": 1112.5707568656135,
-            "longest_reign_days": 670.2815554767245,
-            "current_reign_days": 670.2815554767245,
+            "total_duration_us": 96533605578084,
+            "total_days": 1117.2871015981943,
+            "longest_reign_days": 674.9979002093055,
+            "current_reign_days": 674.9979002093055,
             "reign_count": 3,
             "reigns": [
               {
@@ -7379,15 +7393,15 @@
               {
                 "started_at": "2025-01-20T16:37:52.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 57912326393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 58319818578084,
                 "records": [
                   {
                     "run_id": "y4j7jq2y",
                     "source_url": "https://www.speedrun.com/stk/runs/y4j7jq2y"
                   }
                 ],
-                "days": 670.2815554767245
+                "days": 674.9979002093055
               }
             ]
           }
@@ -7410,24 +7424,24 @@
           "verified_at": "2023-10-19T00:19:11.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 97628647393189,
-            "total_days": 1129.9611966804282,
-            "longest_reign_days": 1129.9611966804282,
-            "current_reign_days": 1129.9611966804282,
+            "total_duration_us": 98036139578084,
+            "total_days": 1134.6775414130093,
+            "longest_reign_days": 1134.6775414130093,
+            "current_reign_days": 1134.6775414130093,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2023-10-19T00:19:11.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 97628647393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 98036139578084,
                 "records": [
                   {
                     "run_id": "me090r3z",
                     "source_url": "https://www.speedrun.com/stk/runs/me090r3z"
                   }
                 ],
-                "days": 1129.9611966804282
+                "days": 1134.6775414130093
               }
             ]
           }
@@ -7665,24 +7679,24 @@
           "verified_at": "2023-11-19T18:30:14.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 94884784393189,
-            "total_days": 1098.203523069317,
-            "longest_reign_days": 1098.203523069317,
-            "current_reign_days": 1098.203523069317,
+            "total_duration_us": 95292276578084,
+            "total_days": 1102.9198678018981,
+            "longest_reign_days": 1102.9198678018981,
+            "current_reign_days": 1102.9198678018981,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2023-11-19T18:30:14.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 94884784393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 95292276578084,
                 "records": [
                   {
                     "run_id": "mkqko8lm",
                     "source_url": "https://www.speedrun.com/stk/runs/mkqko8lm"
                   }
                 ],
-                "days": 1098.203523069317
+                "days": 1102.9198678018981
               }
             ]
           }
@@ -8109,17 +8123,17 @@
           "verified_at": "2023-11-30T15:40:19.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 94442847393189,
-            "total_days": 1093.088511495243,
-            "longest_reign_days": 1093.088511495243,
-            "current_reign_days": 1093.088511495243,
+            "total_duration_us": 94850339578084,
+            "total_days": 1097.804856227824,
+            "longest_reign_days": 1097.804856227824,
+            "current_reign_days": 1097.804856227824,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2023-11-24T21:15:51.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 94442847393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 94850339578084,
                 "records": [
                   {
                     "run_id": "yoovvn7y",
@@ -8130,7 +8144,7 @@
                     "source_url": "https://www.speedrun.com/stk/runs/z0xn774z"
                   }
                 ],
-                "days": 1093.088511495243
+                "days": 1097.804856227824
               }
             ]
           }
@@ -8153,24 +8167,24 @@
           "verified_at": "2023-11-19T18:13:50.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 94885768393189,
-            "total_days": 1098.2149119582061,
-            "longest_reign_days": 1098.2149119582061,
-            "current_reign_days": 1098.2149119582061,
+            "total_duration_us": 95293260578084,
+            "total_days": 1102.931256690787,
+            "longest_reign_days": 1102.931256690787,
+            "current_reign_days": 1102.931256690787,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2023-11-19T18:13:50.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 94885768393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 95293260578084,
                 "records": [
                   {
                     "run_id": "y4xd3xkz",
                     "source_url": "https://www.speedrun.com/stk/runs/y4xd3xkz"
                   }
                 ],
-                "days": 1098.2149119582061
+                "days": 1102.931256690787
               }
             ]
           }
@@ -8343,24 +8357,24 @@
           "verified_at": "2023-11-19T22:41:02.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 94869736393189,
-            "total_days": 1098.0293564026504,
-            "longest_reign_days": 1098.0293564026504,
-            "current_reign_days": 1098.0293564026504,
+            "total_duration_us": 95277228578084,
+            "total_days": 1102.7457011352315,
+            "longest_reign_days": 1102.7457011352315,
+            "current_reign_days": 1102.7457011352315,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2023-11-19T22:41:02.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 94869736393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 95277228578084,
                 "records": [
                   {
                     "run_id": "y9kvp1rz",
                     "source_url": "https://www.speedrun.com/stk/runs/y9kvp1rz"
                   }
                 ],
-                "days": 1098.0293564026504
+                "days": 1102.7457011352315
               }
             ]
           }
@@ -8436,24 +8450,24 @@
           "verified_at": "2023-11-19T22:40:51.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 94869747393189,
-            "total_days": 1098.0294837174654,
-            "longest_reign_days": 1098.0294837174654,
-            "current_reign_days": 1098.0294837174654,
+            "total_duration_us": 95277239578084,
+            "total_days": 1102.7458284500462,
+            "longest_reign_days": 1102.7458284500462,
+            "current_reign_days": 1102.7458284500462,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2023-11-19T22:40:51.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 94869747393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 95277239578084,
                 "records": [
                   {
                     "run_id": "znep93vz",
                     "source_url": "https://www.speedrun.com/stk/runs/znep93vz"
                   }
                 ],
-                "days": 1098.0294837174654
+                "days": 1102.7458284500462
               }
             ]
           }
@@ -8636,24 +8650,24 @@
           "verified_at": "2022-11-18T03:53:30.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 126559788393189,
-            "total_days": 1464.8123656619098,
-            "longest_reign_days": 1464.8123656619098,
-            "current_reign_days": 1464.8123656619098,
+            "total_duration_us": 126967280578084,
+            "total_days": 1469.5287103944906,
+            "longest_reign_days": 1469.5287103944906,
+            "current_reign_days": 1469.5287103944906,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2022-11-18T03:53:30.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 126559788393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 126967280578084,
                 "records": [
                   {
                     "run_id": "zq9oxqxy",
                     "source_url": "https://www.speedrun.com/stk/runs/zq9oxqxy"
                   }
                 ],
-                "days": 1464.8123656619098
+                "days": 1469.5287103944906
               }
             ]
           }
@@ -8720,24 +8734,24 @@
           "verified_at": "2023-11-19T18:28:25.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 94884893393189,
-            "total_days": 1098.2047846433911,
-            "longest_reign_days": 1098.2047846433911,
-            "current_reign_days": 1098.2047846433911,
+            "total_duration_us": 95292385578084,
+            "total_days": 1102.9211293759722,
+            "longest_reign_days": 1102.9211293759722,
+            "current_reign_days": 1102.9211293759722,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2023-11-19T18:28:25.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 94884893393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 95292385578084,
                 "records": [
                   {
                     "run_id": "z1kpv5wy",
                     "source_url": "https://www.speedrun.com/stk/runs/z1kpv5wy"
                   }
                 ],
-                "days": 1098.2047846433911
+                "days": 1102.9211293759722
               }
             ]
           }
@@ -8893,37 +8907,37 @@
           "direction": "reverse",
           "run_id": "zxw6we5m",
           "time_us": 69280000,
-          "wr_time_us": 69280000,
-          "gap_us": 0,
-          "board_rank": 1,
-          "is_wr": true,
+          "wr_time_us": 68854000,
+          "gap_us": 426000,
+          "board_rank": 2,
+          "is_wr": false,
           "historic_board_rank": 1,
-          "gap_percent": 0.0,
-          "points": 10.0,
+          "gap_percent": 0.6187004386092311,
+          "points": 6.219658224035987,
           "source_url": "https://www.speedrun.com/stk/runs/zxw6we5m",
           "glitches": "Yes",
           "played_on": "2023-10-18",
           "verified_at": "2023-10-19T00:19:13.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 97628645393189,
-            "total_days": 1129.96117353228,
-            "longest_reign_days": 1129.96117353228,
-            "current_reign_days": 1129.96117353228,
+            "total_duration_us": 97995634000000,
+            "total_days": 1134.208726851852,
+            "longest_reign_days": 1134.208726851852,
+            "current_reign_days": 0.0,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2023-10-19T00:19:13.000000Z",
-                "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 97628645393189,
+                "ended_at": "2026-11-26T05:19:47.000000Z",
+                "counted_until": "2026-11-26T05:19:47.000000Z",
+                "duration_us": 97995634000000,
                 "records": [
                   {
                     "run_id": "zxw6we5m",
                     "source_url": "https://www.speedrun.com/stk/runs/zxw6we5m"
                   }
                 ],
-                "days": 1129.96117353228
+                "days": 1134.208726851852
               }
             ]
           }
@@ -9341,13 +9355,13 @@
           "direction": "reverse",
           "run_id": "ywk2p20y",
           "time_us": 70463000,
-          "wr_time_us": 69280000,
-          "gap_us": 1183000,
-          "board_rank": 3,
+          "wr_time_us": 68854000,
+          "gap_us": 1609000,
+          "board_rank": 4,
           "is_wr": false,
           "historic_board_rank": 1,
-          "gap_percent": 1.7075635103926097,
-          "points": 2.6965728848867245,
+          "gap_percent": 2.3368286519301713,
+          "points": 1.66363142764532,
           "source_url": "https://www.speedrun.com/stk/runs/ywk2p20y",
           "glitches": "Yes",
           "played_on": "2021-10-26",
@@ -9599,24 +9613,24 @@
           "verified_at": "2026-06-19T02:46:29.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 13466209393189,
-            "total_days": 155.85890501376159,
-            "longest_reign_days": 155.85890501376159,
-            "current_reign_days": 155.85890501376159,
+            "total_duration_us": 13873701578084,
+            "total_days": 160.5752497463426,
+            "longest_reign_days": 160.5752497463426,
+            "current_reign_days": 160.5752497463426,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2026-06-19T02:46:29.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 13466209393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 13873701578084,
                 "records": [
                   {
                     "run_id": "mkx6rqvz",
                     "source_url": "https://www.speedrun.com/stk/runs/mkx6rqvz"
                   }
                 ],
-                "days": 155.85890501376159
+                "days": 160.5752497463426
               }
             ]
           }
@@ -9665,10 +9679,10 @@
           "verified_at": "2026-06-19T02:42:49.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 13595725393189,
-            "total_days": 157.35793279153935,
-            "longest_reign_days": 155.86145131005787,
-            "current_reign_days": 155.86145131005787,
+            "total_duration_us": 14003217578084,
+            "total_days": 162.07427752412036,
+            "longest_reign_days": 160.57779604263888,
+            "current_reign_days": 160.57779604263888,
             "reign_count": 3,
             "reigns": [
               {
@@ -9700,15 +9714,15 @@
               {
                 "started_at": "2026-06-19T02:42:49.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 13466429393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 13873921578084,
                 "records": [
                   {
                     "run_id": "medqpw9y",
                     "source_url": "https://www.speedrun.com/stk/runs/medqpw9y"
                   }
                 ],
-                "days": 155.86145131005787
+                "days": 160.57779604263888
               }
             ]
           }
@@ -11789,10 +11803,10 @@
           "verified_at": "2021-03-14T11:25:55.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 231958593393189,
-            "total_days": 2684.7059420507985,
-            "longest_reign_days": 2654.5102360322803,
-            "current_reign_days": 2654.5102360322803,
+            "total_duration_us": 232366085578084,
+            "total_days": 2689.4222867833796,
+            "longest_reign_days": 2659.226580764861,
+            "current_reign_days": 2659.226580764861,
             "reign_count": 4,
             "reigns": [
               {
@@ -11841,8 +11855,8 @@
               {
                 "started_at": "2019-08-16T11:08:34.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 229349684393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 229757176578084,
                 "records": [
                   {
                     "run_id": "m31r56gz",
@@ -11869,7 +11883,7 @@
                     "source_url": "https://www.speedrun.com/stk/runs/mk7olq1y"
                   }
                 ],
-                "days": 2654.5102360322803
+                "days": 2659.226580764861
               }
             ]
           }
@@ -12407,10 +12421,10 @@
           "verified_at": "2021-10-09T13:53:16.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 229225865393189,
-            "total_days": 2653.0771457545025,
-            "longest_reign_days": 2426.550999921169,
-            "current_reign_days": 2426.550999921169,
+            "total_duration_us": 229633357578084,
+            "total_days": 2657.7934904870835,
+            "longest_reign_days": 2431.26734465375,
+            "current_reign_days": 2431.26734465375,
             "reign_count": 5,
             "reigns": [
               {
@@ -12480,8 +12494,8 @@
               {
                 "started_at": "2020-03-31T10:09:52.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 209654006393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 210061498578084,
                 "records": [
                   {
                     "run_id": "y4w9pwdm",
@@ -12496,7 +12510,7 @@
                     "source_url": "https://www.speedrun.com/stk/runs/m77ngv0m"
                   }
                 ],
-                "days": 2426.550999921169
+                "days": 2431.26734465375
               }
             ]
           }
@@ -12760,13 +12774,13 @@
           "direction": "reverse",
           "run_id": "z01rg5oy",
           "time_us": 76543000,
-          "wr_time_us": 69280000,
-          "gap_us": 7263000,
+          "wr_time_us": 68854000,
+          "gap_us": 7689000,
           "board_rank": 6,
           "is_wr": false,
           "historic_board_rank": 1,
-          "gap_percent": 10.483545034642033,
-          "points": 0.003202469398191814,
+          "gap_percent": 11.16710721236239,
+          "points": 0.0018950947531732212,
           "source_url": "https://www.speedrun.com/stk/runs/z01rg5oy",
           "glitches": "No",
           "played_on": "2019-08-25",
@@ -12999,10 +13013,10 @@
           "verified_at": "2025-05-03T08:57:29.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 88164419393189,
-            "total_days": 1020.4215207545024,
-            "longest_reign_days": 567.6012661248727,
-            "current_reign_days": 567.6012661248727,
+            "total_duration_us": 88571911578084,
+            "total_days": 1025.1378654870834,
+            "longest_reign_days": 572.3176108574537,
+            "current_reign_days": 572.3176108574537,
             "reign_count": 4,
             "reigns": [
               {
@@ -13047,15 +13061,15 @@
               {
                 "started_at": "2025-05-03T08:57:29.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 49040749393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 49448241578084,
                 "records": [
                   {
                     "run_id": "y8g9251z",
                     "source_url": "https://www.speedrun.com/stk/runs/y8g9251z"
                   }
                 ],
-                "days": 567.6012661248727
+                "days": 572.3176108574537
               }
             ]
           }
@@ -13544,13 +13558,13 @@
           "direction": "reverse",
           "run_id": "y642nxjm",
           "time_us": 80373000,
-          "wr_time_us": 69280000,
-          "gap_us": 11093000,
+          "wr_time_us": 68854000,
+          "gap_us": 11519000,
           "board_rank": 8,
           "is_wr": false,
           "historic_board_rank": 7,
-          "gap_percent": 16.011836027713628,
-          "points": 4.5996133318638055e-05,
+          "gap_percent": 16.729601766055712,
+          "points": 2.6513439928582887e-05,
           "source_url": "https://www.speedrun.com/stk/runs/y642nxjm",
           "glitches": "No",
           "played_on": "2026-06-09",
@@ -14051,17 +14065,17 @@
           "verified_at": "2025-09-10T01:38:57.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 61841702393189,
-            "total_days": 715.7604443656135,
-            "longest_reign_days": 715.7604443656135,
-            "current_reign_days": 715.7604443656135,
+            "total_duration_us": 62249194578084,
+            "total_days": 720.4767890981944,
+            "longest_reign_days": 720.4767890981944,
+            "current_reign_days": 720.4767890981944,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2024-12-06T05:08:16.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 61841702393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 62249194578084,
                 "records": [
                   {
                     "run_id": "ydvq00xy",
@@ -14080,7 +14094,7 @@
                     "source_url": "https://www.speedrun.com/stk/runs/y8g7n5xz"
                   }
                 ],
-                "days": 715.7604443656135
+                "days": 720.4767890981944
               }
             ]
           }
@@ -14103,24 +14117,24 @@
           "verified_at": "2025-09-23T00:51:52.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 36714686393189,
-            "total_days": 424.93849992116895,
-            "longest_reign_days": 424.93849992116895,
-            "current_reign_days": 424.93849992116895,
+            "total_duration_us": 37122178578084,
+            "total_days": 429.65484465375,
+            "longest_reign_days": 429.65484465375,
+            "current_reign_days": 429.65484465375,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2025-09-23T00:51:52.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 36714686393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 37122178578084,
                 "records": [
                   {
                     "run_id": "mkrlvwlz",
                     "source_url": "https://www.speedrun.com/stk/runs/mkrlvwlz"
                   }
                 ],
-                "days": 424.93849992116895
+                "days": 429.65484465375
               }
             ]
           }
@@ -14143,24 +14157,24 @@
           "verified_at": "2026-09-17T07:43:46.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 5672372393189,
-            "total_days": 65.65245825450232,
-            "longest_reign_days": 65.65245825450232,
-            "current_reign_days": 65.65245825450232,
+            "total_duration_us": 6079864578084,
+            "total_days": 70.36880298708333,
+            "longest_reign_days": 70.36880298708333,
+            "current_reign_days": 70.36880298708333,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2026-09-17T07:43:46.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 5672372393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 6079864578084,
                 "records": [
                   {
                     "run_id": "mknpknxm",
                     "source_url": "https://www.speedrun.com/stk/runs/mknpknxm"
                   }
                 ],
-                "days": 65.65245825450232
+                "days": 70.36880298708333
               }
             ]
           }
@@ -14183,10 +14197,10 @@
           "verified_at": "2025-10-26T17:13:03.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 40341929393189,
-            "total_days": 466.92047908783564,
-            "longest_reign_days": 391.2571226063542,
-            "current_reign_days": 391.2571226063542,
+            "total_duration_us": 40749421578084,
+            "total_days": 471.6368238204167,
+            "longest_reign_days": 395.97346733893517,
+            "current_reign_days": 395.97346733893517,
             "reign_count": 2,
             "reigns": [
               {
@@ -14205,15 +14219,15 @@
               {
                 "started_at": "2025-10-26T17:13:03.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 33804615393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 34212107578084,
                 "records": [
                   {
                     "run_id": "yo5k1ndz",
                     "source_url": "https://www.speedrun.com/stk/runs/yo5k1ndz"
                   }
                 ],
-                "days": 391.2571226063542
+                "days": 395.97346733893517
               }
             ]
           }
@@ -14276,24 +14290,24 @@
           "verified_at": "2026-11-09T16:55:14.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 1060084393189,
-            "total_days": 12.269495291539352,
-            "longest_reign_days": 12.269495291539352,
-            "current_reign_days": 12.269495291539352,
+            "total_duration_us": 1467576578084,
+            "total_days": 16.98584002412037,
+            "longest_reign_days": 16.98584002412037,
+            "current_reign_days": 16.98584002412037,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2026-11-09T16:55:14.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 1060084393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 1467576578084,
                 "records": [
                   {
                     "run_id": "y24lv8jz",
                     "source_url": "https://www.speedrun.com/stk/runs/y24lv8jz"
                   }
                 ],
-                "days": 12.269495291539352
+                "days": 16.98584002412037
               }
             ]
           }
@@ -14316,17 +14330,17 @@
           "verified_at": "2026-11-11T04:06:11.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 35645937393189,
-            "total_days": 412.5687198285764,
-            "longest_reign_days": 412.5687198285764,
-            "current_reign_days": 412.5687198285764,
+            "total_duration_us": 36053429578084,
+            "total_days": 417.2850645611574,
+            "longest_reign_days": 417.2850645611574,
+            "current_reign_days": 417.2850645611574,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2025-10-05T09:44:21.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 35645937393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 36053429578084,
                 "records": [
                   {
                     "run_id": "yw5p1npy",
@@ -14337,7 +14351,7 @@
                     "source_url": "https://www.speedrun.com/stk/runs/z04vx58y"
                   }
                 ],
-                "days": 412.5687198285764
+                "days": 417.2850645611574
               }
             ]
           }
@@ -14360,24 +14374,24 @@
           "verified_at": "2026-09-17T07:39:43.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 5672615393189,
-            "total_days": 65.65527075450231,
-            "longest_reign_days": 65.65527075450231,
-            "current_reign_days": 65.65527075450231,
+            "total_duration_us": 6080107578084,
+            "total_days": 70.37161548708333,
+            "longest_reign_days": 70.37161548708333,
+            "current_reign_days": 70.37161548708333,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2026-09-17T07:39:43.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 5672615393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 6080107578084,
                 "records": [
                   {
                     "run_id": "m74n644m",
                     "source_url": "https://www.speedrun.com/stk/runs/m74n644m"
                   }
                 ],
-                "days": 65.65527075450231
+                "days": 70.37161548708333
               }
             ]
           }
@@ -14400,24 +14414,24 @@
           "verified_at": "2026-09-23T19:08:51.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 5112867393189,
-            "total_days": 59.1767059396875,
-            "longest_reign_days": 59.1767059396875,
-            "current_reign_days": 59.1767059396875,
+            "total_duration_us": 5520359578084,
+            "total_days": 63.893050672268515,
+            "longest_reign_days": 63.893050672268515,
+            "current_reign_days": 63.893050672268515,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2026-09-23T19:08:51.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 5112867393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 5520359578084,
                 "records": [
                   {
                     "run_id": "mkn15xxm",
                     "source_url": "https://www.speedrun.com/stk/runs/mkn15xxm"
                   }
                 ],
-                "days": 59.1767059396875
+                "days": 63.893050672268515
               }
             ]
           }
@@ -14440,10 +14454,10 @@
           "verified_at": "2026-11-07T03:38:21.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 1314711393189,
-            "total_days": 15.216567050798611,
-            "longest_reign_days": 14.822886495243056,
-            "current_reign_days": 14.822886495243056,
+            "total_duration_us": 1722203578084,
+            "total_days": 19.93291178337963,
+            "longest_reign_days": 19.539231227824075,
+            "current_reign_days": 19.539231227824075,
             "reign_count": 2,
             "reigns": [
               {
@@ -14462,15 +14476,15 @@
               {
                 "started_at": "2026-11-07T03:38:21.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 1280697393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 1688189578084,
                 "records": [
                   {
                     "run_id": "m34ed4wz",
                     "source_url": "https://www.speedrun.com/stk/runs/m34ed4wz"
                   }
                 ],
-                "days": 14.822886495243056
+                "days": 19.539231227824075
               }
             ]
           }
@@ -14493,24 +14507,24 @@
           "verified_at": "2025-01-24T18:41:32.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 57559306393189,
-            "total_days": 666.1956758470949,
-            "longest_reign_days": 666.1956758470949,
-            "current_reign_days": 666.1956758470949,
+            "total_duration_us": 57966798578084,
+            "total_days": 670.912020579676,
+            "longest_reign_days": 670.912020579676,
+            "current_reign_days": 670.912020579676,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2025-01-24T18:41:32.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 57559306393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 57966798578084,
                 "records": [
                   {
                     "run_id": "zxjlleey",
                     "source_url": "https://www.speedrun.com/stk/runs/zxjlleey"
                   }
                 ],
-                "days": 666.1956758470949
+                "days": 670.912020579676
               }
             ]
           }
@@ -14533,10 +14547,10 @@
           "verified_at": "2026-11-09T16:50:56.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 7252300393189,
-            "total_days": 83.93866195820601,
+            "total_duration_us": 7659792578084,
+            "total_days": 88.65500669078703,
             "longest_reign_days": 53.04056712962963,
-            "current_reign_days": 12.272481402650463,
+            "current_reign_days": 16.98882613523148,
             "reign_count": 3,
             "reigns": [
               {
@@ -14568,15 +14582,15 @@
               {
                 "started_at": "2026-11-09T16:50:56.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 1060342393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 1467834578084,
                 "records": [
                   {
                     "run_id": "y845r7nz",
                     "source_url": "https://www.speedrun.com/stk/runs/y845r7nz"
                   }
                 ],
-                "days": 12.272481402650463
+                "days": 16.98882613523148
               }
             ]
           }
@@ -14665,24 +14679,24 @@
           "verified_at": "2024-12-21T11:04:28.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 60524330393189,
-            "total_days": 700.5130832545024,
-            "longest_reign_days": 700.5130832545024,
-            "current_reign_days": 700.5130832545024,
+            "total_duration_us": 60931822578084,
+            "total_days": 705.2294279870833,
+            "longest_reign_days": 705.2294279870833,
+            "current_reign_days": 705.2294279870833,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2024-12-21T11:04:28.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 60524330393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 60931822578084,
                 "records": [
                   {
                     "run_id": "yjek277m",
                     "source_url": "https://www.speedrun.com/stk/runs/yjek277m"
                   }
                 ],
-                "days": 700.5130832545024
+                "days": 705.2294279870833
               }
             ]
           }
@@ -14705,24 +14719,24 @@
           "verified_at": "2025-10-07T21:20:10.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 35431388393189,
-            "total_days": 410.0855138100579,
-            "longest_reign_days": 410.0855138100579,
-            "current_reign_days": 410.0855138100579,
+            "total_duration_us": 35838880578084,
+            "total_days": 414.8018585426389,
+            "longest_reign_days": 414.8018585426389,
+            "current_reign_days": 414.8018585426389,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2025-10-07T21:20:10.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 35431388393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 35838880578084,
                 "records": [
                   {
                     "run_id": "y2rqp2jm",
                     "source_url": "https://www.speedrun.com/stk/runs/y2rqp2jm"
                   }
                 ],
-                "days": 410.0855138100579
+                "days": 414.8018585426389
               }
             ]
           }
@@ -14745,24 +14759,24 @@
           "verified_at": "2025-02-16T02:20:17.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 55630981393189,
-            "total_days": 643.877099458206,
-            "longest_reign_days": 643.877099458206,
-            "current_reign_days": 643.877099458206,
+            "total_duration_us": 56038473578084,
+            "total_days": 648.5934441907871,
+            "longest_reign_days": 648.5934441907871,
+            "current_reign_days": 648.5934441907871,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2025-02-16T02:20:17.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 55630981393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 56038473578084,
                 "records": [
                   {
                     "run_id": "yje2333m",
                     "source_url": "https://www.speedrun.com/stk/runs/yje2333m"
                   }
                 ],
-                "days": 643.877099458206
+                "days": 648.5934441907871
               }
             ]
           }
@@ -14825,24 +14839,24 @@
           "verified_at": "2026-08-31T14:04:05.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 7118353393189,
-            "total_days": 82.38834945820602,
-            "longest_reign_days": 82.38834945820602,
-            "current_reign_days": 82.38834945820602,
+            "total_duration_us": 7525845578084,
+            "total_days": 87.10469419078704,
+            "longest_reign_days": 87.10469419078704,
+            "current_reign_days": 87.10469419078704,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2026-08-31T14:04:05.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 7118353393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 7525845578084,
                 "records": [
                   {
                     "run_id": "zqoedp8y",
                     "source_url": "https://www.speedrun.com/stk/runs/zqoedp8y"
                   }
                 ],
-                "days": 82.38834945820602
+                "days": 87.10469419078704
               }
             ]
           }
@@ -14891,10 +14905,10 @@
           "verified_at": "2025-12-11T15:01:00.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 31255875393189,
-            "total_days": 361.7578170507986,
-            "longest_reign_days": 345.34882399524304,
-            "current_reign_days": 345.34882399524304,
+            "total_duration_us": 31663367578084,
+            "total_days": 366.47416178337966,
+            "longest_reign_days": 350.0651687278241,
+            "current_reign_days": 350.0651687278241,
             "reign_count": 2,
             "reigns": [
               {
@@ -14913,15 +14927,15 @@
               {
                 "started_at": "2025-12-11T15:01:00.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 29838138393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 30245630578084,
                 "records": [
                   {
                     "run_id": "y8n0qwdy",
                     "source_url": "https://www.speedrun.com/stk/runs/y8n0qwdy"
                   }
                 ],
-                "days": 345.34882399524304
+                "days": 350.0651687278241
               }
             ]
           }
@@ -14984,17 +14998,17 @@
           "verified_at": "2026-11-16T02:58:35.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 39214947393189,
-            "total_days": 453.8767059396875,
-            "longest_reign_days": 453.8767059396875,
-            "current_reign_days": 453.8767059396875,
+            "total_duration_us": 39622439578084,
+            "total_days": 458.59305067226853,
+            "longest_reign_days": 458.59305067226853,
+            "current_reign_days": 458.59305067226853,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2025-08-25T02:20:51.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 39214947393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 39622439578084,
                 "records": [
                   {
                     "run_id": "z160korm",
@@ -15009,7 +15023,7 @@
                     "source_url": "https://www.speedrun.com/stk/runs/yj0j813z"
                   }
                 ],
-                "days": 453.8767059396875
+                "days": 458.59305067226853
               }
             ]
           }
@@ -15145,24 +15159,24 @@
           "verified_at": "2024-07-01T05:00:50.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 75493348393189,
-            "total_days": 873.7656064026505,
-            "longest_reign_days": 873.7656064026505,
-            "current_reign_days": 873.7656064026505,
+            "total_duration_us": 75900840578084,
+            "total_days": 878.4819511352315,
+            "longest_reign_days": 878.4819511352315,
+            "current_reign_days": 878.4819511352315,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2024-07-01T05:00:50.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 75493348393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 75900840578084,
                 "records": [
                   {
                     "run_id": "yjonl57z",
                     "source_url": "https://www.speedrun.com/stk/runs/yjonl57z"
                   }
                 ],
-                "days": 873.7656064026505
+                "days": 878.4819511352315
               }
             ]
           }
@@ -15265,24 +15279,24 @@
           "verified_at": "2025-04-08T17:24:40.000000Z",
           "wr_history": {
             "dates_complete": true,
-            "total_duration_us": 51170318393189,
-            "total_days": 592.2490554767245,
-            "longest_reign_days": 592.2490554767245,
-            "current_reign_days": 592.2490554767245,
+            "total_duration_us": 51577810578084,
+            "total_days": 596.9654002093056,
+            "longest_reign_days": 596.9654002093056,
+            "current_reign_days": 596.9654002093056,
             "reign_count": 1,
             "reigns": [
               {
                 "started_at": "2025-04-08T17:24:40.000000Z",
                 "ended_at": null,
-                "counted_until": "2026-11-21T23:23:18.393189Z",
-                "duration_us": 51170318393189,
+                "counted_until": "2026-11-26T16:34:50.578084Z",
+                "duration_us": 51577810578084,
                 "records": [
                   {
                     "run_id": "z1vej4gz",
                     "source_url": "https://www.speedrun.com/stk/runs/z1vej4gz"
                   }
                 ],
-                "days": 592.2490554767245
+                "days": 596.9654002093056
               }
             ]
           }
@@ -15639,13 +15653,13 @@
           "direction": "reverse",
           "run_id": "y47l61ny",
           "time_us": 72711000,
-          "wr_time_us": 69280000,
-          "gap_us": 3431000,
-          "board_rank": 4,
+          "wr_time_us": 68854000,
+          "gap_us": 3857000,
+          "board_rank": 5,
           "is_wr": false,
           "historic_board_rank": 1,
-          "gap_percent": 4.952367205542725,
-          "points": 0.22346573048586593,
+          "gap_percent": 5.6017079617741885,
+          "points": 0.13575755657112135,
           "source_url": "https://www.speedrun.com/stk/runs/y47l61ny",
           "glitches": "Yes",
           "played_on": "2021-10-17",
@@ -16550,7 +16564,7 @@
           "time_us": 99746000,
           "wr_time_us": 94575000,
           "gap_us": 5171000,
-          "board_rank": 8,
+          "board_rank": 9,
           "is_wr": false,
           "historic_board_rank": 3,
           "gap_percent": 5.4676182923605605,
@@ -16765,7 +16779,7 @@
         {
           "player_key": "user:jmrlwpy8",
           "player_name": "Spyker462",
-          "points": 0.2515620738202541,
+          "points": 0.3163759504169135,
           "boards_played": 5,
           "second_places": 0,
           "third_places": 0,
@@ -16903,11 +16917,11 @@
         {
           "player_key": "user:jp691l08",
           "player_name": "trolli123",
-          "points": 147.62497985945006,
+          "points": 143.84463808348605,
           "boards_played": 21,
-          "second_places": 6,
+          "second_places": 7,
           "third_places": 5,
-          "world_records": 8,
+          "world_records": 7,
           "rank": 1
         },
         {
@@ -16923,12 +16937,22 @@
         {
           "player_key": "user:v8lg5q2j",
           "player_name": "theodorepringle",
-          "points": 59.61880712119132,
+          "points": 59.6174997465463,
           "boards_played": 21,
           "second_places": 6,
           "third_places": 5,
           "world_records": 0,
           "rank": 3
+        },
+        {
+          "player_key": "user:j9lyr5vj",
+          "player_name": "gluteq",
+          "points": 40.039247824973636,
+          "boards_played": 5,
+          "second_places": 0,
+          "third_places": 1,
+          "world_records": 4,
+          "rank": 4
         },
         {
           "player_key": "user:xz7y0z0j",
@@ -16938,16 +16962,6 @@
           "second_places": 1,
           "third_places": 1,
           "world_records": 2,
-          "rank": 4
-        },
-        {
-          "player_key": "user:j9lyr5vj",
-          "player_name": "gluteq",
-          "points": 30.042829449551334,
-          "boards_played": 5,
-          "second_places": 0,
-          "third_places": 1,
-          "world_records": 3,
           "rank": 5
         },
         {
@@ -16963,7 +16977,7 @@
         {
           "player_key": "user:5j5k196j",
           "player_name": "Andet",
-          "points": 19.083967786879498,
+          "points": 19.083821249709747,
           "boards_played": 21,
           "second_places": 0,
           "third_places": 6,
@@ -16973,7 +16987,7 @@
         {
           "player_key": "user:j47966mj",
           "player_name": "BroCrow",
-          "points": 10.776791515445497,
+          "points": 10.776791419357655,
           "boards_played": 17,
           "second_places": 0,
           "third_places": 0,
@@ -16993,10 +17007,10 @@
         {
           "player_key": "user:j2374vlx",
           "player_name": "Red_Skid_STK",
-          "points": 6.666578575948273,
+          "points": 4.1359950457880155,
           "boards_played": 1,
-          "second_places": 1,
-          "third_places": 0,
+          "second_places": 0,
+          "third_places": 1,
           "world_records": 0,
           "rank": 10
         },
@@ -17023,10 +17037,10 @@
         {
           "player_key": "user:o86ywe3j",
           "player_name": "Fouks",
-          "points": 2.6965728848867245,
+          "points": 1.66363142764532,
           "boards_played": 1,
           "second_places": 0,
-          "third_places": 1,
+          "third_places": 0,
           "world_records": 0,
           "rank": 13
         },
@@ -17043,7 +17057,7 @@
         {
           "player_key": "user:xz9lpq98",
           "player_name": "skindoormimiz",
-          "points": 0.7580081216626877,
+          "points": 0.6702999477479431,
           "boards_played": 3,
           "second_places": 0,
           "third_places": 0,
@@ -17091,11 +17105,11 @@
         {
           "player_key": "user:jp691l08",
           "player_name": "trolli123",
-          "points": 267.09263812204335,
+          "points": 263.31229634607934,
           "boards_played": 38,
-          "second_places": 13,
+          "second_places": 14,
           "third_places": 13,
-          "world_records": 10,
+          "world_records": 9,
           "rank": 1
         },
         {
@@ -17111,7 +17125,7 @@
         {
           "player_key": "user:v8lg5q2j",
           "player_name": "theodorepringle",
-          "points": 167.23811783918453,
+          "points": 167.2368104645395,
           "boards_played": 42,
           "second_places": 10,
           "third_places": 9,
@@ -17121,17 +17135,17 @@
         {
           "player_key": "user:j9lyr5vj",
           "player_name": "gluteq",
-          "points": 136.3542652941575,
+          "points": 146.3506836695798,
           "boards_played": 23,
           "second_places": 2,
           "third_places": 7,
-          "world_records": 8,
+          "world_records": 9,
           "rank": 4
         },
         {
           "player_key": "user:5j5k196j",
           "player_name": "Andet",
-          "points": 46.47622951037482,
+          "points": 46.476082973205074,
           "boards_played": 42,
           "second_places": 0,
           "third_places": 7,
@@ -17201,7 +17215,7 @@
         {
           "player_key": "user:j47966mj",
           "player_name": "BroCrow",
-          "points": 11.196232607753467,
+          "points": 11.196232511665624,
           "boards_played": 35,
           "second_places": 0,
           "third_places": 0,
@@ -17231,20 +17245,20 @@
         {
           "player_key": "user:j2374vlx",
           "player_name": "Red_Skid_STK",
-          "points": 6.666578575948273,
+          "points": 4.1359950457880155,
           "boards_played": 1,
-          "second_places": 1,
-          "third_places": 0,
+          "second_places": 0,
+          "third_places": 1,
           "world_records": 0,
           "rank": 15
         },
         {
           "player_key": "user:o86ywe3j",
           "player_name": "Fouks",
-          "points": 4.226059330696916,
+          "points": 3.1931178734555115,
           "boards_played": 4,
           "second_places": 0,
-          "third_places": 1,
+          "third_places": 0,
           "world_records": 0,
           "rank": 16
         },
@@ -17261,7 +17275,7 @@
         {
           "player_key": "user:xz9lpq98",
           "player_name": "skindoormimiz",
-          "points": 1.7911108691877013,
+          "points": 1.7034026952729566,
           "boards_played": 11,
           "second_places": 0,
           "third_places": 1,
@@ -17291,7 +17305,7 @@
         {
           "player_key": "user:x7ye200x",
           "player_name": "Talk2",
-          "points": 0.5502148878715487,
+          "points": 0.5501954051781587,
           "boards_played": 10,
           "second_places": 0,
           "third_places": 0,
@@ -17301,7 +17315,7 @@
         {
           "player_key": "user:jmrlwpy8",
           "player_name": "Spyker462",
-          "points": 0.2515620738202541,
+          "points": 0.3163759504169135,
           "boards_played": 5,
           "second_places": 0,
           "third_places": 0,
@@ -17639,7 +17653,7 @@
         {
           "player_key": "user:jmrlwpy8",
           "player_name": "Spyker462",
-          "points": 0.2515620738202541,
+          "points": 0.3163759504169135,
           "boards_played": 5,
           "second_places": 0,
           "third_places": 0,
@@ -17777,11 +17791,11 @@
         {
           "player_key": "user:jp691l08",
           "player_name": "trolli123",
-          "points": 147.62497985945006,
+          "points": 143.84463808348605,
           "boards_played": 21,
-          "second_places": 6,
+          "second_places": 7,
           "third_places": 5,
-          "world_records": 8,
+          "world_records": 7,
           "rank": 1
         },
         {
@@ -17797,12 +17811,22 @@
         {
           "player_key": "user:v8lg5q2j",
           "player_name": "theodorepringle",
-          "points": 59.61880712119132,
+          "points": 59.6174997465463,
           "boards_played": 21,
           "second_places": 6,
           "third_places": 5,
           "world_records": 0,
           "rank": 3
+        },
+        {
+          "player_key": "user:j9lyr5vj",
+          "player_name": "gluteq",
+          "points": 40.039247824973636,
+          "boards_played": 5,
+          "second_places": 0,
+          "third_places": 1,
+          "world_records": 4,
+          "rank": 4
         },
         {
           "player_key": "user:xz7y0z0j",
@@ -17812,16 +17836,6 @@
           "second_places": 1,
           "third_places": 1,
           "world_records": 2,
-          "rank": 4
-        },
-        {
-          "player_key": "user:j9lyr5vj",
-          "player_name": "gluteq",
-          "points": 30.042829449551334,
-          "boards_played": 5,
-          "second_places": 0,
-          "third_places": 1,
-          "world_records": 3,
           "rank": 5
         },
         {
@@ -17837,7 +17851,7 @@
         {
           "player_key": "user:5j5k196j",
           "player_name": "Andet",
-          "points": 19.083967786879498,
+          "points": 19.083821249709747,
           "boards_played": 21,
           "second_places": 0,
           "third_places": 6,
@@ -17847,7 +17861,7 @@
         {
           "player_key": "user:j47966mj",
           "player_name": "BroCrow",
-          "points": 10.776791515445497,
+          "points": 10.776791419357655,
           "boards_played": 17,
           "second_places": 0,
           "third_places": 0,
@@ -17867,10 +17881,10 @@
         {
           "player_key": "user:j2374vlx",
           "player_name": "Red_Skid_STK",
-          "points": 6.666578575948273,
+          "points": 4.1359950457880155,
           "boards_played": 1,
-          "second_places": 1,
-          "third_places": 0,
+          "second_places": 0,
+          "third_places": 1,
           "world_records": 0,
           "rank": 10
         },
@@ -17897,10 +17911,10 @@
         {
           "player_key": "user:o86ywe3j",
           "player_name": "Fouks",
-          "points": 2.6965728848867245,
+          "points": 1.66363142764532,
           "boards_played": 1,
           "second_places": 0,
-          "third_places": 1,
+          "third_places": 0,
           "world_records": 0,
           "rank": 13
         },
@@ -17917,7 +17931,7 @@
         {
           "player_key": "user:xz9lpq98",
           "player_name": "skindoormimiz",
-          "points": 0.7580081216626877,
+          "points": 0.6702999477479431,
           "boards_played": 3,
           "second_places": 0,
           "third_places": 0,
@@ -17965,11 +17979,11 @@
         {
           "player_key": "user:jp691l08",
           "player_name": "trolli123",
-          "points": 267.09263812204335,
+          "points": 263.31229634607934,
           "boards_played": 38,
-          "second_places": 13,
+          "second_places": 14,
           "third_places": 13,
-          "world_records": 10,
+          "world_records": 9,
           "rank": 1
         },
         {
@@ -17985,7 +17999,7 @@
         {
           "player_key": "user:v8lg5q2j",
           "player_name": "theodorepringle",
-          "points": 167.23811783918453,
+          "points": 167.2368104645395,
           "boards_played": 42,
           "second_places": 10,
           "third_places": 9,
@@ -17995,17 +18009,17 @@
         {
           "player_key": "user:j9lyr5vj",
           "player_name": "gluteq",
-          "points": 136.3542652941575,
+          "points": 146.3506836695798,
           "boards_played": 23,
           "second_places": 2,
           "third_places": 7,
-          "world_records": 8,
+          "world_records": 9,
           "rank": 4
         },
         {
           "player_key": "user:5j5k196j",
           "player_name": "Andet",
-          "points": 46.47622951037482,
+          "points": 46.476082973205074,
           "boards_played": 42,
           "second_places": 0,
           "third_places": 7,
@@ -18085,7 +18099,7 @@
         {
           "player_key": "user:j47966mj",
           "player_name": "BroCrow",
-          "points": 11.196232607753467,
+          "points": 11.196232511665624,
           "boards_played": 35,
           "second_places": 0,
           "third_places": 0,
@@ -18105,20 +18119,20 @@
         {
           "player_key": "user:j2374vlx",
           "player_name": "Red_Skid_STK",
-          "points": 6.666578575948273,
+          "points": 4.1359950457880155,
           "boards_played": 1,
-          "second_places": 1,
-          "third_places": 0,
+          "second_places": 0,
+          "third_places": 1,
           "world_records": 0,
           "rank": 15
         },
         {
           "player_key": "user:o86ywe3j",
           "player_name": "Fouks",
-          "points": 4.226059330696916,
+          "points": 3.1931178734555115,
           "boards_played": 4,
           "second_places": 0,
-          "third_places": 1,
+          "third_places": 0,
           "world_records": 0,
           "rank": 16
         },
@@ -18135,7 +18149,7 @@
         {
           "player_key": "user:xz9lpq98",
           "player_name": "skindoormimiz",
-          "points": 1.7911108691877013,
+          "points": 1.7034026952729566,
           "boards_played": 11,
           "second_places": 0,
           "third_places": 1,
@@ -18165,7 +18179,7 @@
         {
           "player_key": "user:x7ye200x",
           "player_name": "Talk2",
-          "points": 0.5502148878715487,
+          "points": 0.5501954051781587,
           "boards_played": 10,
           "second_places": 0,
           "third_places": 0,
@@ -18175,7 +18189,7 @@
         {
           "player_key": "user:jmrlwpy8",
           "player_name": "Spyker462",
-          "points": 0.2515620738202541,
+          "points": 0.3163759504169135,
           "boards_played": 5,
           "second_places": 0,
           "third_places": 0,
@@ -18316,7 +18330,7 @@
     }
   },
   "hall_of_fame": {
-    "as_of": "2026-11-21T23:23:18.393189Z",
+    "as_of": "2026-11-26T16:34:50.578084Z",
     "rules": {
       "direction": "forward",
       "include_bonus": false,
@@ -18367,7 +18381,7 @@
         "player_key": "user:v8lg5q2j",
         "player_name": "theodorepringle",
         "qualifying_track_count": 20,
-        "total_wr_hours": 834802.5449406606,
+        "total_wr_hours": 835028.9294878244,
         "median_wr_date": "2019-08-31T01:15:50.000000Z",
         "rank": 1
       },
@@ -18375,7 +18389,7 @@
         "player_key": "user:jp691l08",
         "player_name": "trolli123",
         "qualifying_track_count": 14,
-        "total_wr_hours": 212418.85021843834,
+        "total_wr_hours": 212645.23476560222,
         "median_wr_date": "2024-11-17T10:56:43.000000Z",
         "rank": 2
       },
@@ -18383,7 +18397,7 @@
         "player_key": "user:xz2vge9x",
         "player_name": "ElTuneado009",
         "qualifying_track_count": 13,
-        "total_wr_hours": 106496.93647918862,
+        "total_wr_hours": 107742.05148859,
         "median_wr_date": "2025-09-08T22:01:19.000000Z",
         "rank": 3
       },
@@ -18407,7 +18421,7 @@
         "player_key": "user:x72mkqq8",
         "player_name": "Haenschen",
         "qualifying_track_count": 5,
-        "total_wr_hours": 29724.50816477472,
+        "total_wr_hours": 29837.700438356667,
         "median_wr_date": "2023-09-06T06:36:49.500000Z",
         "rank": 6
       },
@@ -19527,8 +19541,8 @@
           {
             "started_at": "2026-11-21T21:16:34.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 7604393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 415096578084,
             "records": [
               {
                 "run_id": "y4d5gxdy",
@@ -19536,15 +19550,15 @@
               }
             ],
             "track": "around-the-lighthouse",
-            "hours": 2.1123314413888887,
+            "hours": 115.30460502333334,
             "qualifies": false,
             "qualifies_at": "2026-12-21T21:16:34.000000Z"
           },
           {
             "started_at": "2026-10-03T19:32:55.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 4247423393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 4654915578084,
             "records": [
               {
                 "run_id": "y24noq9z",
@@ -19552,15 +19566,15 @@
               }
             ],
             "track": "black-forest",
-            "hours": 1179.839831441389,
+            "hours": 1293.0321050233333,
             "qualifies": true,
             "qualifies_at": "2026-11-02T19:32:55.000000Z"
           },
           {
             "started_at": "2026-09-17T07:32:27.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 5673051393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 6080543578084,
             "records": [
               {
                 "run_id": "zqo8vqxy",
@@ -19568,7 +19582,7 @@
               }
             ],
             "track": "fort-magma",
-            "hours": 1575.8476092191668,
+            "hours": 1689.0398828011112,
             "qualifies": true,
             "qualifies_at": "2026-10-17T07:32:27.000000Z"
           },
@@ -19607,8 +19621,8 @@
           {
             "started_at": "2026-10-02T03:46:15.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 4390623393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 4798115578084,
             "records": [
               {
                 "run_id": "z048nqey",
@@ -19616,7 +19630,7 @@
               }
             ],
             "track": "stk-enterprise",
-            "hours": 1219.6176092191668,
+            "hours": 1332.8098828011111,
             "qualifies": true,
             "qualifies_at": "2026-11-01T03:46:15.000000Z"
           },
@@ -19643,8 +19657,8 @@
           {
             "started_at": "2026-10-15T03:16:05.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 3269233393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 3676725578084,
             "records": [
               {
                 "run_id": "znl5jg7y",
@@ -19652,7 +19666,7 @@
               }
             ],
             "track": "xr591",
-            "hours": 908.1203869969445,
+            "hours": 1021.3126605788889,
             "qualifies": true,
             "qualifies_at": "2026-11-14T03:16:05.000000Z"
           }
@@ -19666,8 +19680,8 @@
           "xr591"
         ],
         "qualifying_track_count": 5,
-        "total_wr_duration_us": 38967082965945,
-        "total_wr_hours": 10824.1897127625,
+        "total_wr_duration_us": 41004543890420,
+        "total_wr_hours": 11390.151080672222,
         "speedrun_qualified_at": "2026-10-17T07:32:27.000000Z",
         "online_top_three_confirmed": false
       },
@@ -19711,8 +19725,8 @@
           {
             "started_at": "2025-01-20T16:37:52.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 57912326393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 58319818578084,
             "records": [
               {
                 "run_id": "y4j7jq2y",
@@ -19720,7 +19734,7 @@
               }
             ],
             "track": "antediluvian-abyss",
-            "hours": 16086.75733144139,
+            "hours": 16199.949605023334,
             "qualifies": true,
             "qualifies_at": "2025-02-19T16:37:52.000000Z"
           },
@@ -19875,8 +19889,8 @@
           {
             "started_at": "2023-11-24T21:15:51.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 94442847393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 94850339578084,
             "records": [
               {
                 "run_id": "yoovvn7y",
@@ -19888,7 +19902,7 @@
               }
             ],
             "track": "minigolf",
-            "hours": 26234.12427588583,
+            "hours": 26347.316549467778,
             "qualifies": true,
             "qualifies_at": "2023-12-24T21:15:51.000000Z"
           },
@@ -20063,8 +20077,8 @@
           "xr591"
         ],
         "qualifying_track_count": 14,
-        "total_wr_duration_us": 764707860786378,
-        "total_wr_hours": 212418.85021843834,
+        "total_wr_duration_us": 765522845156168,
+        "total_wr_hours": 212645.23476560222,
         "speedrun_qualified_at": "2023-11-04T13:44:00.000000Z",
         "online_top_three_confirmed": true
       },
@@ -21107,8 +21121,8 @@
           {
             "started_at": "2019-08-16T11:08:34.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 229349684393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 229757176578084,
             "records": [
               {
                 "run_id": "m31r56gz",
@@ -21136,7 +21150,7 @@
               }
             ],
             "track": "olivers-math-class",
-            "hours": 63708.245664774724,
+            "hours": 63821.43793835667,
             "qualifies": true,
             "qualifies_at": "2019-09-15T11:08:34.000000Z"
           },
@@ -21463,8 +21477,8 @@
           {
             "started_at": "2020-03-31T10:09:52.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 209654006393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 210061498578084,
             "records": [
               {
                 "run_id": "y4w9pwdm",
@@ -21480,7 +21494,7 @@
               }
             ],
             "track": "volcan-island",
-            "hours": 58237.22399810806,
+            "hours": 58350.41627169,
             "qualifies": true,
             "qualifies_at": "2020-04-30T10:09:52.000000Z"
           },
@@ -21649,8 +21663,8 @@
           "zen-garden"
         ],
         "qualifying_track_count": 20,
-        "total_wr_duration_us": 3005289161786378,
-        "total_wr_hours": 834802.5449406606,
+        "total_wr_duration_us": 3006104146156168,
+        "total_wr_hours": 835028.9294878244,
         "speedrun_qualified_at": "2019-07-13T05:41:32.000000Z",
         "online_top_three_confirmed": true
       },
@@ -21758,8 +21772,8 @@
           {
             "started_at": "2025-05-03T08:57:29.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 49040749393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 49448241578084,
             "records": [
               {
                 "run_id": "y8g9251z",
@@ -21767,7 +21781,7 @@
               }
             ],
             "track": "old-mine",
-            "hours": 13622.430386996944,
+            "hours": 13735.622660578889,
             "qualifies": true,
             "qualifies_at": "2025-06-02T08:57:29.000000Z"
           },
@@ -21797,8 +21811,8 @@
           "zen-garden"
         ],
         "qualifying_track_count": 5,
-        "total_wr_duration_us": 107008229393189,
-        "total_wr_hours": 29724.50816477472,
+        "total_wr_duration_us": 107415721578084,
+        "total_wr_hours": 29837.700438356667,
         "speedrun_qualified_at": "2022-12-20T09:06:54.000000Z",
         "online_top_three_confirmed": true
       },
@@ -21858,8 +21872,8 @@
           {
             "started_at": "2024-12-06T05:08:16.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 61841702393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 62249194578084,
             "records": [
               {
                 "run_id": "ydvq00xy",
@@ -21879,15 +21893,15 @@
               }
             ],
             "track": "candela-city",
-            "hours": 17178.25066477472,
+            "hours": 17291.442938356668,
             "qualifies": true,
             "qualifies_at": "2025-01-05T05:08:16.000000Z"
           },
           {
             "started_at": "2025-09-23T00:51:52.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 36714686393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 37122178578084,
             "records": [
               {
                 "run_id": "mkrlvwlz",
@@ -21895,7 +21909,7 @@
               }
             ],
             "track": "cocoa-temple",
-            "hours": 10198.523998108056,
+            "hours": 10311.71627169,
             "qualifies": true,
             "qualifies_at": "2025-10-23T00:51:52.000000Z"
           },
@@ -21918,8 +21932,8 @@
           {
             "started_at": "2025-10-26T17:13:03.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 33804615393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 34212107578084,
             "records": [
               {
                 "run_id": "yo5k1ndz",
@@ -21927,7 +21941,7 @@
               }
             ],
             "track": "cornfield-crossing",
-            "hours": 9390.1709425525,
+            "hours": 9503.363216134445,
             "qualifies": true,
             "qualifies_at": "2025-11-25T17:13:03.000000Z"
           },
@@ -21950,8 +21964,8 @@
           {
             "started_at": "2025-10-05T09:44:21.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 35645937393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 36053429578084,
             "records": [
               {
                 "run_id": "yw5p1npy",
@@ -21963,15 +21977,15 @@
               }
             ],
             "track": "gran-paradiso-island",
-            "hours": 9901.649275885833,
+            "hours": 10014.841549467777,
             "qualifies": true,
             "qualifies_at": "2025-11-04T09:44:21.000000Z"
           },
           {
             "started_at": "2026-09-23T19:08:51.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 5112867393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 5520359578084,
             "records": [
               {
                 "run_id": "mkn15xxm",
@@ -21979,7 +21993,7 @@
               }
             ],
             "track": "hacienda",
-            "hours": 1420.2409425525,
+            "hours": 1533.4332161344444,
             "qualifies": true,
             "qualifies_at": "2026-10-23T19:08:51.000000Z"
           },
@@ -22002,8 +22016,8 @@
           {
             "started_at": "2026-11-07T03:38:21.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 1280697393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 1688189578084,
             "records": [
               {
                 "run_id": "m34ed4wz",
@@ -22011,7 +22025,7 @@
               }
             ],
             "track": "nessies-pond",
-            "hours": 355.74927588583336,
+            "hours": 468.9415494677778,
             "qualifies": false,
             "qualifies_at": "2026-12-07T03:38:21.000000Z"
           },
@@ -22050,8 +22064,8 @@
           {
             "started_at": "2026-11-09T16:50:56.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 1060342393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 1467834578084,
             "records": [
               {
                 "run_id": "y845r7nz",
@@ -22059,7 +22073,7 @@
               }
             ],
             "track": "northern-resort",
-            "hours": 294.5395536636111,
+            "hours": 407.73182724555556,
             "qualifies": false,
             "qualifies_at": "2026-12-09T16:50:56.000000Z"
           },
@@ -22082,8 +22096,8 @@
           {
             "started_at": "2024-12-21T11:04:28.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 60524330393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 60931822578084,
             "records": [
               {
                 "run_id": "yjek277m",
@@ -22091,15 +22105,15 @@
               }
             ],
             "track": "ravenbridge-mansion",
-            "hours": 16812.313998108057,
+            "hours": 16925.50627169,
             "qualifies": true,
             "qualifies_at": "2025-01-20T11:04:28.000000Z"
           },
           {
             "started_at": "2025-02-16T02:20:17.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 55630981393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 56038473578084,
             "records": [
               {
                 "run_id": "yje2333m",
@@ -22107,15 +22121,15 @@
               }
             ],
             "track": "shifting-sands",
-            "hours": 15453.050386996945,
+            "hours": 15566.24266057889,
             "qualifies": true,
             "qualifies_at": "2025-03-18T02:20:17.000000Z"
           },
           {
             "started_at": "2026-08-31T14:04:05.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 7118353393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 7525845578084,
             "records": [
               {
                 "run_id": "zqoedp8y",
@@ -22123,7 +22137,7 @@
               }
             ],
             "track": "snow-peak",
-            "hours": 1977.3203869969445,
+            "hours": 2090.5126605788887,
             "qualifies": true,
             "qualifies_at": "2026-09-30T14:04:05.000000Z"
           },
@@ -22146,8 +22160,8 @@
           {
             "started_at": "2025-08-25T02:20:51.000000Z",
             "ended_at": null,
-            "counted_until": "2026-11-21T23:23:18.393189Z",
-            "duration_us": 39214947393189,
+            "counted_until": "2026-11-26T16:34:50.578084Z",
+            "duration_us": 39622439578084,
             "records": [
               {
                 "run_id": "z160korm",
@@ -22163,7 +22177,7 @@
               }
             ],
             "track": "zen-garden",
-            "hours": 10893.0409425525,
+            "hours": 11006.233216134444,
             "qualifies": true,
             "qualifies_at": "2025-09-24T02:20:51.000000Z"
           }
@@ -22185,8 +22199,8 @@
           "zen-garden"
         ],
         "qualifying_track_count": 13,
-        "total_wr_duration_us": 383388971325079,
-        "total_wr_hours": 106496.93647918862,
+        "total_wr_duration_us": 387871385358924,
+        "total_wr_hours": 107742.05148859,
         "speedrun_qualified_at": "2025-01-20T11:06:28.000000Z",
         "online_top_three_confirmed": true
       },
